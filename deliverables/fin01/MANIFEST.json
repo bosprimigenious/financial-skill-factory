@@ -1,0 +1,42 @@
+{
+  "item_id": "7705055555161788179",
+  "code": "fin01",
+  "generated_at": "2026-11-09T23:00:19+08:00",
+  "status": "BLOCKED",
+  "gaps": [
+    "材料未接入：packs/fin01/materials 为空（需真实公开数据，按 materials_contract.md 落盘）",
+    "豆包未运行：无 runs/fin01/doubao_run.json（CDP 9334 不可用）"
+  ],
+  "files": [
+    {
+      "path": "pack/STATUS.md",
+      "sha256": "3fcc113451a50098241adaf3135825a1d2145e561d229807b41cee201247e8f3",
+      "bytes": 715
+    },
+    {
+      "path": "pack/gt.md",
+      "sha256": "2e5ab9216a9847ea1a07f9d6358077f1b9698abc0aa3c2dd2a9426a856e609c6",
+      "bytes": 922
+    },
+    {
+      "path": "pack/ideal_steps.md",
+      "sha256": "a31727c3103ac5b853a4eea3a461921af3ca37508efe3897100a23c71322d076",
+      "bytes": 1313
+    },
+    {
+      "path": "pack/materials_contract.md",
+      "sha256": "2943c4fcbeb4eaf0a560795122292f31083e9571764c886f46fc0768bbe6d21c",
+      "bytes": 973
+    },
+    {
+      "path": "pack/prompt.md",
+      "sha256": "3997e444c16ec9b5d9bff13536d9fbe02a0ce160f6069049ed7f24fbd10b70de",
+      "bytes": 1886
+    },
+    {
+      "path": "pack/rubric.csv",
+      "sha256": "6b77b3d5dcb69911eced65a31d55a60117a7a5d8bb008c12c6ab877b0a43081c",
+      "bytes": 2287
+    }
+  ]
+}
