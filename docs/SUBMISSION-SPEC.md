@@ -24,9 +24,16 @@
 | 表格数据 | **XLSX / CSV** | 不要只传截图；CSV 用 UTF-8 |
 | 文档 | **DOCX / PDF** | 长 PDF 要说明用途与相关章节 |
 | 图片 | PNG / JPG | 截图类证据 |
-| 压缩包 | ZIP | 复核记录里实际出现 `task19_input.zip` 等，说明平台接受 zip；但网页端上传 zip 可能不稳，优先解包逐个传 |
+| 压缩包 | ZIP | **平台接受 zip**：119 条复核记录里输入附件 40 个 zip、回复附件 42 个 zip（如 `task19_input.zip`、`doubao_original_outputs.zip`）。网页端上传 zip 偶发不稳，可解包逐个传 |
 | 单文件上限 | `TBC` | 旧口径：单件 ≤20 MB、≤11 个、合计 ≤2 GB；11.4 未重申 |
 | 命名 | 唯一 + 前缀 | 如 `A01_valuation.xlsx`，避免同名覆盖 |
+
+**实测分布（119 条复核记录）**
+
+- 输入附件：xlsx 210、docx 110、pdf 103、csv 60、zip 40、md 19、pptx 2、txt 1、jpg 1；平均 **4.6 个/题**。
+- 回复附件：xlsx 76、docx 56、csv 47、zip 42、md 17、pdf 9、pptx 2、html 2、txt 1；平均 **2.1 个/题**。
+
+结论：**xlsx/docx/pdf/csv 为主，zip 作打包补充**；两者都被接受，不是二选一。
 
 **禁止上传**：重复文件、完整数据库导出、无关整本报告、不可访问链接、加密文件、嵌套压缩包。
 
