@@ -1,0 +1,4 @@
+id,rubric_type,核心判分点,达标标准,专业判断说明,依据来源与位置,数值与容差,合理替代或判定边界,gate_candidate,gate_reason
+R01,必需项,{{POINT}},达标：{{PASS}}；部分达标：{{PARTIAL}}；不达标：{{FAIL}},{{IMPACT}},{{SOURCE}},{{VALUE_TOL}},{{ALT}},否,
+R02,负向项,{{POINT}},触发：{{TRIGGER}}；例外：{{EXCEPTION}},{{IMPACT}},{{SOURCE}},不适用,{{NO_TRIGGER}},否,
+R03,加分项,{{POINT}},加分：{{BONUS}}；不加分：{{NO_BONUS}},额外价值,{{SOURCE}},{{VALUE_TOL}},{{ALT}},否,加分项一律否

@@ -1,0 +1,10 @@
+vendor/
+.uv-cache/
+out/
+!out/.gitkeep
+packs/
+!packs/.gitkeep
+cases/*/
+__pycache__/
+*.pyc
+.DS_Store
