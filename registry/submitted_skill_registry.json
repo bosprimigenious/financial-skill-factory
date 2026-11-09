@@ -129,11 +129,12 @@
       "source": "fin8-scaffold"
     },
     {
-      "platform_task_id": "7705055634240196361",
+      "platform_task_id": "7705055508675333931",
       "l2_skill": "市场异动归因与复盘",
       "level3_skill": "解读量价筹码与资金行为",
       "status": "draft",
-      "source": "fin8-scaffold"
+      "source": "fin8-scaffold",
+      "verified_at": "2026-11-09T20:20:00+08:00"
     },
     {
       "platform_task_id": "7705055652846309139",

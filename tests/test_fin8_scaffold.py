@@ -153,10 +153,20 @@ class TestRegistryUniqueness(unittest.TestCase):
             self.assertIn(t["l3"], names, f"{t['l3']} 未登记")
 
     def test_platform_ids_unique_per_skill(self):
+        """以平台实测选题（SELECTION-8-TASKS.json）为准，而不是脚手架里的初始 ID。
+
+        2026-11-09 起，题目 ID 来自 Chrome 登录态抓取的 2407 条池子；
+        FIN08 由「评估流动性缺口」换成「分析执行偏差」（前者被旧批次占用）。
+        """
+        sel_path = REPO / "deliverables/SELECTION-8-TASKS.json"
+        self.assertTrue(sel_path.is_file(), "缺平台实测选题文件")
+        sel = {s["l3"]: s["item_id"] for s in json.loads(sel_path.read_text(encoding="utf-8"))["selection"]}
         reg = json.loads((REPO / "registry/submitted_skill_registry.json").read_text(encoding="utf-8"))
         by_skill = {e["level3_skill"]: e.get("platform_task_id") for e in reg["entries"]}
-        for t in TASKS:
-            self.assertEqual(by_skill[t["l3"]], t["platform"])
+        self.assertEqual(len(sel), 8)
+        for l3, item_id in sel.items():
+            self.assertIn(l3, by_skill, f"{l3} 未登记")
+            self.assertEqual(by_skill[l3], item_id, f"{l3} 的 ID 与平台实测不一致")
 
 
 class TestMasterPackage(unittest.TestCase):
