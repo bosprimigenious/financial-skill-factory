@@ -13,7 +13,7 @@ SUBMITTED_REGISTRY=ROOT/"registry"/"submitted_skill_registry.json"
 def load(path):
     with path.open(encoding="utf-8") as f: return json.load(f)
 
-def create_case(case_code: str, batch_root: Path, registry_path=REGISTRY, domains_path=DOMAINS, batch_path=BATCH):
+def create_case(case_code: str, batch_root: Path, registry_path=REGISTRY, domains_path=DOMAINS, batch_path=BATCH, submitted_registry_path=SUBMITTED_REGISTRY):
     registry=load(registry_path); domains=load(domains_path); batch=load(batch_path)
     selected={x["case_code"]:x for x in batch["selected_tasks"]}
     if case_code not in selected: raise ValueError(f"unknown case_code: {case_code}")
@@ -33,7 +33,7 @@ def create_case(case_code: str, batch_root: Path, registry_path=REGISTRY, domain
     # Cross-check the live project reservation ledger. The selected batch may
     # use only exact, already-reserved draft entries; other occupied Skills
     # cannot be silently reused or renamed.
-    submitted=load(SUBMITTED_REGISTRY)
+    submitted=load(submitted_registry_path)
     entries=submitted.get("entries",[])
     by_id={str(x.get("platform_task_id")):x for x in entries}
     for selected_item in batch["selected_tasks"]:
