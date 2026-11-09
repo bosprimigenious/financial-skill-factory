@@ -1,0 +1,1130 @@
+{
+  "catalog_version": "2.1.0",
+  "industry": "金融",
+  "platform_mapping_policy": "The ten platform task IDs and Skill labels are immutable source mappings captured from the user's platform task list. Domain capabilities below are internal capability decomposition, not additional platform Skills.",
+  "professional_domains": [
+    {
+      "platform_task_id": "7705055457837633316",
+      "second_level_skill": "风险薪酬与利益分配",
+      "third_level_skill": "分配Carry",
+      "domain": "私募基金收益分配与Carry核算",
+      "business_objects": [
+        "基金/投资载体",
+        "LP/GP",
+        "资本账户",
+        "实缴与未返还资本",
+        "可分配现金",
+        "优先回报",
+        "追补分配",
+        "Carry"
+      ],
+      "typical_inputs": [
+        "LPA及补充协议相关条款",
+        "出资与分配流水",
+        "投资退出回款",
+        "费用及税费明细",
+        "LP份额/承诺额台账",
+        "历史分配及资本账户"
+      ],
+      "professional_decisions": [
+        "确认分配口径和计算层级",
+        "识别基金级/项目级瀑布差异",
+        "确定资本返还与优先回报的计提基数和期间",
+        "处理后续追加出资、回拨、托管款和非现金分配",
+        "核对GP追补及Carry归属"
+      ],
+      "calculation_kernels": [
+        "distribution_waterfall_configured"
+      ],
+      "required_controls": [
+        "条款版本与生效日期核验",
+        "现金流方向和日期核验",
+        "LP份额合计与资本账户勾稽",
+        "分配总额与可分配现金勾稽",
+        "每层瀑布前后余额连续",
+        "舍入差异单列"
+      ],
+      "deliverables": [
+        "分配瀑布计算底稿",
+        "LP/GP分配明细",
+        "关键条款映射表",
+        "差异及假设清单"
+      ],
+      "failure_modes": [
+        "错用项目级与基金级瀑布",
+        "忽略回拨/追缴",
+        "优先回报期间或复利口径错误",
+        "把未实现收益当作可分配现金",
+        "分配总额不守恒"
+      ],
+      "policy_parameters_required": [
+        "waterfall_type",
+        "return_of_capital_order",
+        "preferred_return_rate_and_day_count",
+        "compounding_rule",
+        "catch_up_rule",
+        "carry_rate",
+        "clawback_rule",
+        "rounding_policy"
+      ],
+      "hard_boundary": "不得把某一种常见瀑布结构当作所有基金的默认规则；必须以已授权协议和题目给定口径为准。"
+    },
+    {
+      "platform_task_id": "7705055545555963657",
+      "second_level_skill": "信息隔离与员工交易",
+      "third_level_skill": "核验员工交易预审批",
+      "domain": "员工个人证券交易合规监控",
+      "business_objects": [
+        "员工及关联账户",
+        "证券/金融工具",
+        "受限名单",
+        "观察名单",
+        "敏感信息状态",
+        "预审批申请",
+        "批准窗口",
+        "订单与成交"
+      ],
+      "typical_inputs": [
+        "员工及关联账户清单",
+        "预审批申请记录",
+        "受限/观察名单及生效时间",
+        "黑窗期与项目敏感期",
+        "订单和成交回报",
+        "审批权限矩阵",
+        "账户申报及例外记录"
+      ],
+      "professional_decisions": [
+        "确认人员、账户、受益所有权和工具映射",
+        "按交易时点判断限制状态",
+        "核对批准范围、有效期、数量和方向",
+        "识别批准后条件变化或撤销",
+        "区分缺证、违规和待调查事项"
+      ],
+      "calculation_kernels": [
+        "temporal_rule_matching"
+      ],
+      "required_controls": [
+        "所有时间统一时区并保留原始时区",
+        "名单版本与生效区间可追溯",
+        "申请、批准、下单、成交时间顺序核验",
+        "证券代码/发行人/衍生品标的映射",
+        "权限和例外审批留痕"
+      ],
+      "deliverables": [
+        "逐笔预审批核验表",
+        "例外事项清单",
+        "规则命中及证据链",
+        "待调查事项与升级建议"
+      ],
+      "failure_modes": [
+        "用当前名单回溯历史交易",
+        "忽略账户关联关系",
+        "批准过期或超范围仍判合规",
+        "将信息缺失直接判定违规",
+        "把观察名单和禁止交易名单混为一谈"
+      ],
+      "policy_parameters_required": [
+        "restricted_list_effective_time",
+        "blackout_windows",
+        "approval_validity",
+        "instrument_scope",
+        "account_scope",
+        "exception_authority"
+      ],
+      "hard_boundary": "是否构成违规必须按适用制度、规则版本和完整证据判定；缺失证据应标为待核实，不得自动定性。"
+    },
+    {
+      "platform_task_id": "7705054646998732586",
+      "second_level_skill": "媒体与声誉管理",
+      "third_level_skill": "核验媒体回应事实依据",
+      "domain": "金融机构媒体回应与事实核查",
+      "business_objects": [
+        "媒体问题",
+        "待回应主张",
+        "事实陈述",
+        "原始来源",
+        "公开披露",
+        "内部确认",
+        "审批版本"
+      ],
+      "typical_inputs": [
+        "媒体问询原文",
+        "公开公告/监管披露",
+        "经授权的业务记录",
+        "已批准口径",
+        "历史回应版本",
+        "法务/合规审核意见"
+      ],
+      "professional_decisions": [
+        "拆分可验证事实与观点/预测",
+        "追踪每项主张的原始证据",
+        "核验时间、主体、金额、口径和限定条件",
+        "识别证据冲突及不可公开信息",
+        "判断哪些内容可确认、需限定或不得回应"
+      ],
+      "calculation_kernels": [
+        "claim_evidence_traceability"
+      ],
+      "required_controls": [
+        "主张级证据定位",
+        "来源权威性与时点检查",
+        "事实与推断分栏",
+        "公开披露与保密边界检查",
+        "回应版本审批记录"
+      ],
+      "deliverables": [
+        "主张-证据矩阵",
+        "事实核查备忘录",
+        "可回应/不可确认清单",
+        "带限定条件的回应稿"
+      ],
+      "failure_modes": [
+        "引用二手报道代替原始证据",
+        "把预测写成事实",
+        "忽略披露时点",
+        "用未经批准内部信息回应",
+        "证据仅能支持部分主张却作绝对表述"
+      ],
+      "policy_parameters_required": [
+        "approved_disclosure_scope",
+        "source_hierarchy",
+        "as_of_time",
+        "approval_roles"
+      ],
+      "hard_boundary": "不得为补足证据而编造内部事实、媒体来源或审批意见。"
+    },
+    {
+      "platform_task_id": "7705055485594930987",
+      "second_level_skill": "基金产品设计",
+      "third_level_skill": "设计流动性条款",
+      "domain": "基金开放安排与流动性风险条款设计",
+      "business_objects": [
+        "申赎频率",
+        "锁定期",
+        "通知期",
+        "赎回窗口",
+        "赎回上限/Gate",
+        "延期支付",
+        "暂停赎回",
+        "侧袋/资产隔离",
+        "流动性分层"
+      ],
+      "typical_inputs": [
+        "基金策略及资产流动性画像",
+        "投资者结构与集中度",
+        "历史申赎数据",
+        "资产变现周期和折价",
+        "基金合同/产品约束",
+        "运营及托管结算能力"
+      ],
+      "professional_decisions": [
+        "匹配资产变现周期与负债端赎回承诺",
+        "设计通知期、频率和结算周期",
+        "评估集中赎回与市场冲击",
+        "识别暂停、延期、Gate等条款触发条件",
+        "分析不同投资者之间的公平性"
+      ],
+      "calculation_kernels": [
+        "redemption_liquidity_stress"
+      ],
+      "required_controls": [
+        "资产流动性分桶与变现折价",
+        "赎回请求与可用现金时点匹配",
+        "压力情景和反向压力测试",
+        "条款触发阈值来源",
+        "合同、运营和估值流程一致性"
+      ],
+      "deliverables": [
+        "流动性条款方案对比",
+        "赎回压力测试底稿",
+        "触发条件与操作流程",
+        "投资者公平性和风险说明"
+      ],
+      "failure_modes": [
+        "只看资产账面价值不看变现时间",
+        "忽略赎回集中度",
+        "把暂停赎回当作常规流动性来源",
+        "条款无法被运营系统执行",
+        "压力测试没有明确假设"
+      ],
+      "policy_parameters_required": [
+        "dealing_frequency",
+        "notice_period",
+        "lock_up",
+        "gate_limit",
+        "settlement_lag",
+        "suspension_trigger",
+        "haircut_method",
+        "cash_reserve"
+      ],
+      "hard_boundary": "条款的法律效力和可执行性须由适格法律/合规人员核验；计算模型不能替代法律审查。"
+    },
+    {
+      "platform_task_id": "7705055496872939307",
+      "second_level_skill": "基金估值与净值",
+      "third_level_skill": "核验估值日持仓数量",
+      "domain": "基金估值日持仓与数量三方核对",
+      "business_objects": [
+        "基金/组合",
+        "证券/资产标识",
+        "托管持仓",
+        "管理人持仓",
+        "交易系统持仓",
+        "待交收交易",
+        "公司行动",
+        "冻结/质押数量"
+      ],
+      "typical_inputs": [
+        "托管人持仓文件",
+        "基金会计/估值系统持仓",
+        "OMS/交易系统持仓",
+        "成交与交收流水",
+        "公司行动通知",
+        "冻结/质押/借贷记录",
+        "证券主数据映射"
+      ],
+      "professional_decisions": [
+        "确定估值日和截数时点",
+        "统一证券标识、账户和币种",
+        "识别未交收、公司行动和冻结数量",
+        "判断差异是时点、映射、状态还是实际错账",
+        "形成可追溯的调整/升级记录"
+      ],
+      "calculation_kernels": [
+        "three_way_position_reconciliation"
+      ],
+      "required_controls": [
+        "按基金/账户/证券/币种/估值日复合键核对",
+        "来源文件版本和时间戳检查",
+        "重复记录与冲销处理",
+        "数量容差按资产类型配置",
+        "差异不得被汇总净额掩盖"
+      ],
+      "deliverables": [
+        "三方持仓核对表",
+        "逐证券差异清单",
+        "差异原因和证据",
+        "估值放行/暂缓建议"
+      ],
+      "failure_modes": [
+        "只比较总持仓数量",
+        "遗漏待交收交易",
+        "公司行动重复计入或漏计",
+        "证券代码映射错误",
+        "用一个总容差掩盖单券差异"
+      ],
+      "policy_parameters_required": [
+        "valuation_cutoff",
+        "source_precedence",
+        "settlement_convention",
+        "corporate_action_treatment",
+        "quantity_tolerance",
+        "rounding_policy"
+      ],
+      "hard_boundary": "来源优先级和估值政策必须来自基金文件/运营制度，不应硬编码为普遍规则。"
+    },
+    {
+      "platform_task_id": "7705055005065629459",
+      "second_level_skill": "基金清算",
+      "third_level_skill": "核验清算资产清单",
+      "domain": "基金终止、清算资产负债完整性核验",
+      "business_objects": [
+        "现金",
+        "证券及非现金资产",
+        "应收款",
+        "应付款",
+        "未交收交易",
+        "应计费用",
+        "税费",
+        "或有负债",
+        "受限资产",
+        "清算费用"
+      ],
+      "typical_inputs": [
+        "估值日资产负债表",
+        "托管资产证明",
+        "银行余额证明",
+        "应收应付明细",
+        "未交收交易",
+        "费用及税务资料",
+        "法律/诉讼事项",
+        "资产处置及回款记录"
+      ],
+      "professional_decisions": [
+        "确定清算基准日和清单范围",
+        "核实资产权属、存在性和可变现性",
+        "识别受限/质押/争议资产",
+        "补齐未入账负债和清算费用",
+        "核对处置、回款、分配的闭环"
+      ],
+      "calculation_kernels": [
+        "liquidation_net_asset_reconciliation"
+      ],
+      "required_controls": [
+        "资产清单与总账/托管/银行三方勾稽",
+        "资产和负债完整性测试",
+        "账龄及可收回性评估",
+        "未交收和或有项目单列",
+        "清算净额与分配基础勾稽"
+      ],
+      "deliverables": [
+        "清算资产负债清单",
+        "来源及权属证据索引",
+        "未决事项台账",
+        "净清算资产勾稽表"
+      ],
+      "failure_modes": [
+        "遗漏表外或或有负债",
+        "把受限资产当作可分配现金",
+        "重复计算应收款和银行回款",
+        "忽略清算费用和税项",
+        "资产清单与总账口径不一致"
+      ],
+      "policy_parameters_required": [
+        "liquidation_cutoff",
+        "asset_ownership_rule",
+        "valuation_basis",
+        "realization_haircut",
+        "liability_completeness_scope",
+        "expense_reserve_policy"
+      ],
+      "hard_boundary": "资产存在性、权属和负债完整性必须由可追溯证据支持，不能只依赖管理层自述。"
+    },
+    {
+      "platform_task_id": "7705055542784659209",
+      "second_level_skill": "员工操守与举报调查",
+      "third_level_skill": "跟踪操守整改事项",
+      "domain": "金融机构合规调查整改与关闭验证",
+      "business_objects": [
+        "调查发现",
+        "根因",
+        "整改措施",
+        "责任人",
+        "期限",
+        "证据",
+        "复测",
+        "残余风险",
+        "关闭审批"
+      ],
+      "typical_inputs": [
+        "调查结论",
+        "整改计划",
+        "责任部门反馈",
+        "制度/系统变更记录",
+        "培训和抽样证据",
+        "复测结果",
+        "延期/风险接受审批"
+      ],
+      "professional_decisions": [
+        "区分纠正、纠正措施和预防措施",
+        "判断措施是否针对根因",
+        "验证证据是否证明实施而非仅承诺",
+        "判断复测样本是否充分",
+        "识别逾期、重复发生和残余风险"
+      ],
+      "calculation_kernels": [
+        "remediation_evidence_tracking"
+      ],
+      "required_controls": [
+        "发现-措施-责任人-期限关联",
+        "证据版本及时间戳",
+        "独立复测与抽样范围",
+        "延期和风险接受授权",
+        "关闭条件及批准人"
+      ],
+      "deliverables": [
+        "整改跟踪台账",
+        "证据充分性评估",
+        "逾期/复发清单",
+        "关闭或升级建议"
+      ],
+      "failure_modes": [
+        "把提交制度文件等同于整改有效",
+        "无独立复测直接关闭",
+        "延期无审批",
+        "根因与措施不匹配",
+        "忽略残余风险"
+      ],
+      "policy_parameters_required": [
+        "severity",
+        "due_date_rule",
+        "evidence_standard",
+        "retest_sample",
+        "closure_authority",
+        "risk_acceptance_authority"
+      ],
+      "hard_boundary": "整改关闭应基于证据和授权，不以任务状态字段或口头承诺代替验证。"
+    },
+    {
+      "platform_task_id": "7705055543246212902",
+      "second_level_skill": "股票交易执行",
+      "third_level_skill": "测算交易成本",
+      "domain": "股票交易成本分析（TCA）",
+      "business_objects": [
+        "订单",
+        "子订单",
+        "成交",
+        "基准价格",
+        "买卖方向",
+        "费用",
+        "市场数据",
+        "汇率",
+        "执行场所"
+      ],
+      "typical_inputs": [
+        "订单指令及决策时间",
+        "成交回报",
+        "到达价/VWAP/收盘价等基准",
+        "佣金税费",
+        "交易所及平台费用",
+        "汇率",
+        "行情切片"
+      ],
+      "professional_decisions": [
+        "选择与研究问题匹配的基准",
+        "统一买卖方向和价格时点",
+        "拆分显性费用与隐性滑点",
+        "处理部分成交、撤单和未成交数量",
+        "判断异常成交及市场冲击"
+      ],
+      "calculation_kernels": [
+        "transaction_cost_analysis"
+      ],
+      "required_controls": [
+        "订单与成交数量勾稽",
+        "基准价格来源和时间戳",
+        "买卖方向符号约定",
+        "币种换算及费用口径",
+        "显性费用与价格冲击分列",
+        "未成交机会成本单列"
+      ],
+      "deliverables": [
+        "逐笔TCA底稿",
+        "订单级汇总",
+        "显性/隐性成本拆分",
+        "基准敏感性分析"
+      ],
+      "failure_modes": [
+        "买卖方向符号反转",
+        "把不同基准混在一个总指标",
+        "遗漏费用或汇率",
+        "成交数量超过订单数量",
+        "将未成交机会成本混入已成交滑点"
+      ],
+      "policy_parameters_required": [
+        "benchmark_type",
+        "benchmark_timestamp",
+        "base_currency",
+        "fx_source",
+        "fee_inclusion",
+        "unfilled_quantity_method"
+      ],
+      "hard_boundary": "TCA结果必须标明基准、时间、方向、币种和费用口径；不同口径的结果不能直接横向比较。"
+    },
+    {
+      "platform_task_id": "7705055551180853043",
+      "second_level_skill": "投资观点传播",
+      "third_level_skill": "监控传播反馈",
+      "domain": "投资研究观点传播效果与反馈监测",
+      "business_objects": [
+        "研究观点版本",
+        "受众群体",
+        "传播渠道",
+        "触达/阅读",
+        "反馈",
+        "纠错",
+        "更新与撤回"
+      ],
+      "typical_inputs": [
+        "已批准研究观点",
+        "渠道发布记录",
+        "阅读/触达数据",
+        "评论和问询",
+        "客户反馈",
+        "更正及撤回记录"
+      ],
+      "professional_decisions": [
+        "区分触达、阅读、互动和有效反馈",
+        "按渠道与受众分层比较",
+        "识别观点误读、传播偏差和事实纠错",
+        "追踪版本更新是否同步",
+        "区分相关性与传播效果因果"
+      ],
+      "calculation_kernels": [
+        "communication_feedback_cohort"
+      ],
+      "required_controls": [
+        "观点版本与发布时间关联",
+        "渠道数据口径一致",
+        "去重及机器人流量处理",
+        "受众分母定义",
+        "反馈分类和证据引用",
+        "更正闭环"
+      ],
+      "deliverables": [
+        "渠道反馈看板",
+        "受众分层分析",
+        "异常传播/误读清单",
+        "后续更新建议"
+      ],
+      "failure_modes": [
+        "把曝光量当作有效阅读",
+        "跨渠道口径直接相加",
+        "忽略样本偏差",
+        "把相关性写成因果",
+        "未追踪观点更正和撤回"
+      ],
+      "policy_parameters_required": [
+        "channel_definition",
+        "audience_cohort",
+        "deduplication_rule",
+        "engagement_definition",
+        "observation_window"
+      ],
+      "hard_boundary": "不得把传播互动指标直接解释为投资收益、客户转化或观点正确性的证明。"
+    },
+    {
+      "platform_task_id": "7705055551529078578",
+      "second_level_skill": "股票交易执行",
+      "third_level_skill": "分析执行偏差",
+      "domain": "交易执行偏差归因与实施质量分析",
+      "business_objects": [
+        "目标仓位/订单",
+        "实际成交",
+        "未成交数量",
+        "执行时段",
+        "市场基准",
+        "参与率",
+        "场所",
+        "市场状态"
+      ],
+      "typical_inputs": [
+        "目标订单及指令时间",
+        "订单生命周期日志",
+        "成交和撤单回报",
+        "行情数据",
+        "基准价格序列",
+        "执行算法参数",
+        "市场状态标签"
+      ],
+      "professional_decisions": [
+        "区分决策延迟、执行延迟和市场冲击",
+        "拆分已成交与未成交部分",
+        "识别参与率、价格限制和流动性约束",
+        "评估执行策略与市场状态匹配",
+        "区分可控偏差和外生市场变化"
+      ],
+      "calculation_kernels": [
+        "implementation_shortfall_configured"
+      ],
+      "required_controls": [
+        "目标数量与成交/未成交数量勾稽",
+        "订单生命周期时间线",
+        "基准时点一致",
+        "成交方向和价格符号",
+        "市场数据缺口标识",
+        "归因项加总与总偏差勾稽"
+      ],
+      "deliverables": [
+        "订单级执行偏差报告",
+        "实施差额分解",
+        "市场状态与策略归因",
+        "异常订单复盘"
+      ],
+      "failure_modes": [
+        "把TCA和执行偏差当成同一指标",
+        "忽略未成交机会成本",
+        "用事后价格替代决策时基准",
+        "归因项重复计算",
+        "无法解释总偏差与分项之差"
+      ],
+      "policy_parameters_required": [
+        "decision_price",
+        "arrival_price",
+        "benchmark_type",
+        "unfilled_opportunity_cost",
+        "market_impact_method",
+        "attribution_convention"
+      ],
+      "hard_boundary": "实施差额分解取决于明确的归因约定；不得将一种分解口径伪装成唯一行业标准。"
+    },
+    {
+      "platform_task_id": "7705055555161788179",
+      "second_level_skill": "市场数据与信息查询",
+      "third_level_skill": "查询行业高频与另类数据",
+      "domain": "金融另类数据准入、谱系与研究可用性",
+      "business_objects": [
+        "数据源",
+        "数据集版本",
+        "实体映射",
+        "观测值",
+        "事件时间",
+        "发布时间",
+        "许可与再分发边界"
+      ],
+      "typical_inputs": [
+        "数据源目录",
+        "数据字典",
+        "真实观测数据",
+        "实体映射表",
+        "数据质量报告",
+        "许可与授权记录"
+      ],
+      "professional_decisions": [
+        "判定数据源是否适合研究目的",
+        "识别事件时间与发布时间差异",
+        "审查实体映射与覆盖率",
+        "识别修订、缺失、延迟和幸存者偏差",
+        "区分可研究、可商业使用与可再分发"
+      ],
+      "required_controls": [
+        "源版本和哈希冻结",
+        "实体映射有效期核验",
+        "时间戳和时区统一",
+        "覆盖率及缺失率计算",
+        "许可和用途边界逐源确认"
+      ],
+      "deliverables": [
+        "数据源评估表",
+        "实体时间对齐审计",
+        "特征字典",
+        "数据质量报告",
+        "研究可用性备忘录"
+      ],
+      "failure_modes": [
+        "把公开可访问等同于可再分发",
+        "把发布时间当事件时间",
+        "忽略映射版本",
+        "把缺失当零",
+        "把数据延迟误判为真实市场信号"
+      ],
+      "policy_parameters_required": [
+        "source_hierarchy",
+        "event_time_rule",
+        "publish_time_rule",
+        "entity_mapping_policy",
+        "missing_value_semantics",
+        "license_scope"
+      ]
+    },
+    {
+      "platform_task_id": "7705055634240196361",
+      "second_level_skill": "市场异动归因与复盘",
+      "third_level_skill": "解读量价筹码与资金行为",
+      "domain": "证券市场量价结构与资金行为复盘",
+      "business_objects": [
+        "证券",
+        "交易日",
+        "OHLCV",
+        "换手率",
+        "流通股本",
+        "资金流口径",
+        "事件窗口",
+        "复权因子"
+      ],
+      "typical_inputs": [
+        "行情数据",
+        "证券主数据",
+        "股本与流通股数据",
+        "公司行动",
+        "资金流数据及方法说明",
+        "事件时间线"
+      ],
+      "professional_decisions": [
+        "定义异常窗口和基准期",
+        "区分价格变化、成交活跃度和可观测资金流",
+        "判断信号是否由公司行动或样本选择造成",
+        "比较市场/行业基准",
+        "给出多种可证伪解释"
+      ],
+      "required_controls": [
+        "复权与公司行动处理",
+        "成交量和换手率分母核验",
+        "资金流来源与分类口径核验",
+        "事件时间窗口冻结",
+        "样本量和稳健性检查"
+      ],
+      "deliverables": [
+        "事件窗口分析表",
+        "量价分解表",
+        "资金流口径说明",
+        "信号稳健性表",
+        "市场复盘备忘录"
+      ],
+      "failure_modes": [
+        "把资金流估算写成真实主力行为",
+        "忽略复权",
+        "选择性窗口",
+        "将相关性解释为因果",
+        "把流通股本和总股本混用"
+      ],
+      "policy_parameters_required": [
+        "adjustment_policy",
+        "turnover_denominator",
+        "flow_methodology",
+        "event_window",
+        "benchmark_definition",
+        "outlier_policy"
+      ]
+    },
+    {
+      "platform_task_id": "7705055652846309139",
+      "second_level_skill": "基金与ETF研究评价",
+      "third_level_skill": "分析ETF折溢价与申赎套利机制",
+      "domain": "ETF折溢价监测与申赎套利经济性",
+      "business_objects": [
+        "ETF份额",
+        "二级市场价格",
+        "NAV/IOPV",
+        "PCF申赎篮子",
+        "现金替代",
+        "申赎单位",
+        "交易费用",
+        "交收周期"
+      ],
+      "typical_inputs": [
+        "交易所行情",
+        "基金NAV/IOPV",
+        "申赎清单PCF",
+        "基金合同/招募说明书",
+        "费率与现金替代规则",
+        "交易日历与结算规则"
+      ],
+      "professional_decisions": [
+        "核验价格与净值时间戳",
+        "逐成分核对申赎篮子",
+        "计算可执行套利毛利和净利",
+        "识别停牌、限购、现金替代和交收约束",
+        "区分理论偏离与可实现收益"
+      ],
+      "required_controls": [
+        "NAV/IOPV时点一致性",
+        "PCF版本和生效日核验",
+        "申赎单位和最小交易单位核验",
+        "费用税费和滑点纳入",
+        "停牌/限购/结算限制处理"
+      ],
+      "deliverables": [
+        "折溢价时间序列",
+        "PCF篮子核对表",
+        "套利成本底稿",
+        "套利可行性矩阵",
+        "ETF研究备忘录"
+      ],
+      "failure_modes": [
+        "用过期NAV计算折溢价",
+        "忽略现金替代溢价",
+        "遗漏申赎费用",
+        "将理论价差当无风险收益",
+        "忽略交收时点"
+      ],
+      "policy_parameters_required": [
+        "nav_timestamp_rule",
+        "iopv_source",
+        "pcf_effective_date",
+        "creation_unit",
+        "cash_substitution_rule",
+        "fee_schedule",
+        "settlement_rule"
+      ]
+    },
+    {
+      "platform_task_id": "7705055555161820947",
+      "second_level_skill": "持仓诊断与投资决策辅助",
+      "third_level_skill": "归因个人组合收益与基准偏离",
+      "domain": "投资组合收益核算与主动收益归因",
+      "business_objects": [
+        "组合",
+        "证券持仓",
+        "交易",
+        "现金流",
+        "费用",
+        "基准权重",
+        "估值价格",
+        "收益期间"
+      ],
+      "typical_inputs": [
+        "期初期末持仓",
+        "交易流水",
+        "现金流",
+        "费用",
+        "基准成分权重和收益",
+        "估值价格与汇率"
+      ],
+      "professional_decisions": [
+        "选择适用收益率方法",
+        "处理外部现金流和费用",
+        "统一组合与基准期间",
+        "分解资产配置、证券选择及交互效应",
+        "解释无法归因部分"
+      ],
+      "required_controls": [
+        "期初期末资产勾稽",
+        "现金流时点处理",
+        "价格和汇率来源",
+        "基准权重归一化",
+        "归因分项与主动收益勾稽"
+      ],
+      "deliverables": [
+        "收益重算底稿",
+        "组合与基准对照",
+        "收益归因表",
+        "持仓贡献表",
+        "例外清单和决策备忘录"
+      ],
+      "failure_modes": [
+        "混用时间加权和资金加权收益",
+        "遗漏现金流",
+        "基准成分错期",
+        "重复计算费用",
+        "归因分项不等于主动收益却不解释"
+      ],
+      "policy_parameters_required": [
+        "return_method",
+        "cashflow_timing",
+        "benchmark_id",
+        "valuation_cutoff",
+        "fx_source",
+        "fee_treatment",
+        "attribution_method"
+      ]
+    },
+    {
+      "platform_task_id": "7705055005066317587",
+      "second_level_skill": "宏观与市场策略研究",
+      "third_level_skill": "评估汇率冲击影响",
+      "domain": "汇率变动对资产负债及现金流的风险传导",
+      "business_objects": [
+        "币种敞口",
+        "外币资产负债",
+        "收入成本",
+        "现金流",
+        "远期/掉期/期权套保",
+        "汇率情景"
+      ],
+      "typical_inputs": [
+        "外币敞口表",
+        "现金流期限表",
+        "套保合约",
+        "历史汇率与定盘价",
+        "宏观情景依据",
+        "主体财务口径"
+      ],
+      "professional_decisions": [
+        "区分交易、折算和经济敞口",
+        "按期限匹配套保",
+        "量化直接和间接影响",
+        "处理自然对冲",
+        "比较冲击情景及敏感性"
+      ],
+      "required_controls": [
+        "汇率来源和发布时间",
+        "敞口币种方向",
+        "套保名义本金和期限",
+        "现金流时点匹配",
+        "情景冲击依据"
+      ],
+      "deliverables": [
+        "币种敞口矩阵",
+        "情景冲击结果",
+        "套保缺口表",
+        "敏感性分析",
+        "汇率风险备忘录"
+      ],
+      "failure_modes": [
+        "币种方向颠倒",
+        "把名义套保额当完全抵消",
+        "忽略期限错配",
+        "将折算损益和现金流损益混为一谈",
+        "用当前汇率回填历史"
+      ],
+      "policy_parameters_required": [
+        "base_currency",
+        "fx_fixing_source",
+        "exposure_definition",
+        "hedge_effectiveness_rule",
+        "scenario_shock_basis",
+        "cashflow_horizon"
+      ]
+    },
+    {
+      "platform_task_id": "7705055524749086518",
+      "second_level_skill": "信用与固定收益研究",
+      "third_level_skill": "识别信用评级迁移风险",
+      "domain": "发行人评级迁移与固定收益敞口风险",
+      "business_objects": [
+        "发行人",
+        "评级机构",
+        "评级级别",
+        "展望/观察",
+        "评级生效日",
+        "债券敞口",
+        "违约事件"
+      ],
+      "typical_inputs": [
+        "发行人主数据",
+        "评级历史",
+        "评级方法版本",
+        "财务报表",
+        "债券持仓及到期结构",
+        "违约事件记录"
+      ],
+      "professional_decisions": [
+        "标准化不同评级机构尺度",
+        "构建迁移矩阵",
+        "区分评级观察与正式迁移",
+        "分析主体财务驱动",
+        "量化组合敞口迁移影响"
+      ],
+      "required_controls": [
+        "评级机构及方法版本留痕",
+        "公告日与生效日分开",
+        "评级映射表版本控制",
+        "迁移样本分母与删失处理",
+        "敞口与主体主键核验"
+      ],
+      "deliverables": [
+        "评级迁移矩阵",
+        "主体风险观察表",
+        "债券敞口影响表",
+        "评级方法和映射说明",
+        "信用风险备忘录"
+      ],
+      "failure_modes": [
+        "把展望负面当正式降级",
+        "跨机构评级直接混合",
+        "忽略评级生效日",
+        "将评级迁移率等同违约概率",
+        "忽略退市/缺失样本"
+      ],
+      "policy_parameters_required": [
+        "rating_scale_mapping",
+        "agency_scope",
+        "announcement_vs_effective_date",
+        "default_definition",
+        "observation_window",
+        "exposure_measure"
+      ]
+    },
+    {
+      "platform_task_id": "7705054469567057727",
+      "second_level_skill": "压力测试与风险限额",
+      "third_level_skill": "设计压力情景",
+      "domain": "投资组合风险因子压力情景设计与限额评估",
+      "business_objects": [
+        "风险因子",
+        "资产敞口",
+        "组合",
+        "风险限额",
+        "历史压力事件",
+        "相关结构",
+        "估值模型"
+      ],
+      "typical_inputs": [
+        "组合风险敞口",
+        "风险因子时间序列",
+        "限额政策",
+        "历史事件",
+        "模型参数",
+        "已批准情景方法"
+      ],
+      "professional_decisions": [
+        "选择具有经济机制的风险因子",
+        "设计单因子和联合情景",
+        "处理相关性变化和非线性",
+        "评估基准/压力结果与限额使用",
+        "确定管理行动和升级条件"
+      ],
+      "required_controls": [
+        "情景依据和观察窗口",
+        "风险因子单位与方向",
+        "相关性假设",
+        "模型版本和估值方法",
+        "限额生效日和币种"
+      ],
+      "deliverables": [
+        "情景定义表",
+        "压力估值结果",
+        "限额突破表",
+        "敏感性和反向压力测试",
+        "行动登记与风险备忘录"
+      ],
+      "failure_modes": [
+        "随意设定冲击幅度",
+        "忽略相关性在压力期变化",
+        "重复计算风险敞口",
+        "使用过期限额",
+        "把未运行模型写成已验证"
+      ],
+      "policy_parameters_required": [
+        "scenario_basis",
+        "risk_factor_mapping",
+        "correlation_method",
+        "valuation_model_version",
+        "limit_effective_date",
+        "stress_horizon"
+      ]
+    },
+    {
+      "platform_task_id": "7705055005065203475",
+      "second_level_skill": "投资风险管理",
+      "third_level_skill": "评估流动性缺口",
+      "domain": "投资组合期限桶流动性缺口与资产可用性分析",
+      "business_objects": [
+        "现金流入",
+        "现金流出",
+        "资产变现",
+        "负债到期",
+        "抵质押/冻结",
+        "期限桶",
+        "流动性折扣"
+      ],
+      "typical_inputs": [
+        "资产负债现金流",
+        "资产持仓与市场价值",
+        "结算周期",
+        "抵质押状态",
+        "历史赎回/融资行为",
+        "流动性政策和压力假设"
+      ],
+      "professional_decisions": [
+        "按期限桶匹配流入流出",
+        "判断资产是否能在缺口前变现",
+        "扣除受限资产和合理折价",
+        "计算基准与压力缺口",
+        "提出可执行的流动性缓释措施"
+      ],
+      "required_controls": [
+        "现金流到期日和确定性",
+        "资产结算周期",
+        "受限/质押状态",
+        "币种和汇率",
+        "折扣率来源",
+        "缺口累计计算"
+      ],
+      "deliverables": [
+        "流动性期限梯队",
+        "逐桶净缺口与累计缺口",
+        "不可用资产清单",
+        "覆盖率和压力缺口",
+        "应急行动备忘录"
+      ],
+      "failure_modes": [
+        "账面价值当作可用现金",
+        "忽略结算周期",
+        "遗漏或有流出",
+        "重复计入抵押资产",
+        "把负缺口净额跨期限抵消"
+      ],
+      "policy_parameters_required": [
+        "bucket_definition",
+        "cashflow_certainty",
+        "asset_availability_rule",
+        "haircut_source",
+        "encumbrance_policy",
+        "fx_source",
+        "stress_runoff_assumption"
+      ]
+    }
+  ]
+}
