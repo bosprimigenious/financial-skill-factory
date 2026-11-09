@@ -157,18 +157,31 @@
       "source": "fin8-scaffold"
     },
     {
-      "platform_task_id": "7705055524749086518",
+      "platform_task_id": "7705055926348238592",
       "l2_skill": "信用与固定收益研究",
       "level3_skill": "识别信用评级迁移风险",
       "status": "draft",
-      "source": "fin8-scaffold"
+      "source": "fin8-scaffold",
+      "verified_at": "2026-11-09T20:20:00+08:00",
+      "verified_from": "corexpertdata pool fetch (2407 rows)"
     },
     {
-      "platform_task_id": "7705054469567057727",
+      "platform_task_id": "7705055839858560804",
       "l2_skill": "压力测试与风险限额",
       "level3_skill": "设计压力情景",
       "status": "draft",
-      "source": "fin8-scaffold"
+      "source": "fin8-scaffold",
+      "verified_at": "2026-11-09T20:20:00+08:00",
+      "verified_from": "corexpertdata pool fetch (2407 rows)"
+    },
+    {
+      "platform_task_id": "7705056530287021864",
+      "l2_skill": "股票交易执行",
+      "level3_skill": "分析执行偏差",
+      "status": "draft",
+      "source": "fin8-scaffold",
+      "verified_at": "2026-11-09T20:20:00+08:00",
+      "verified_from": "corexpertdata pool fetch"
     }
   ]
 }
