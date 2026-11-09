@@ -502,6 +502,21 @@ def emit_materials(pack):
       [list(r) for r in CLAUSES12])
 
 
+def normalize_zip(path, stamp=(2026, 1, 1, 0, 0, 0)):
+    """把 xlsx 内部 zip 条目的时间戳与顺序固定，保证同一输入逐字节一致。"""
+    import zipfile
+    with zipfile.ZipFile(path) as z:
+        items = [(i.filename, z.read(i.filename), i.compress_type) for i in z.infolist()]
+    tmp = path + ".tmp"
+    with zipfile.ZipFile(tmp, "w") as z:
+        for name, data, ctype in items:
+            zi = zipfile.ZipInfo(name, date_time=stamp)
+            zi.compress_type = ctype
+            zi.external_attr = 0o600 << 16
+            z.writestr(zi, data)
+    os.replace(tmp, path)
+
+
 def emit_gt(pack, dm, grades):
     from openpyxl import Workbook
     from openpyxl.styles import Alignment, Font, PatternFill
@@ -631,8 +646,14 @@ def emit_gt(pack, dm, grades):
 
     for f in ("D1_维度判定", "D4_综合定级与处置", "D8_计数勾稽与登记", "D9_口径命中与边界", "D10_对平"):
         pass
+    # 固定文档属性，保证同一输入产出逐字节一致（openpyxl 默认写入当前时间）
+    wb.properties.creator = "financial-skill-factory"
+    wb.properties.created = dt.datetime(2026, 1, 1, 0, 0, 0)
+    wb.properties.modified = dt.datetime(2026, 1, 1, 0, 0, 0)
+    wb.properties.lastModifiedBy = "financial-skill-factory"
     out = os.path.join(gt, "标准答案_城商行IT外包供应商技术风险定级.xlsx")
     wb.save(out)
+    normalize_zip(out)
     print(f"  GT xlsx: {os.path.basename(out)} ({os.path.getsize(out)} 字节)")
 
 
