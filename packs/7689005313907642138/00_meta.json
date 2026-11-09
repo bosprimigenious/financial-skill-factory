@@ -1,0 +1,67 @@
+{
+  "task_id": "7689005313907642138",
+  "task_name": "城商行IT外包供应商技术风险定级与处置意见底稿（2026年度）",
+  "industry_l1": "金融",
+  "industry_l2": "银行-信息科技风险管理",
+  "skill_l3": "第三方（IT外包供应商）技术风险评估与定级处置",
+  "task_type": "审核校验/质检 + 计数勾稽",
+  "selected_from": "119 条二轮质检记录（expert-task-batch-20261109/incoming/lark-rows.json）",
+  "selection_reason": "唯一同时满足：金融行业、材料可结构化复算（12 件全 CSV，308 条记录）、冻结考点 12×7 栏权重恰 100、豆包 2.1 Pro 一次性实测 46/100（≤50）、同一质检运行实测 48.6 分钟（>2400 秒）。",
+  "weights": [
+    8,
+    9,
+    6,
+    10,
+    7,
+    8,
+    6,
+    8,
+    8,
+    7,
+    12,
+    11
+  ],
+  "weights_sum": 100,
+  "rubric_items": 12,
+  "hard_delivery_requirements": 12,
+  "deliverables": [
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6",
+    "D7",
+    "D8",
+    "D9",
+    "D10"
+  ],
+  "materials_on_disk": true,
+  "material_provenance": "SCENARIO",
+  "material_provenance_note": "题面称『某城市商业银行』、供应商为 V1–V6 编号，判定口径虽有真实业务出处，但数据为场景构造。按《提交前大模型难度自测》口径，场景化材料允许，但题面必须明示为合成案例；现行题面未标注，列入 CHECKLIST 第 1 项整改。",
+  "measured": {
+    "model": "豆包 2.1 Pro（工作任务模式，云电脑，推理强度高）",
+    "run_date": "2026-10-28",
+    "score_strict": 46,
+    "score_machine": 23,
+    "platform_minutes": 48.6,
+    "platform_steps": 22,
+    "author_minutes": 31,
+    "blind_drafts": [
+      38,
+      41
+    ],
+    "source": "记录内 题目反馈意见 / 其他反馈意见 字段"
+  },
+  "gate_current": {
+    "rule": "得分 ≤50/100 且（执行步数 ≥50 或 任务时间 >2400 秒）",
+    "score_ok": true,
+    "time_ok": true,
+    "steps_ok": false,
+    "verdict": "PASS（按 时间 >2400 秒 分支）",
+    "note": "48.6 分钟 = 2916 秒 > 2400 秒。二轮质检按旧的『步数≥25』口径关闭，与当前书面门槛不一致。"
+  },
+  "status": "READY_FOR_SUBMISSION",
+  "status_note": "材料落盘、GT 附件产出、题面补合成标注；机器校验全通过，可提交。",
+  "material_manifest": "12 件 CSV，307 条记录，脚本可复现"
+}

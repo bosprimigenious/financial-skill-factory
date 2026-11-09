@@ -1,10 +1,15 @@
 vendor/
 .uv-cache/
 out/
-!out/.gitkeep
-packs/
-!packs/.gitkeep
-cases/*/
 __pycache__/
 *.pyc
 .DS_Store
+
+# 产线产物与实例需要入库（只排除生成态）
+packs/*
+!packs/.gitkeep
+!packs/SELECTION-FROM-119.md
+!packs/7689005313907642138/
+cases/*
+!cases/README.md
+!cases/ccb-vendor-tpr-2026/
