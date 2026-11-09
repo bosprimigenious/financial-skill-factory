@@ -1,0 +1,15 @@
+place,date,is_business_day
+SH,2026-09-29,true
+SH,2026-09-30,true
+SH,2026-10-01,false
+SH,2026-10-02,false
+SH,2026-10-03,false
+SH,2026-10-04,false
+SH,2026-10-05,true
+SZ,2026-09-29,true
+SZ,2026-09-30,true
+SZ,2026-10-01,false
+SZ,2026-10-02,false
+SZ,2026-10-03,false
+SZ,2026-10-04,false
+SZ,2026-10-05,true

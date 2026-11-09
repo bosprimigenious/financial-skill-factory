@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "event_envelope": ["event_id", "batch_id", "source", "source_at", "effective_at", "action"],
+  "actions": ["NEW", "AMEND", "CANCEL", "TRADE", "CORRECT", "BUST", "ALLOCATE", "REPLACE", "VOID", "POST", "REVERSAL", "REQUEST"],
+  "sides": ["BUY", "SELL"],
+  "capacities": ["AGENCY", "PRINCIPAL"],
+  "liquidity": ["MAKER", "TAKER"],
+  "money": "integer minor units unless a field name ends with _bps or cny_minor_per_minor",
+  "time": "ISO-8601 with explicit Z, except source_at which is epoch|tick",
+  "replacement": "replaces_event_id identifies the immediately preceding event version"
+}

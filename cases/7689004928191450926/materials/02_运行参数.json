@@ -1,0 +1,22 @@
+{
+  "company": "黄洋财险",
+  "valuation_at": "2026-06-30T23:59:59+08:00",
+  "watermarks": [
+    {"node_id": "W1", "evidence_cutoff": "2026-06-30T16:00:00+08:00"},
+    {"node_id": "W2", "evidence_cutoff": "2026-07-01T09:00:00+08:00"}
+  ],
+  "money_dp": 2,
+  "share_dp": 6,
+  "max_payload_bytes": 16384,
+  "max_trailing_bytes": 16,
+  "memory_limit_mib": 32,
+  "event_types": {
+    "APPLICATION_EVENT": 1,
+    "LINE_EVENT": 2,
+    "AUTH_EVENT": 3,
+    "EVIDENCE_EVENT": 4,
+    "GROUP_EVENT": 5,
+    "TERM_APPROVAL": 6
+  }
+}
+

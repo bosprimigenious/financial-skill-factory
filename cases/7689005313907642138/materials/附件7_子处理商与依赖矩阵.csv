@@ -1,0 +1,17 @@
+﻿供应商编号,子处理商,角色,云区域,灾备机房
+V1,SP-X,主用,CR-A,DC-East
+V1,SP-M,备用,CR-A,DC-East
+V2,SP-X,主用,CR-A,DC-East
+V2,SP-Q,备用,CR-A,DC-East
+V3,SP-Y,主用,CR-B,DC-North
+V3,SP-T,备用,CR-B,DC-North
+V4,SP-Z,主用,CR-C,DC-South
+V4,SP-U,备用,CR-C,DC-South
+V5,SP-X,主用,CR-A,DC-East
+V5,SP-Q,备用,CR-A,DC-East
+V6,SP-W,主用,CR-D,DC-West
+V6,SP-M,备用,CR-D,DC-West
+V1,SP-W,组件供应商,CR-D,DC-West
+V4,SP-W,组件供应商,CR-D,DC-West
+V5,SP-W,组件供应商,CR-D,DC-West
+V2,SP-W,组件供应商,CR-D,DC-West

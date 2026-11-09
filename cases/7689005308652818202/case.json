@@ -1,0 +1,22 @@
+{
+  "id": "7689005308652818202",
+  "title": "龙鳞风险管理部需要恢复一套可回溯的日终风险服务。服务须在任意记录截止时点重放批次、市场时钟、头寸、工具映射、历史冲击、信",
+  "source_type": "synthetic",
+  "industry_l1": "金融",
+  "industry_l2": "银行/证券/基金/保险（见 prompt）",
+  "l2_skill_proposed": "待平台词条确认",
+  "level3_skill_proposed": "待平台词条确认",
+  "platform_measured_score_text": "seed 2.1pro 38分； gpt6.1sol high 60分",
+  "rubric_chars": 3270,
+  "prompt_chars": 598,
+  "materials_files": 16,
+  "materials_bytes": 405872,
+  "downloaded_at": "2026-11-09T17:14:09+08:00",
+  "provenance": "lark-base OcFPbjoVdaGhwescxD6cPWzBnrd / table tblmog3SbccztaSE (二轮质检记录)",
+  "synthetic_labeled": true,
+  "notes": [
+    "材料为平台记录附件的原件，未改写",
+    "rubric/实测分来自同一记录",
+    "三级 skill 词条需按平台登记核对后再登记入 registry"
+  ]
+}

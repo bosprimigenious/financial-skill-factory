@@ -1,0 +1,22 @@
+{
+  "id": "7689004928191450926",
+  "title": "你是黄洋财险再保险运营与系统控制负责人。请以2026-06-30T23:59:59+08:00为业务计量时点，仅使用全部",
+  "source_type": "synthetic",
+  "industry_l1": "金融",
+  "industry_l2": "银行/证券/基金/保险（见 prompt）",
+  "l2_skill_proposed": "待平台词条确认",
+  "level3_skill_proposed": "待平台词条确认",
+  "platform_measured_score_text": "豆包2.1pro 42分。 GPT6.1sol high 58分",
+  "rubric_chars": 3702,
+  "prompt_chars": 440,
+  "materials_files": 20,
+  "materials_bytes": 61376,
+  "downloaded_at": "2026-11-09T17:14:09+08:00",
+  "provenance": "lark-base OcFPbjoVdaGhwescxD6cPWzBnrd / table tblmog3SbccztaSE (二轮质检记录)",
+  "synthetic_labeled": true,
+  "notes": [
+    "材料为平台记录附件的原件，未改写",
+    "rubric/实测分来自同一记录",
+    "三级 skill 词条需按平台登记核对后再登记入 registry"
+  ]
+}

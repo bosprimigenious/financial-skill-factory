@@ -1,0 +1,17 @@
+{"kind":"BATCH","batch_id":"B0","recorded_at":"2026-09-30T07:00:00Z","status":"COMMITTED","depends_on":[]}
+{"kind":"BATCH","batch_id":"B1","recorded_at":"2026-09-30T07:30:00Z","status":"COMMITTED","depends_on":["B0"]}
+{"kind":"BATCH","batch_id":"B2","recorded_at":"2026-09-30T08:30:00Z","status":"COMMITTED","depends_on":["B1"]}
+{"kind":"BATCH","batch_id":"B3","recorded_at":"2026-09-30T09:30:00Z","status":"COMMITTED","depends_on":["B2"]}
+{"kind":"BATCH","batch_id":"BX","recorded_at":"2026-09-30T08:10:00Z","status":"RETRACTED","depends_on":["B0"]}
+{"kind":"BATCH","batch_id":"BC1","recorded_at":"2026-09-30T08:00:00Z","status":"COMMITTED","depends_on":["BC2"]}
+{"kind":"BATCH","batch_id":"BC2","recorded_at":"2026-09-30T08:00:01Z","status":"COMMITTED","depends_on":["BC1"]}
+{"kind":"CLOCK","event_id":"CLK-OMS-E1-A","batch_id":"B0","recorded_at":"2026-09-30T07:00:00Z","source":"OMS","epoch":"E1","source_ts":"1000","utc":"2026-09-30T08:00:00Z"}
+{"kind":"CLOCK","event_id":"CLK-OMS-E1-B","batch_id":"B0","recorded_at":"2026-09-30T07:00:01Z","source":"OMS","epoch":"E1","source_ts":"2000","utc":"2026-09-30T08:10:00Z"}
+{"kind":"CLOCK","event_id":"CLK-CSD-E1-A","batch_id":"B0","recorded_at":"2026-09-30T07:00:02Z","source":"CSD","epoch":"E1","source_ts":"0","utc":"2026-09-30T08:00:00Z"}
+{"kind":"CLOCK","event_id":"CLK-CSD-E1-B","batch_id":"B0","recorded_at":"2026-09-30T07:00:03Z","source":"CSD","epoch":"E1","source_ts":"3600","utc":"2026-09-30T09:00:00Z"}
+{"kind":"CLOCK","event_id":"CLK-BANK-E1-A","batch_id":"B0","recorded_at":"2026-09-30T07:00:04Z","source":"BANK","epoch":"E1","source_ts":"0","utc":"2026-09-30T08:00:00Z"}
+{"kind":"CLOCK","event_id":"CLK-BANK-E1-B","batch_id":"B0","recorded_at":"2026-09-30T07:00:05Z","source":"BANK","epoch":"E1","source_ts":"3600","utc":"2026-09-30T09:00:00Z"}
+{"kind":"CLOCK","event_id":"CLK-CUST-E1-A","batch_id":"B0","recorded_at":"2026-09-30T07:00:06Z","source":"CUST","epoch":"E1","source_ts":"0","utc":"2026-09-30T08:00:00Z"}
+{"kind":"CLOCK","event_id":"CLK-CUST-E1-B","batch_id":"B0","recorded_at":"2026-09-30T07:00:07Z","source":"CUST","epoch":"E1","source_ts":"3600","utc":"2026-09-30T09:00:00Z"}
+{"kind":"CLOCK","event_id":"CLK-OMS-E2-A","batch_id":"B0","recorded_at":"2026-09-30T07:00:08Z","source":"OMS","epoch":"E2","source_ts":"0","utc":"2026-09-30T08:30:00Z"}
+{"kind":"CLOCK","event_id":"CLK-OMS-E2-B","batch_id":"B0","recorded_at":"2026-09-30T07:00:09Z","source":"OMS","epoch":"E2","source_ts":"100","utc":"2026-09-30T08:31:40Z"}

@@ -1,0 +1,11 @@
+{"event_id":"BCORE","batch_id":"CORE","source":"OMS","source_at":"A|90000000","effective_at":"2026-06-02T01:00:00Z","action":"COMMIT","depends_on":[]}
+{"event_id":"BTRD","batch_id":"TRD1","source":"EMS","source_at":"E1|126000000","effective_at":"2026-06-02T11:00:00Z","action":"COMMIT","depends_on":["CORE"]}
+{"event_id":"BALL","batch_id":"ALL1","source":"ALC","source_at":"X|129600000","effective_at":"2026-06-02T12:00:00Z","action":"COMMIT","depends_on":["TRD1"]}
+{"event_id":"BFEE","batch_id":"FEE1","source":"FEE","source_at":"F|86400000","effective_at":"2026-06-02T00:00:00Z","action":"COMMIT","depends_on":["CORE"]}
+{"event_id":"BLED","batch_id":"LED1","source":"LED","source_at":"L|172800000","effective_at":"2026-06-03T00:00:00Z","action":"COMMIT","depends_on":["ALL1","FEE1"]}
+{"event_id":"BLATE","batch_id":"LATE1","source":"EMS","source_at":"E1|291600000","effective_at":"2026-06-04T09:00:00Z","action":"COMMIT","depends_on":["TRD1"]}
+{"event_id":"BCOR","batch_id":"COR1","source":"ALC","source_at":"X|356400000","effective_at":"2026-06-05T03:00:00Z","action":"COMMIT","depends_on":["LATE1","ALL1"]}
+{"event_id":"BWITH","batch_id":"WITH1","source":"OMS","source_at":"A|367200000","effective_at":"2026-06-05T06:00:00Z","action":"WITHDRAW","target_batch_id":"TRD1","depends_on":["CORE"]}
+{"event_id":"BMISS","batch_id":"ORPHAN","source":"OMS","source_at":"A|180000000","effective_at":"2026-06-03T02:00:00Z","action":"COMMIT","depends_on":["NEVER"]}
+{"event_id":"BCY1","batch_id":"CY1","source":"OMS","source_at":"A|180100000","effective_at":"2026-06-03T02:01:40Z","action":"COMMIT","depends_on":["CY2"]}
+{"event_id":"BCY2","batch_id":"CY2","source":"OMS","source_at":"A|180200000","effective_at":"2026-06-03T02:03:20Z","action":"COMMIT","depends_on":["CY1"]}

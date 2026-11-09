@@ -1,0 +1,7 @@
+{
+  "algorithm": "HMAC-SHA256",
+  "epochs": {
+    "1": "9f2c581aa84e31d4b6c03f7e882d5a174a9382c70b61fe3d459ab0c2d96e7135"
+  }
+}
+

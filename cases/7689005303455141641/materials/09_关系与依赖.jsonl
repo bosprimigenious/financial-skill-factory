@@ -1,0 +1,3 @@
+{"kind":"LINK","event_id":"LK-06","batch_id":"B1","recorded_at":"2026-09-30T08:15:00Z","source":"OMS","epoch":"E1","source_ts":"1450","seq":"1","payload":{"link_type":"AFTER","instruction_id":"I06","related_instruction_id":"I05"}}
+{"kind":"LINK","event_id":"LK-08","batch_id":"B1","recorded_at":"2026-09-30T08:16:00Z","source":"OMS","epoch":"E1","source_ts":"1460","seq":"1","payload":{"link_type":"ALL_OR_NONE","group_id":"G1","instruction_id":"I08"}}
+{"kind":"LINK","event_id":"LK-09","batch_id":"B1","recorded_at":"2026-09-30T08:16:01Z","source":"OMS","epoch":"E1","source_ts":"1461","seq":"1","payload":{"link_type":"ALL_OR_NONE","group_id":"G1","instruction_id":"I09"}}

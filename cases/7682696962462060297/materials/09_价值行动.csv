@@ -1,0 +1,4 @@
+initiative_id,segment,start_date,end_date,treatment_rule,control_rule,metric,min_each_arm,target_fee_delta_bps,target_term_delta_days,target_uplift_cny,target_dso_delta_days
+VC-101,MICRO,2026-04-01,2026-05-20,price_arm=1,price_arm=-1,CONTRIBUTION_PER_ELIGIBLE,35,6,0,20,0
+VC-102,GROWTH,2026-04-01,2026-05-20,term_arm=-1,term_arm=1,DSO,35,0,-30,0,-8
+VC-103,ENTERPRISE,2026-04-01,2026-05-20,price_arm=1,price_arm=-1,CONTRIBUTION_PER_ELIGIBLE,30,6,0,1500,0

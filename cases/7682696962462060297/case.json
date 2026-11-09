@@ -1,0 +1,22 @@
+{
+  "id": "7682696962462060297",
+  "title": "你是晨曦支付业务价值创造负责人。仅使用全部附件修订现行服务，按观察点恢复双截止状态、首个有效报价时点网络及连通分量；以日",
+  "source_type": "synthetic",
+  "industry_l1": "金融",
+  "industry_l2": "银行/证券/基金/保险（见 prompt）",
+  "l2_skill_proposed": "待平台词条确认",
+  "level3_skill_proposed": "待平台词条确认",
+  "platform_measured_score_text": "gpt6.1sol high 10分；  豆包2.1pro 13分",
+  "rubric_chars": 3524,
+  "prompt_chars": 406,
+  "materials_files": 19,
+  "materials_bytes": 1154480,
+  "downloaded_at": "2026-11-09T17:14:09+08:00",
+  "provenance": "lark-base OcFPbjoVdaGhwescxD6cPWzBnrd / table tblmog3SbccztaSE (二轮质检记录)",
+  "synthetic_labeled": true,
+  "notes": [
+    "材料为平台记录附件的原件，未改写",
+    "rubric/实测分来自同一记录",
+    "三级 skill 词条需按平台登记核对后再登记入 registry"
+  ]
+}

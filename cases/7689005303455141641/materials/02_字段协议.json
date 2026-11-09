@@ -1,0 +1,7 @@
+{
+  "decimal_fields": ["quantity", "opening_quantity", "available_quantity", "delta_quantity", "custody_quantity", "lot_size", "price_cents"],
+  "integer_fields": ["cash_cents", "available_cash_cents", "delta_cash_cents"],
+  "time_fields": ["recorded_at", "source_ts", "valid_from", "valid_to"],
+  "record_envelope": ["kind", "event_id", "batch_id", "recorded_at", "source", "epoch", "source_ts", "seq", "payload"],
+  "business_kinds": ["TRADE", "ALLOCATION", "CORRECT", "CANCEL", "INSTRUCTION", "HOLD", "RELEASE", "ACCOUNT", "SSI", "SEC_SNAPSHOT", "CASH_SNAPSHOT", "RESERVATION", "EXTERNAL_SEC", "EXTERNAL_CASH", "SEC_LEG", "CASH_LEG", "CUSTODY_BALANCE", "LINK", "SETTLEMENT_PARAM", "CREDIT_LINE", "COLLATERAL_ELIGIBILITY", "VALUATION"]
+}

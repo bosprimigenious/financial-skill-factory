@@ -66,5 +66,6 @@
   },
   "status": "READY_FOR_SUBMISSION",
   "status_note": "材料落盘、GT 附件产出、题面补合成标注；机器校验全通过，可提交。",
-  "material_manifest": "12 件 CSV，307 条记录，脚本可复现"
+  "material_manifest": "12 件 CSV，307 条记录，脚本可复现",
+  "materials_provenance_detail": "重建版（按冻结考点生成）；平台原件见 cases/7689005313907642138/materials/，差异见 04_evidence/MATERIAL-DIVERGENCE.md"
 }

@@ -1,0 +1,42 @@
+{
+  "firm_name": "龙鳞",
+  "record_kinds": [
+    "batch", "clock", "position", "corporate_action", "instrument", "factor_alias",
+    "issuer_relation", "fx_spot", "sample_freeze", "historical_shock", "stress_scenario",
+    "rating", "credit_parameter", "recovery", "cure", "limit", "release_group",
+    "waiver_signature", "release_action", "volatility_point"
+  ],
+  "common_fields": {
+    "event_id": "globally unique case-sensitive string",
+    "kind": "one of record_kinds",
+    "stream_id": "version stream string when versioned",
+    "revision": "positive integer when versioned",
+    "recorded_at": "RFC3339 instant",
+    "operation": "upsert or void; default upsert",
+    "batch_id": "optional transaction batch string",
+    "valid_from": "RFC3339 instant when interval based",
+    "valid_to": "RFC3339 instant or null",
+    "logged_at": "source clock time when clock calibration applies",
+    "clock_epoch": "mandatory source clock epoch when logged_at exists",
+    "source_seq": "numeric string used after calibrated time"
+  },
+  "position_ops": ["open", "trade", "close", "cancel", "correct"],
+  "decimal_fields": [
+    "offset_seconds", "quantity", "price", "ratio", "exposure_per_unit", "delta_per_unit",
+    "gamma_per_unit", "cross_gamma_per_unit", "shock", "fx_rate", "pd_12m", "pd_lifetime", "lgd",
+    "drawn_ead", "undrawn_commitment", "ccf_stage1", "ccf_stage2", "ccf_stage3",
+    "collateral_amount", "collateral_haircut", "threshold", "max_metric_value", "decay_factor"
+  ],
+  "output_scales": {
+    "money": 6,
+    "ratio": 6,
+    "quantity": 6
+  },
+  "notes": [
+    "CSV clock rows are equivalent to kind=clock records.",
+    "A correct record has target_event_id and replacement mapping.",
+    "A cancel record has target_event_id pointing to a normal position message.",
+    "Identifiers are case sensitive."
+  ]
+}
+

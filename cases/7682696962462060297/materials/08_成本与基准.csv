@@ -1,0 +1,4 @@
+segment,baseline_net_rate_bps,baseline_term_days,baseline_activation_rate,baseline_tpv_per_eligible_cny,variable_cost_bps,activation_cost_cny,forecast_leads_next_month,max_conversion_decline_pp
+MICRO,32,30,0.58,60000,18,180,520,0.02
+GROWTH,26,45,0.47,250000,14,420,260,0.02
+ENTERPRISE,20,60,0.38,900000,10,1800,110,0.02

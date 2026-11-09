@@ -1,0 +1,9 @@
+{"event_id":"B-MKT-1","kind":"batch","stream_id":"batch:MKT","revision":1,"batch_id":"MKT","status":"commit","depends_on_batches":[],"recorded_at":"2026-09-30T15:40:00+08:00"}
+{"event_id":"B-POS-1","kind":"batch","stream_id":"batch:POS","revision":1,"batch_id":"POS","status":"commit","depends_on_batches":["MKT"],"recorded_at":"2026-09-30T15:42:00+08:00"}
+{"event_id":"B-RSK-1","kind":"batch","stream_id":"batch:RSK","revision":1,"batch_id":"RSK","status":"commit","depends_on_batches":["MKT","POS"],"recorded_at":"2026-09-30T15:45:00+08:00"}
+{"event_id":"B-CRD-1","kind":"batch","stream_id":"batch:CRD","revision":1,"batch_id":"CRD","status":"commit","depends_on_batches":["POS"],"recorded_at":"2026-09-30T15:46:00+08:00"}
+{"event_id":"B-LIM-1","kind":"batch","stream_id":"batch:LIM","revision":1,"batch_id":"LIM","status":"commit","depends_on_batches":["RSK","CRD"],"recorded_at":"2026-09-30T15:50:00+08:00"}
+{"event_id":"B-OLD-1","kind":"batch","stream_id":"batch:OLD","revision":1,"batch_id":"OLD","status":"commit","depends_on_batches":[],"recorded_at":"2026-09-29T16:00:00+08:00"}
+{"event_id":"B-OLD-2","kind":"batch","stream_id":"batch:OLD","revision":2,"batch_id":"OLD","status":"abort","depends_on_batches":[],"recorded_at":"2026-09-30T08:00:00+08:00"}
+{"event_id":"B-CYCLE-A","kind":"batch","stream_id":"batch:CYA","revision":1,"batch_id":"CYA","status":"commit","depends_on_batches":["CYB"],"recorded_at":"2026-09-30T12:00:00+08:00"}
+{"event_id":"B-CYCLE-B","kind":"batch","stream_id":"batch:CYB","revision":1,"batch_id":"CYB","status":"commit","depends_on_batches":["CYA"],"recorded_at":"2026-09-30T12:00:01+08:00"}

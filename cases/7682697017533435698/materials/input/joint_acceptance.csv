@@ -1,0 +1,3 @@
+report_id,contracts,cumulative_units,scope,customer1_signed,customer2_signed,customer3_signed,received_at,replaces,customer1_signer,customer2_signer,customer3_signer
+LA0930,HT1403|HT1408|HT1413,18,本批三合同累计装调验收含逐张回执,2026-09-30 17:55,2026-09-30 17:56,2026-09-30 17:57,2026-09-30 17:59,,客户03-R,客户08-R,客户13-R
+LA0930B,HT1403|HT1408|HT1413,21,本批三合同累计装调验收含逐张回执,2026-09-30 18:00,2026-09-30 18:00,2026-10-01 09:00,2026-09-30 18:00,LA0930,客户03-R,客户08-R,客户13-R

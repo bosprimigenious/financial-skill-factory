@@ -1,0 +1,35 @@
+{
+  "world_axes": {
+    "macro": {
+      "DOWN": {"demand_multiplier": 0.82, "activation_shift": -0.05},
+      "BASE": {"demand_multiplier": 1.00, "activation_shift": 0.00},
+      "UP": {"demand_multiplier": 1.15, "activation_shift": 0.03}
+    },
+    "competition": {
+      "SOFT": {"own_price_scale": 0.80, "cross_price_scale": 0.70},
+      "NORMAL": {"own_price_scale": 1.00, "cross_price_scale": 1.00},
+      "HARD": {"own_price_scale": 1.25, "cross_price_scale": 1.30}
+    },
+    "collection": {
+      "FAST": {"delay_days": -10},
+      "NORMAL": {"delay_days": 0},
+      "SLOW": {"delay_days": 18}
+    }
+  },
+  "planning_coefficients": {
+    "MICRO": {"volume_price": -1.20, "volume_term": 0.10, "activation_price": -0.42, "activation_term": 0.05},
+    "GROWTH": {"volume_price": -1.45, "volume_term": 0.08, "activation_price": -0.50, "activation_term": 0.04},
+    "ENTERPRISE": {"volume_price": -0.95, "volume_term": 0.06, "activation_price": -0.30, "activation_term": 0.03}
+  },
+  "portfolio_constraints": {
+    "minimum_conversion_change_pp": -0.03,
+    "annual_activation_capacity": 5700,
+    "cash_release_floor_cny": -50000,
+    "capital_value_rate": 0.08,
+    "activation_excess_penalty_cny": 2000,
+    "conversion_violation_penalty_cny": 1000000,
+    "cvar_tail_probability": 0.10,
+    "comparison_tolerance": 1e-09
+  }
+}
+

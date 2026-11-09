@@ -1,0 +1,22 @@
+{
+  "id": "7689004886126038822",
+  "title": "你是硬科技PE投资总监，基金拟参与拓荆科技（688072.SH）首发前股东询价转让并受让股份。投决会要求你完成尽调工作底",
+  "source_type": "public",
+  "industry_l1": "金融",
+  "industry_l2": "银行/证券/基金/保险（见 prompt）",
+  "l2_skill_proposed": "待平台词条确认",
+  "level3_skill_proposed": "待平台词条确认",
+  "platform_measured_score_text": "gpt 38.5分，豆包2.1pro自测 38分",
+  "rubric_chars": 4558,
+  "prompt_chars": 871,
+  "materials_files": 5,
+  "materials_bytes": 4298096,
+  "downloaded_at": "2026-11-09T17:14:09+08:00",
+  "provenance": "lark-base OcFPbjoVdaGhwescxD6cPWzBnrd / table tblmog3SbccztaSE (二轮质检记录)",
+  "synthetic_labeled": false,
+  "notes": [
+    "材料为平台记录附件的原件，未改写",
+    "rubric/实测分来自同一记录",
+    "三级 skill 词条需按平台登记核对后再登记入 registry"
+  ]
+}

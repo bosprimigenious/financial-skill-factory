@@ -6,7 +6,8 @@
 | 项 | 值 |
 |---|---|
 | 产线版本 | **v1.1 冻结**（见 [PIPELINE.md](PIPELINE.md)） |
-| 实例 | 1 个：`packs/7689005313907642138/`（城商行 IT 外包供应商技术风险定级） |
+| 成品题包 | 1 个：`packs/7689005313907642138/`（城商行 IT 外包供应商技术风险定级） |
+| 实例库 | **9 个**：`cases/<题目 ID>/`（平台原件 + 来源与 sha256），见 [cases/INSTANCES.md](cases/INSTANCES.md) |
 | 机器校验 | `tools/verify_pack.py` **47/47 PASS** |
 | 单元测试 | `make test` 6/6 OK |
 | 平台状态 | 未提交（见文末「诚实边界」） |
@@ -53,6 +54,9 @@ make test
 ## 目录
 
 ```text
+cases/7689005313907642138/materials/      平台原件（12 件 CSV，21,736 字节）
+cases/<其余 8 个 ID>/materials/           平台原件（zip 解包 / PDF / md+csv）
+cases/INSTANCES.md + cases/registry.json  实例库索引（9 个，含实测分与 sha256）
 cases/ccb-vendor-tpr-2026/build_case.py   单一事实源：材料 12 件 CSV + GT 5 表 + 断言
 packs/7689005313907642138/
   00_meta.json                  选题元数据、权重、实测、门槛核算

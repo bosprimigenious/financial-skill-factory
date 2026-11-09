@@ -1,0 +1,9 @@
+[
+  "after_schema",
+  "after_ingest_commit",
+  "after_compute_commit",
+  "before_publish",
+  "after_publish",
+  "after_mark_published"
+]
+

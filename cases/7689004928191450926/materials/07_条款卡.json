@@ -1,0 +1,11 @@
+[
+  {"terms_code":"T-CN72","basis":"OCCURRENCE","hours":72,"anchor":"FIRST_LOSS","territory":"CN_MAINLAND","currency":"CNY","wording_style":"FULL","equivalent_to":null,"drafted_by":"D01","received_at":"2026-06-27T09:00:00+08:00"},
+  {"terms_code":"T-CN72S","basis":"OCCURRENCE","hours":72,"anchor":"FIRST_LOSS","territory":"CN_MAINLAND","currency":"CNY","wording_style":"SHORT","equivalent_to":"T-CN72","drafted_by":"D02","received_at":"2026-06-27T09:01:00+08:00"},
+  {"terms_code":"T-CN168","basis":"OCCURRENCE","hours":168,"anchor":"FIRST_LOSS","territory":"CN_MAINLAND","currency":"CNY","wording_style":"FULL","equivalent_to":null,"drafted_by":"D03","received_at":"2026-06-27T09:02:00+08:00"},
+  {"terms_code":"T-MAR96","basis":"OCCURRENCE","hours":96,"anchor":"NOTICE","territory":"WORLDWIDE","currency":"USD","wording_style":"FULL","equivalent_to":null,"drafted_by":"D04","received_at":"2026-06-27T09:03:00+08:00"},
+  {"terms_code":"T-EU48","basis":"OCCURRENCE","hours":48,"anchor":"FIRST_LOSS","territory":"EEA","currency":"EUR","wording_style":"FULL","equivalent_to":null,"drafted_by":"D05","received_at":"2026-06-27T09:04:00+08:00"},
+  {"terms_code":"T-AGG","basis":"AGGREGATE","hours":0,"anchor":"POLICY_YEAR","territory":"CN_MAINLAND","currency":"CNY","wording_style":"FULL","equivalent_to":null,"drafted_by":"D06","received_at":"2026-06-27T09:05:00+08:00"},
+  {"terms_code":"T-AGG-ALT","basis":"AGGREGATE","hours":0,"anchor":"POLICY_YEAR","territory":"CN_MAINLAND","currency":"CNY","wording_style":"SHORT","equivalent_to":"T-AGG","drafted_by":"D07","received_at":"2026-06-27T09:06:00+08:00"},
+  {"terms_code":"T-US72","basis":"OCCURRENCE","hours":72,"anchor":"FIRST_LOSS","territory":"USA","currency":"USD","wording_style":"FULL","equivalent_to":null,"drafted_by":"D08","received_at":"2026-06-27T09:07:00+08:00"}
+]
+

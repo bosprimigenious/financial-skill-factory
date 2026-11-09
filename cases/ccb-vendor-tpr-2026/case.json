@@ -1,0 +1,9 @@
+{
+  "id": "ccb-vendor-tpr-2026",
+  "title": "城商行 IT 外包供应商技术风险定级（实例 7689005313907642138 的材料生成器）",
+  "source_type": "synthetic",
+  "materials_files": 0,
+  "materials_bytes": 0,
+  "note": "本目录只放 build_case.py：从一份事实表生成实例材料与 GT，并逐格断言。材料在 packs/7689005313907642138/01_public/data 与 cases/7689005313907642138/materials。",
+  "required_files": []
+}

@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "updated": "2026-11-09T17:14:09+08:00",
+  "source": "lark-base OcFPbjoVdaGhwescxD6cPWzBnrd/tblmog3SbccztaSE",
+  "instances": [
+    {
+      "tid": "7689005313907642138",
+      "title": "【角色与场景】",
+      "source_type": "synthetic",
+      "files": 12,
+      "bytes": 21736,
+      "score_text": "豆包 2.1 Pro 一次性实测卷（2026-10-28 由专家本人运行，人工计时 31 分钟，交付 13 个工作表、判",
+      "stage": "MATERIAL_INGESTED"
+    },
+    {
+      "tid": "7682696205114576686",
+      "title": "龙鳞经纪运营部需要恢复一段停用的客户收费引擎，在 OPEN、MID、CLOSE 三个知识切点重建订单接收时点、账户权限、",
+      "source_type": "synthetic",
+      "files": 17,
+      "bytes": 50017,
+      "score_text": "seed 2.1pro 36分； gpt6.1sol high 55分",
+      "stage": "MATERIAL_INGESTED"
+    },
+    {
+      "tid": "7689004928191450926",
+      "title": "你是黄洋财险再保险运营与系统控制负责人。请以2026-06-30T23:59:59+08:00为业务计量时点，仅使用全部",
+      "source_type": "synthetic",
+      "files": 20,
+      "bytes": 61376,
+      "score_text": "豆包2.1pro 42分。 GPT6.1sol high 58分",
+      "stage": "MATERIAL_INGESTED"
+    },
+    {
+      "tid": "7682696962462060297",
+      "title": "你是晨曦支付业务价值创造负责人。仅使用全部附件修订现行服务，按观察点恢复双截止状态、首个有效报价时点网络及连通分量；以日",
+      "source_type": "synthetic",
+      "files": 19,
+      "bytes": 1154480,
+      "score_text": "gpt6.1sol high 10分；  豆包2.1pro 13分",
+      "stage": "MATERIAL_INGESTED"
+    },
+    {
+      "tid": "7689005303455141641",
+      "title": "# 龙鳞券款失败归因与续办引擎",
+      "source_type": "synthetic",
+      "files": 18,
+      "bytes": 70013,
+      "score_text": "seed 2.1pro 8分； gpt6.1sol high 60分",
+      "stage": "MATERIAL_INGESTED"
+    },
+    {
+      "tid": "7689005308652818202",
+      "title": "龙鳞风险管理部需要恢复一套可回溯的日终风险服务。服务须在任意记录截止时点重放批次、市场时钟、头寸、工具映射、历史冲击、信",
+      "source_type": "synthetic",
+      "files": 16,
+      "bytes": 405872,
+      "score_text": "seed 2.1pro 38分； gpt6.1sol high 60分",
+      "stage": "MATERIAL_INGESTED"
+    },
+    {
+      "tid": "7682697017533435698",
+      "title": "以9月30日18:00附件为据，向投委会提交第三季度收入及客户风险的量化采用意见、底稿。未明事项注明依据。人民币，合成案",
+      "source_type": "synthetic",
+      "files": 38,
+      "bytes": 76576,
+      "score_text": "本地gpt得分65.5,豆包不达标",
+      "stage": "MATERIAL_INGESTED"
+    },
+    {
+      "tid": "7699775475468144393",
+      "title": "【角色与背景】",
+      "source_type": "synthetic",
+      "files": 10,
+      "bytes": 27571,
+      "score_text": "0/100（严格档：12 组判据 0 组整组闭合；单判点命中率 50.0%＝77/154 原子。同题面隔离盲做两卷同为 ",
+      "stage": "MATERIAL_INGESTED"
+    },
+    {
+      "tid": "7689004886126038822",
+      "title": "你是硬科技PE投资总监，基金拟参与拓荆科技（688072.SH）首发前股东询价转让并受让股份。投决会要求你完成尽调工作底",
+      "source_type": "public",
+      "files": 5,
+      "bytes": 4298096,
+      "score_text": "gpt 38.5分，豆包2.1pro自测 38分",
+      "stage": "MATERIAL_INGESTED"
+    }
+  ]
+}
