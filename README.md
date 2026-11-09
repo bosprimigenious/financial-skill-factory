@@ -9,12 +9,38 @@
 
 | 项 | 值 |
 |---|---|
-| 产线版本 | **v1.1 冻结**（见 [PIPELINE.md](PIPELINE.md)） |
+| 产线版本 | **V2（当前开发线）**；V1.1 保留为历史基线（见 [V2-PLAN.md](V2-PLAN.md)） |
 | 成品题包 | 1 个：`packs/7689005313907642138/`（城商行 IT 外包供应商技术风险定级） |
 | 实例库 | **9 个**：`cases/<题目 ID>/`（平台原件 + 来源与 sha256），见 [cases/INSTANCES.md](cases/INSTANCES.md) |
 | 机器校验 | `tools/verify_pack.py` **47/47 PASS** |
 | 单元测试 | `make test` 6/6 OK |
 | 平台状态 | 未提交（见文末「诚实边界」） |
+
+
+## V2：两套金融产线能力已整合
+
+当前 `integration/expert-task-pipeline-v2` 是将另一仓库的通用批次工具移植到本仓库 V2 的集成分支。两个 GitHub 仓库原本没有共同分支祖先，因此不是跨仓库原生 merge commit；集成时保留本仓库 V2 的金融验证器、隔离生成器、真实性门禁和质量门禁，移植精确的八题 Task ID/L2/L3 登记、专业域目录、批次建题与 fail-closed 打包工具。
+
+- 八题官方任务登记：`finance/batch/selected_tasks.json`
+- 平台 Skill 映射：`finance/skill_registry.json` + `finance/domain_catalog.json`
+- 建题：`tools/new_task.py`
+- 批次打包：`tools/package_batch.py`
+- 集成说明：[docs/BRANCH-INTEGRATION.md](docs/BRANCH-INTEGRATION.md)
+
+### 八题脚手架操作
+
+```bash
+# 建立八个独立案例骨架，并生成 8 个小包 + 1 个总包（SCAFFOLD）
+make batch-scaffold
+
+# 执行批次单元测试
+make batch-test
+
+# 只有所有正式门禁完成后才可尝试 AUTHOR 包；未就绪会 fail closed
+make batch-release
+```
+
+默认案例工作目录为 `work/financial-eight/cases/`，输出目录为 `dist/financial-eight/`。这两个目录不覆盖原有 `cases/<平台ID>/` 实例库。
 
 ## 这条产线解决什么
 
@@ -31,7 +57,7 @@
 | G2 | 材料契约 | 每件附件的行数、必备字段、必须埋的陷阱都写死 | 材料重做 |
 | G3 | 冻结考点 | 12 条、权重合计恰 100、每条可判 TRUE/FALSE | 不许开工 |
 | G4 | 标准答案 | 文字答案 + 答案附件，逐条对应考点 | 不许自测 |
-| G5 | 自测与判分 | 得分 ≤50，且（步数 ≥50 或 时间 >2400 秒） | 修题重测 |
+| G5 | 当前 FDE 11.4 难度门槛 | 平台 Judge ≤50 **且** 官方单轮模型调用步数 ≥50；时长仅用于评级 | 修题重测 |
 | G6 | 提交前 12 项 | 12/12 PASS | 不许领题 |
 
 细节与反例写法见 [PIPELINE.md](PIPELINE.md)。
