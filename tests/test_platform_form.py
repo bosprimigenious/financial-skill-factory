@@ -136,3 +136,19 @@ class TestRepoPack(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestTrackedInGit(unittest.TestCase):
+    """防止再犯：题包被 .gitignore 挡住，导致 CI 里缺文件、本地却全绿。"""
+
+    def test_fin01_pack_is_tracked(self):
+        import subprocess
+        out = subprocess.run(["git", "ls-files", "packs/fin01"], cwd=REPO,
+                             capture_output=True, text=True)
+        if out.returncode != 0:            # 非 git 环境（例如解压的 zip）跳过
+            self.skipTest("not a git work tree")
+        tracked = out.stdout.strip().splitlines()
+        self.assertTrue(tracked, "packs/fin01 未入库：检查 .gitignore 的 packs/* 段")
+        for name in ("prompt.md", "rubric.csv", "ideal_steps.md", "gt.md",
+                     "materials_contract.md", "STATUS.md"):
+            self.assertTrue(any(t.endswith(name) for t in tracked), f"{name} 未入库")
