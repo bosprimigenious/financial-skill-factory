@@ -26,6 +26,19 @@ from generators import rubric_builder                             # noqa: E402
 from quality_gates import xpert_readiness                         # noqa: E402
 from task_architect import skill_mapper                           # noqa: E402
 
+def _occupied_excluding(reg_path: Path, own_platform_id: str) -> set[str]:
+    if not reg_path.is_file():
+        return set()
+    data = json.loads(reg_path.read_text(encoding="utf-8"))
+    out = set()
+    for e in data.get("entries", []):
+        if e.get("status") in {"draft", "submitted", "carried_over_previous", "locked"}:
+            if own_platform_id and str(e.get("platform_task_id") or "") == own_platform_id:
+                continue          # 自己不算占用
+            out.add(e["level3_skill"])
+    return out
+
+
 STAGES = ("intake", "authenticity", "skill", "rubric", "qa", "mutation", "difficulty", "readiness")
 
 
@@ -65,6 +78,9 @@ def run_case(case: Path, occupied: set[str], want: dict) -> dict:
 
     meta = json.loads((case / "case.json").read_text(encoding="utf-8")) if (case / "case.json").is_file() else {}
     prompt = _prompt_of(case)
+    # 本案例自己的登记不算"占用"：同一题目当然能通过自己的唯一性检查
+    own = str(meta.get("platform_task_id") or "")
+    occupied = _occupied_excluding(ROOT / "registry/submitted_skill_registry.json", own)
 
     # ---- Stage 0 authenticity ----
     if src is None:

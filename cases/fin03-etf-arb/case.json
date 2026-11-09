@@ -1,0 +1,14 @@
+{
+  "id": "fin03-etf-arb",
+  "title": "分析ETF折溢价与申赎套利机制",
+  "platform_task_id": "7705055652846309139",
+  "industry_l1": "金融",
+  "l2_skill": "基金与ETF研究评价",
+  "level3_skill": "分析ETF折溢价与申赎套利机制",
+  "source_type": "public",
+  "as_of": "2026-11-09",
+  "status": "MATERIAL_PARTIAL",
+  "downloaded_at": "2026-11-09T18:30:10+08:00",
+  "materials_files": 7,
+  "note": "真实公开行情与费率已取得；IOPV/净值与PCF篮子缺失，见 MATERIAL-GAPS.md"
+}

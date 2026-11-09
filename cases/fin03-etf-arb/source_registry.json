@@ -1,0 +1,24 @@
+{
+  "case_id": "fin03-etf-arb",
+  "title": "分析ETF折溢价与申赎套利机制",
+  "provenance": "https://push2.eastmoney.com / https://fundf10.eastmoney.com（公开页面，见 materials/SOURCE_REGISTER.csv）",
+  "source_type": "public",
+  "collected_at": "2026-11-09T18:28:00+08:00",
+  "as_of": "2026-11-09",
+  "released_at": "2026-11-09",
+  "authorized": false,
+  "desensitized": false,
+  "owner": "",
+  "level3_skill": "分析ETF折溢价与申赎套利机制",
+  "synthetic_disclosed_in_prompt": false,
+  "materials": {
+    "SOURCE_REGISTER.csv": "0f4291418fbc1bd321c9be651bfb449bd67ae2dfff96eb19bb7d062a4f457ce5",
+    "etf_list_mk0021.json": "722e5b542374aa549f54593609e97ab81b83769505781f4b453e4bb7c49ccdef",
+    "fee_510300.txt": "c00a53fb168cde110c340e1c35370a7c74a2fa25b5b6aabbf593102fdce07958",
+    "fee_510500.txt": "c08c90697038f9e527b5f8d7c6375a89b3a64d38138405605759567f6287383f",
+    "quote_159915.json": "3dbf75f117b2f3c5927ac2f043bbfee8644e21e96ef257293ec590bbedef4865",
+    "quote_510300.json": "3d7711881878612893d1ba7c97e246e04226753d13b70d74cf6f1f87a8fe4451",
+    "quote_510500.json": "cdf0f0f1b7a6416e1fbf3a779cbd4ab15684497bf4ad66482f6838ecfba96026",
+    "quote_page_510300.txt": "01fbabfe20686a656a3c6f7a94b375e87643fc9a7b2f0bf9cce14aab85968c92"
+  }
+}
