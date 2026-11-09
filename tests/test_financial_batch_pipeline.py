@@ -49,7 +49,7 @@ class FinancialBatchPipelineTests(unittest.TestCase):
             original["entries"][0]["level3_skill"]="WRONG SKILL"
             registry.write_text(json.dumps(original),encoding="utf-8")
             with self.assertRaisesRegex(ValueError,"registry mismatch"):
-                create_case("FIN01_ALT_DATA",root,registry_path=registry)
+                create_case("FIN01_ALT_DATA",root,registry_path=registry,submitted_registry_path=registry)
 
     def test_generator_rejects_unknown_case(self):
         with tempfile.TemporaryDirectory() as td:
