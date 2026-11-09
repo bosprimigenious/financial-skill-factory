@@ -505,8 +505,17 @@ def emit_materials(pack):
 def normalize_zip(path, stamp=(2026, 1, 1, 0, 0, 0)):
     """把 xlsx 内部 zip 条目的时间戳与顺序固定，保证同一输入逐字节一致。"""
     import zipfile
+    import re
     with zipfile.ZipFile(path) as z:
         items = [(i.filename, z.read(i.filename), i.compress_type) for i in z.infolist()]
+    # openpyxl 在 save 时会把 dcterms:modified 覆写为当前时间，这里统一钉死
+    fixed = []
+    for name, data, ctype in items:
+        if name == "docProps/core.xml":
+            data = re.sub(rb"(<dcterms:modified[^>]*>)[^<]*(<)",
+                          rb"\g<1>2026-01-01T00:00:00Z\g<2>", data)
+        fixed.append((name, data, ctype))
+    items = fixed
     tmp = path + ".tmp"
     with zipfile.ZipFile(tmp, "w") as z:
         for name, data, ctype in items:
