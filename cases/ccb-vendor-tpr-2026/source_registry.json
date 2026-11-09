@@ -1,0 +1,15 @@
+{
+  "case_id": "ccb-vendor-tpr-2026",
+  "title": "城商行 IT 外包供应商技术风险定级（实例 7689005313907642138 的材料生成器）",
+  "provenance": "lark-base OcFPbjoVdaGhwescxD6cPWzBnrd / table=tblmog3SbccztaSE",
+  "source_type": "synthetic",
+  "collected_at": "2026-11-09T00:00:00+08:00",
+  "as_of": null,
+  "released_at": null,
+  "authorized": false,
+  "desensitized": false,
+  "owner": "",
+  "level3_skill": "",
+  "synthetic_disclosed_in_prompt": false,
+  "materials": {}
+}

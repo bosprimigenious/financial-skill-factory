@@ -1,0 +1,26 @@
+{
+  "case_id": "7699775475468144393",
+  "title": "7699775475468144393",
+  "provenance": "lark-base OcFPbjoVdaGhwescxD6cPWzBnrd / table tblmog3SbccztaSE (二轮质检记录)",
+  "source_type": "synthetic",
+  "collected_at": "2026-11-09T17:14:09+08:00",
+  "as_of": null,
+  "released_at": null,
+  "authorized": false,
+  "desensitized": false,
+  "owner": "",
+  "level3_skill": "待平台词条确认",
+  "synthetic_disclosed_in_prompt": true,
+  "materials": {
+    "附件10_尽职调查量化补充表.md": "2d99448a7f58a4630d1c4d015cc13ea66adbdcfa69e1c5992af5cee3d966e6b4",
+    "附件1_交易双方2025经营与财务底稿.csv": "bd0e7bb78627d13210663aa3955189cabf8abd0528905d7a7bce8cee2a56df14",
+    "附件2_交易方案与对价要点.md": "2dab6baa55729e6bf9c4116dccb60aacf0ab522d11eda3435200aefcc8bf9392",
+    "附件3_管理层协同效应测算表.csv": "c86c5972eefd090565fc9a68e05ea208a21be628210282641402cfcf0896112a",
+    "附件4_协同口径与行业基准.md": "7d1d1139e2ce9034f03a7c61fc2e712054a395f02fffcbbc2d12bf10f96bb3cf",
+    "附件5_协同价值测算参数.md": "cdd495f2bfdd2f87e8fa2e0649fae6f24c74cdfb41d5ddb5f3ce17a09b9e1ece",
+    "附件6_可比并购交易协同实现率数据库.csv": "5e27cd4b63458c7d749bd3e453007a5d5bb05cf32a81aab1b06ee34118eddc24",
+    "附件7_整合执行风险登记册.md": "4b247efa770b22e4914dbe0567b1f95d7299b0f253393d5fe7e950a068ed1e3c",
+    "附件8_复核工作制度与口径优先级.md": "f19ca18cb66e00966dbb62d56ff13e4dc295ed06dcf5b795e115d12c73ba9dfe",
+    "附件9_读数冲突与数据更正登记.md": "98081190ff46bf6517626651ab2423d4f8f4b3130ce7d5e155321f4ff4833323"
+  }
+}

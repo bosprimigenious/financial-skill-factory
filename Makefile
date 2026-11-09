@@ -2,13 +2,15 @@ PY ?= python3
 VENV ?= vendor/financial-audit-bench/.venv
 RUNPY = $(if $(wildcard $(VENV)/bin/python),$(VENV)/bin/python,$(PY))
 
-.PHONY: test scan pack verify case help
+.PHONY: test scan pack verify case help v2-test v2-smoke
 help:
 	@echo "make test   # run unit tests"
 	@echo "make scan CASE=cases/<id>"
 	@echo "make pack CASE=cases/<id>"
 	@echo "make case   # 重建实例材料+GT（含逐格断言）"
 	@echo "make verify # 题包机器校验"
+	@echo "make v2-test # V2 全部测试"
+	@echo "make v2-smoke # V2 八阶段冒烟（写 artifacts/v2-smoke.md）"
 test:
 	PYTHONPATH=src $(RUNPY) -m unittest discover -s tests -v
 scan:
@@ -20,3 +22,8 @@ case:
 	$(RUNPY) cases/ccb-vendor-tpr-2026/build_case.py --pack packs/7689005313907642138
 verify:
 		$(RUNPY) tools/verify_pack.py packs/7689005313907642138
+
+v2-test:
+	PYTHONPATH=src:. $(RUNPY) -m unittest discover -s tests -v
+v2-smoke:
+	PYTHONPATH=src:. $(RUNPY) tools/v2_smoke.py

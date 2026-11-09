@@ -1,0 +1,77 @@
+# 金融业务域 → 二级/三级 Skill 映射（Stage 1 的输入表）
+# 只登记"平台上真实存在的三级 Skill"或"候选待登记"；proposed=true 表示尚未在平台登记。
+version: 1
+lines:
+  investment_research:
+    label: Investment & Research
+    domains:
+      - l2: 公司研究与财报分析
+        skills:
+          - l3: 解读资本运作公告条款与稀释影响
+            platform: true
+            evidence: "batch-20261109/08_announcement"
+          - l3: 复核跨期收入确认与股份结算桥接
+            platform: false
+            proposed: true
+      - l2: 投资风险管理
+        skills:
+          - l3: 评估流动性缺口
+            platform: true
+            evidence: "batch-20261109/05_liquidity-gap"
+      - l2: 衍生品估值
+        skills:
+          - l3: 复核多笔衍生品估值差异与担保品结算
+            platform: false
+            proposed: true
+  financial_operations:
+    label: Financial Operations
+    domains:
+      - l2: 基金估值与净值
+        skills:
+          - l3: 核验估值日持仓数量
+            platform: true
+      - l2: 基金费用与收益分配
+        skills:
+          - l3: 计提管理费
+            platform: true
+      - l2: 基金清算
+        skills:
+          - l3: 核验清算资产清单
+            platform: true
+      - l2: 销售交易与经纪
+        skills:
+          - l3: 测算交易费用
+            platform: true
+          - l3: 复核成交分配与执行偏差
+            platform: false
+            proposed: true
+  financial_control:
+    label: Financial Control
+    domains:
+      - l2: 股权融资项目
+        skills:
+          - l3: 核验股权沿革
+            platform: true
+      - l2: 追加投资与资本运作
+        skills:
+          - l3: 测算追加投资稀释影响
+            platform: true
+      - l2: 信息科技外包风险管理
+        skills:
+          - l3: 第三方供应商技术风险定级与处置意见编制
+            platform: false
+            proposed: true
+            evidence: "packs/7689005313907642138"
+      - l2: 证券公司资本监管
+        skills:
+          - l3: 测算母公司净资本与风险覆盖率
+            platform: false
+            proposed: true
+  financial_products:
+    label: Financial Products
+    domains:
+      - l2: 基金产品设计
+        skills:
+          - l3: 设计流动性条款与赎回约束
+            platform: false
+            proposed: true

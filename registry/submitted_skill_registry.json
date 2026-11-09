@@ -1,0 +1,125 @@
+{
+  "version": 2,
+  "rule": "status ∈ {draft, submitted, carried_over_previous} 占用三级 Skill；candidate 为提议不占用；released 已释放。",
+  "entries": [
+    {
+      "platform_task_id": "7705055496872939307",
+      "l2_skill": "基金估值与净值",
+      "level3_skill": "核验估值日持仓数量",
+      "status": "draft",
+      "source": "batch-20261109"
+    },
+    {
+      "platform_task_id": "7705055523428142899",
+      "l2_skill": "基金费用与收益分配",
+      "level3_skill": "计提管理费",
+      "status": "draft",
+      "source": "batch-20261109"
+    },
+    {
+      "platform_task_id": "7705055556684107529",
+      "l2_skill": "股权融资项目",
+      "level3_skill": "核验股权沿革",
+      "status": "draft",
+      "source": "batch-20261109"
+    },
+    {
+      "platform_task_id": "7705055523103788826",
+      "l2_skill": "追加投资与资本运作",
+      "level3_skill": "测算追加投资稀释影响",
+      "status": "draft",
+      "source": "batch-20261109"
+    },
+    {
+      "platform_task_id": "7705055005065203475",
+      "l2_skill": "投资风险管理",
+      "level3_skill": "评估流动性缺口",
+      "status": "draft",
+      "source": "batch-20261109"
+    },
+    {
+      "platform_task_id": "7705055527416352562",
+      "l2_skill": "基金清算",
+      "level3_skill": "核验清算资产清单",
+      "status": "draft",
+      "source": "batch-20261109"
+    },
+    {
+      "platform_task_id": "7705055558806114074",
+      "l2_skill": "销售交易与经纪",
+      "level3_skill": "测算交易费用",
+      "status": "draft",
+      "source": "batch-20261109"
+    },
+    {
+      "platform_task_id": "7705054367658331947",
+      "l2_skill": "公司研究与财报分析",
+      "level3_skill": "解读资本运作公告条款与稀释影响",
+      "status": "draft",
+      "source": "batch-20261109"
+    },
+    {
+      "platform_task_id": "7689005313907642138",
+      "l2_skill": "信息科技外包风险管理",
+      "level3_skill": "第三方供应商技术风险定级与处置意见编制",
+      "status": "candidate",
+      "source": "cases/instance"
+    },
+    {
+      "platform_task_id": "7682696205114576686",
+      "l2_skill": "经纪运营系统恢复",
+      "level3_skill": "客户收费引擎停用恢复与切点核对",
+      "status": "candidate",
+      "source": "cases/instance"
+    },
+    {
+      "platform_task_id": "7689004928191450926",
+      "l2_skill": "再保险运营与系统控制",
+      "level3_skill": "财险临分封板与聚合账单复核",
+      "status": "candidate",
+      "source": "cases/instance"
+    },
+    {
+      "platform_task_id": "7682696962462060297",
+      "l2_skill": "支付业务价值复核",
+      "level3_skill": "支付服务价值复核与双截止恢复",
+      "status": "candidate",
+      "source": "cases/instance"
+    },
+    {
+      "platform_task_id": "7689005303455141641",
+      "l2_skill": "清算与结算运营",
+      "level3_skill": "券款失败归因与续办处置",
+      "status": "candidate",
+      "source": "cases/instance"
+    },
+    {
+      "platform_task_id": "7689005308652818202",
+      "l2_skill": "风险计量服务",
+      "level3_skill": "日终风险服务恢复与状态重建",
+      "status": "candidate",
+      "source": "cases/instance"
+    },
+    {
+      "platform_task_id": "7682697017533435698",
+      "l2_skill": "收入与客户风险",
+      "level3_skill": "季度收入与客户风险量化采用意见编制",
+      "status": "candidate",
+      "source": "cases/instance"
+    },
+    {
+      "platform_task_id": "7699775475468144393",
+      "l2_skill": "并购与重组",
+      "level3_skill": "并购协同效应量化复核",
+      "status": "candidate",
+      "source": "cases/instance"
+    },
+    {
+      "platform_task_id": "7689004886126038822",
+      "l2_skill": "股权融资项目",
+      "level3_skill": "首发前股东询价转让受让决策复核",
+      "status": "candidate",
+      "source": "cases/instance"
+    }
+  ]
+}

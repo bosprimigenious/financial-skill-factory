@@ -1,0 +1,32 @@
+{
+  "case_id": "7689005308652818202",
+  "title": "龙鳞风险管理部需要恢复一套可回溯的日终风险服务。服务须在任意记录截止时点重放批次、市场时钟、头寸、工具映射、历史冲击、信",
+  "provenance": "lark-base OcFPbjoVdaGhwescxD6cPWzBnrd / table tblmog3SbccztaSE (二轮质检记录)",
+  "source_type": "synthetic",
+  "collected_at": "2026-11-09T17:14:09+08:00",
+  "as_of": null,
+  "released_at": null,
+  "authorized": false,
+  "desensitized": false,
+  "owner": "",
+  "level3_skill": "待平台词条确认",
+  "synthetic_disclosed_in_prompt": true,
+  "materials": {
+    "00_业务委托.md": "027aef5d3c24489e766b342c762e6d2692d11eab1ee39207c51e24f65d52a98d",
+    "01_风险计量与发布规程.md": "9668a95504ca15f1def193a4a21e303d4c525f0538ecd2e8ce51b07b5e3ae92e",
+    "02_字段协议.json": "f5b175c934deb86a19744c00c43e2c4c7e800509000651ddbe46893210fc1846",
+    "03_批次状态.jsonl": "a7fc819d4b4f6ae267245e47cee34210eab4887263a26932efdf2bd7e61769fa",
+    "04_时钟基准.csv": "9f8c09300934f121d85d26aca3a96969445a3b2d8be15692afae468d14598561",
+    "05_头寸事件.jsonl": "d1f67446615bf7638f5cf97e80adce661fe4314125fa99f3e8ab3042eaba4cbf",
+    "06_工具与映射.jsonl": "05b1bd55b5f878131daeb56eb78ae3dd4e9688525990b2c36a8cda2244fa8804",
+    "07_历史冲击与压力情景.jsonl": "d42233b185caf92fd1857f340e0313b1c02c6c2ccf469034e6c1f9c6573d0abf",
+    "08_信用参数与迁徙.jsonl": "ec8757bf687b089fe1a60a0d06d73cb14129acf632d9a8e03bcd68e5f37c0da6",
+    "09_限额与集中度规则.jsonl": "a82d20071d48a680dc3b17f2f665d0c0a9f640320e6604f4a19fa7d9a8744803",
+    "10_发布与豁免事件.jsonl": "512eebabef63d1f67b589ce43fca4c1882b2589d4c873049d09f4925558e8ff4",
+    "11_交付接口.md": "abb38d4382b48e2c0190e025e5205843e8f8514d62b47e9329503ee6b7ab79ef",
+    "12_公开用例.py": "23bc434c3d5f1b007f328c97e7e32973cca8f7c2bf9c9f1742b5a11bc855a5b2",
+    "13_现行服务.py": "b912a0fa899489b968f815b1b4ca6f78d89d8f7932b9168984939b423a6e7536",
+    "14_命令入口.py": "31bbcc31d3fd83428b7029c55f97efb80ee6cfebdb43374648aeddc94a0608a7",
+    "作答材料.zip": "ad58e3011ba6a67826c621d9b32c8d8a3cd6d6bcc1e14ec8b048779a95cc6be8"
+  }
+}
