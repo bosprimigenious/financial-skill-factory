@@ -1,0 +1,47 @@
+{
+  "schema_version": "financial-case-manifest/2.1",
+  "case_code": "FIN05_FX_SHOCK",
+  "industry": "金融",
+  "platform_task_id": "7705055005066317587",
+  "second_level_skill": "宏观与市场策略研究",
+  "third_level_skill": "评估汇率冲击影响",
+  "source_class": "PENDING",
+  "authorization_status": "PENDING",
+  "source_approval_ref": null,
+  "author_profile": {
+    "role": "PENDING",
+    "qualification_evidence": "PENDING"
+  },
+  "professional_context": {
+    "business_process": "PENDING",
+    "product_or_instrument": "PENDING",
+    "business_date_or_period": "PENDING",
+    "decision_owner": "PENDING",
+    "decision_consequence": "PENDING",
+    "jurisdiction_or_not_applicable": "PENDING"
+  },
+  "policy_parameters": [],
+  "materials": [],
+  "materials_status": "PENDING",
+  "reference_status": "NOT_STARTED",
+  "alternative_status": "NOT_STARTED",
+  "negative_status": "NOT_STARTED",
+  "hidden_difficulty_count": 0,
+  "rubric_status": "TEMPLATE_ONLY",
+  "grader_status": "NOT_STARTED",
+  "c20_status": "PENDING",
+  "platform_skill_verified": false,
+  "platform_skill_verified_at": null,
+  "platform_fields_status": "NOT_STARTED",
+  "model_runs": [],
+  "difficulty_evaluation": {
+    "judge_score": null,
+    "official_single_round_steps": null,
+    "official_evidence": "PENDING"
+  },
+  "readiness_status": "SCAFFOLD_ONLY",
+  "platform_acceptance": {
+    "status": "NOT_SUBMITTED",
+    "receipt": null
+  }
+}

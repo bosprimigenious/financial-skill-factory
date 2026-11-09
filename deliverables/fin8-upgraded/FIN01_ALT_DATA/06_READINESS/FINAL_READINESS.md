@@ -1,0 +1,1 @@
+SCAFFOLD_ONLY. G0-G10 are not passed. Do not submit until source authorization, material acceptance, public contract, hidden difficulty, independent oracle, grader, official Doubao run, current FDE 11.4 difficulty gate, C20 and platform readiness are verified.
