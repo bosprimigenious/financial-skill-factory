@@ -1,16 +1,17 @@
 # 难度门槛（口径写进配置，不写死在代码里）
 #
-# 背景：项目书面口径存在两种读法，本仓库不替项目方选边。
-#   A. 现行书面口径：judge <= 50 且（steps >= 50 或 time > 2400s）      → combine: any_two
-#   B. 改造建议陈述：judge <= 50 且 steps >= 50（时长不计入）            → combine: all
+# 定稿口径（2026-11-09，按 11.4 说明）：
+#   judge <= 50 且 steps >= 50，两项必须同时满足            → combine: all
+#   时长只用于评级，不参与判定，也不能顶替步数。
 #
-# 预检会同时输出 A/B 两种读法各自的结论，并把所用规则版本写进运行记录。
+# 旧口径 judge<=50 且（steps>=50 或 time>2400s）记为 historical_only，不再作为判定依据；
+# 预检仍会同时输出两种读法的结论，便于复核历史争议，但对外结论只认 all。
 version: 1
 rule_id: FSF-DIFF-v1
 judge_max: 50
 steps_min: 50
 time_min_seconds: 2400
-combine: any_two      # all | any_two | any
+combine: all          # all | any_two | any（2026-11-09 按 11.4 定稿：两项必须同时满足）
 notes:
   - "时长扣除可识别的排队、网络故障、人工等待与暂停；不使用模型估时"
   - "步数须来自平台或可核验日志；无记录时标 UNVERIFIABLE，不得用其他量替代"

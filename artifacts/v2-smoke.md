@@ -64,10 +64,10 @@
 
 ## Stage 5.5 · 难度预检（两种读法同时输出）
 
-- 规则：FSF-DIFF-v1 combine=any_two
+- 规则：FSF-DIFF-v1 combine=all
 - 得分 46 ≤ 50：True；步数 22：False；时长 2916s：True
 - 读法 A（any_two）：PASS；读法 B（all）：FAIL
-- 采用 `any_two` → **PASS**
+- 采用 `all` → **FAIL**
 - 记录采信说明：46/100 与 48.6 分钟来自平台记录，非本仓库实测。
 
 ## Stage 6 · 提交门禁（外部事实驱动）
