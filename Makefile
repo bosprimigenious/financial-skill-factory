@@ -2,7 +2,7 @@ PY ?= python3
 VENV ?= vendor/financial-audit-bench/.venv
 RUNPY = $(if $(wildcard $(VENV)/bin/python),$(VENV)/bin/python,$(PY))
 
-.PHONY: test scan pack verify case help v2-test v2-smoke sample
+.PHONY: test scan pack verify case help v2-test v2-smoke sample run
 help:
 	@echo "make test   # run unit tests"
 	@echo "make scan CASE=cases/<id>"
@@ -30,3 +30,6 @@ v2-smoke:
 sample:
 	PYTHONPATH=. $(RUNPY) samples/tca-01/build_sample.py
 	PYTHONPATH=src:. $(RUNPY) -m unittest tests.test_sample_tca -v
+
+run:
+	PYTHONPATH=src:. $(RUNPY) tools/fsf_run.py --all
