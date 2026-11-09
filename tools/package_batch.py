@@ -16,6 +16,17 @@ def package(batch_root:Path,output:Path,mode:str):
     ids=[x["platform_task_id"] for x in cases]
     if len(labels)!=len(set(labels)) or len(ids)!=len(set(ids)):
         raise ValueError("duplicate third-level Skill or task ID in selected batch")
+    # Release packaging must agree with the project's authoritative Skill reservation ledger.
+    submitted=load(ROOT/"registry"/"submitted_skill_registry.json")
+    entries={str(x.get("platform_task_id")):x for x in submitted.get("entries",[])}
+    for item in cases:
+        entry=entries.get(str(item["platform_task_id"]))
+        if not entry:
+            raise ValueError(f"platform task ID missing from submitted_skill_registry: {item['platform_task_id']}")
+        if entry.get("l2_skill")!=item["second_level_skill"] or entry.get("level3_skill")!=item["third_level_skill"]:
+            raise ValueError(f"submitted Skill registry mismatch for {item['case_code']}")
+        if entry.get("status") not in {"draft","carried_over_previous"}:
+            raise ValueError(f"Skill reservation is not active for {item['case_code']}: {entry.get('status')}")
     output.mkdir(parents=True,exist_ok=True)
     case_zips=[]
     for item in cases:
