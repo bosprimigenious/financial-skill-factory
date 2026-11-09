@@ -1,0 +1,116 @@
+{
+  "registry_version": "2.0.0",
+  "industry": "金融",
+  "source_note": "Platform task list supplied by user on 2026-11-09. The original ten and the selected eight are captured snapshots; recheck live Xpert availability and expert qualification before claiming.",
+  "uniqueness_rule": "One submitted task per exact third-level Skill label in the applicable project scope. platform_task_id values are task IDs, not Skill IDs.",
+  "skills": [
+    {
+      "platform_task_id": "7705055457837633316",
+      "second_level_skill": "风险薪酬与利益分配",
+      "third_level_skill": "分配Carry",
+      "role_hint": "基金/私募投资运营"
+    },
+    {
+      "platform_task_id": "7705055545555963657",
+      "second_level_skill": "信息隔离与员工交易",
+      "third_level_skill": "核验员工交易预审批",
+      "role_hint": "合规/员工交易监控"
+    },
+    {
+      "platform_task_id": "7705054646998732586",
+      "second_level_skill": "媒体与声誉管理",
+      "third_level_skill": "核验媒体回应事实依据",
+      "role_hint": "投资者关系/声誉风险"
+    },
+    {
+      "platform_task_id": "7705055485594930987",
+      "second_level_skill": "基金产品设计",
+      "third_level_skill": "设计流动性条款",
+      "role_hint": "基金产品/法律与运营"
+    },
+    {
+      "platform_task_id": "7705055496872939307",
+      "second_level_skill": "基金估值与净值",
+      "third_level_skill": "核验估值日持仓数量",
+      "role_hint": "基金估值/基金会计"
+    },
+    {
+      "platform_task_id": "7705055005065629459",
+      "second_level_skill": "基金清算",
+      "third_level_skill": "核验清算资产清单",
+      "role_hint": "基金清算/托管运营"
+    },
+    {
+      "platform_task_id": "7705055542784659209",
+      "second_level_skill": "员工操守与举报调查",
+      "third_level_skill": "跟踪操守整改事项",
+      "role_hint": "合规调查/整改管理"
+    },
+    {
+      "platform_task_id": "7705055543246212902",
+      "second_level_skill": "股票交易执行",
+      "third_level_skill": "测算交易成本",
+      "role_hint": "交易执行/TCA"
+    },
+    {
+      "platform_task_id": "7705055551180853043",
+      "second_level_skill": "投资观点传播",
+      "third_level_skill": "监控传播反馈",
+      "role_hint": "投研传播/舆情分析"
+    },
+    {
+      "platform_task_id": "7705055551529078578",
+      "second_level_skill": "股票交易执行",
+      "third_level_skill": "分析执行偏差",
+      "role_hint": "交易执行/执行质量分析"
+    },
+    {
+      "platform_task_id": "7705055555161788179",
+      "second_level_skill": "市场数据与信息查询",
+      "third_level_skill": "查询行业高频与另类数据",
+      "role_hint": "量化研究/金融数据研究"
+    },
+    {
+      "platform_task_id": "7705055634240196361",
+      "second_level_skill": "市场异动归因与复盘",
+      "third_level_skill": "解读量价筹码与资金行为",
+      "role_hint": "市场微观结构/量化研究"
+    },
+    {
+      "platform_task_id": "7705055652846309139",
+      "second_level_skill": "基金与ETF研究评价",
+      "third_level_skill": "分析ETF折溢价与申赎套利机制",
+      "role_hint": "ETF研究/交易机制分析"
+    },
+    {
+      "platform_task_id": "7705055555161820947",
+      "second_level_skill": "持仓诊断与投资决策辅助",
+      "third_level_skill": "归因个人组合收益与基准偏离",
+      "role_hint": "投资组合分析/量化研究"
+    },
+    {
+      "platform_task_id": "7705055005066317587",
+      "second_level_skill": "宏观与市场策略研究",
+      "third_level_skill": "评估汇率冲击影响",
+      "role_hint": "宏观量化/风险研究"
+    },
+    {
+      "platform_task_id": "7705055524749086518",
+      "second_level_skill": "信用与固定收益研究",
+      "third_level_skill": "识别信用评级迁移风险",
+      "role_hint": "信用研究/固定收益风险"
+    },
+    {
+      "platform_task_id": "7705054469567057727",
+      "second_level_skill": "压力测试与风险限额",
+      "third_level_skill": "设计压力情景",
+      "role_hint": "量化风险/压力测试"
+    },
+    {
+      "platform_task_id": "7705055005065203475",
+      "second_level_skill": "投资风险管理",
+      "third_level_skill": "评估流动性缺口",
+      "role_hint": "投资风险/流动性风险"
+    }
+  ]
+}
