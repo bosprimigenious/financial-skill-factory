@@ -102,6 +102,11 @@ chk("考点条数=12", len(items) == 12, f"{len(items)}")
 chk("权重合计=100", sum(ws) == 100, f"{sum(ws)}")
 chk("权重与 meta 一致", ws == meta["weights"], f"{ws}")
 
+# 技能树字段：一个案例只对应一个三级 skill（cases/README.md 契约）
+for f in ("industry_l1", "industry_l2", "occupation_l1", "occupation_l2", "l2_skill", "level3_skill"):
+    chk(f"meta 含 {f}", bool(meta.get(f)), "缺字段")
+chk("三级 skill 非空且具体", len(meta.get("level3_skill", "")) >= 8, meta.get("level3_skill", ""))
+
 # ---- 3 题面 ----
 chk("题面含 D1–D10", all(f"D{i}" in prompt for i in range(1, 11)), "")
 chk("题面含合成数据说明", "合成数据" in prompt, "")
