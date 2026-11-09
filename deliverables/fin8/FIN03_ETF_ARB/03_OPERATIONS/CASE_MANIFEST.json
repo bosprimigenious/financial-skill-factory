@@ -1,0 +1,93 @@
+{
+  "task_code": "FIN03",
+  "task_slug": "ETF_ARB",
+  "local_name": "FIN03_ETF_ARB",
+  "industry_l1": "金融",
+  "l2_skill": "基金与ETF研究评价",
+  "level3_skill": "分析ETF折溢价与申赎套利机制",
+  "platform_task_id": "7705055652846309139",
+  "priority": "优先试产",
+  "source_type": "TBD",
+  "status": "SCAFFOLD",
+  "inputs": [
+    {
+      "file": "ETF_QUOTES.csv",
+      "primary_key": "fund+trade_date+ts",
+      "fields": [
+        "fund_code",
+        "trade_date",
+        "ts",
+        "bid",
+        "ask",
+        "last",
+        "volume"
+      ]
+    },
+    {
+      "file": "NAV_IOPV.csv",
+      "primary_key": "fund+trade_date+ts",
+      "fields": [
+        "fund_code",
+        "trade_date",
+        "ts",
+        "nav",
+        "iopv",
+        "nav_date"
+      ]
+    },
+    {
+      "file": "PCF_BASKET.csv",
+      "primary_key": "fund+trade_date",
+      "fields": [
+        "fund_code",
+        "trade_date",
+        "component",
+        "qty",
+        "cash_substitute",
+        "premium_ratio"
+      ]
+    },
+    {
+      "file": "FEES.csv",
+      "primary_key": "fund",
+      "fields": [
+        "fund_code",
+        "fee_type",
+        "rate",
+        "min_amount",
+        "note"
+      ]
+    }
+  ],
+  "deliverables": [
+    "D1 PREMIUM_DISCOUNT（逐日逐时点折溢价，含 IOPV 口径说明）",
+    "D2 ARB_ECONOMICS（逐笔套利成本与净空间）",
+    "D3 可套利/不可套利判定与理由",
+    "D4 口径与缺口登记"
+  ],
+  "decision_chain": [
+    "IOPV 口径",
+    "篮子与现金替代",
+    "折溢价计算",
+    "套利成本",
+    "可执行性判断"
+  ],
+  "policy_parameters": [
+    "折溢价基准（IOPV/净值）",
+    "总成本构成",
+    "最小申赎单位",
+    "停牌成分处理"
+  ],
+  "typical_errors": [
+    "用 T-1 净值算 T 日折溢价",
+    "漏掉现金替代溢价",
+    "忽略买卖价差"
+  ],
+  "difficulty_gate": {
+    "rule_id": "XPERT-DIFF-11.4",
+    "judge_max": 50,
+    "steps_min": 50,
+    "duration": "rating_only"
+  },
+  "created_at": "2026-11-09T18:24:06+08:00"
+}

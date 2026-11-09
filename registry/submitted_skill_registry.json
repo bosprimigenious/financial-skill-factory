@@ -120,6 +120,55 @@
       "level3_skill": "首发前股东询价转让受让决策复核",
       "status": "candidate",
       "source": "cases/instance"
+    },
+    {
+      "platform_task_id": "7705055555161788179",
+      "l2_skill": "市场数据与信息查询",
+      "level3_skill": "查询行业高频与另类数据",
+      "status": "draft",
+      "source": "fin8-scaffold"
+    },
+    {
+      "platform_task_id": "7705055634240196361",
+      "l2_skill": "市场异动归因与复盘",
+      "level3_skill": "解读量价筹码与资金行为",
+      "status": "draft",
+      "source": "fin8-scaffold"
+    },
+    {
+      "platform_task_id": "7705055652846309139",
+      "l2_skill": "基金与ETF研究评价",
+      "level3_skill": "分析ETF折溢价与申赎套利机制",
+      "status": "draft",
+      "source": "fin8-scaffold"
+    },
+    {
+      "platform_task_id": "7705055555161820947",
+      "l2_skill": "持仓诊断与投资决策辅助",
+      "level3_skill": "归因个人组合收益与基准偏离",
+      "status": "draft",
+      "source": "fin8-scaffold"
+    },
+    {
+      "platform_task_id": "7705055005066317587",
+      "l2_skill": "宏观与市场策略研究",
+      "level3_skill": "评估汇率冲击影响",
+      "status": "draft",
+      "source": "fin8-scaffold"
+    },
+    {
+      "platform_task_id": "7705055524749086518",
+      "l2_skill": "信用与固定收益研究",
+      "level3_skill": "识别信用评级迁移风险",
+      "status": "draft",
+      "source": "fin8-scaffold"
+    },
+    {
+      "platform_task_id": "7705054469567057727",
+      "l2_skill": "压力测试与风险限额",
+      "level3_skill": "设计压力情景",
+      "status": "draft",
+      "source": "fin8-scaffold"
     }
   ]
 }

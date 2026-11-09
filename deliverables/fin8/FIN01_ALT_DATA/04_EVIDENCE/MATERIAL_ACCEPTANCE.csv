@@ -1,0 +1,4 @@
+file,expected_rows,actual_rows,required_fields_ok,verdict,note
+SOURCE_CATALOG.csv,,,,PENDING,待真实材料
+OBSERVATIONS.csv,,,,PENDING,待真实材料
+ENTITY_MAPPING.csv,,,,PENDING,待真实材料

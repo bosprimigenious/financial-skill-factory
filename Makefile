@@ -2,7 +2,7 @@ PY ?= python3
 VENV ?= vendor/financial-audit-bench/.venv
 RUNPY = $(if $(wildcard $(VENV)/bin/python),$(VENV)/bin/python,$(PY))
 
-.PHONY: test scan pack verify case help v2-test v2-smoke sample run
+.PHONY: test scan pack verify case help v2-test v2-smoke sample run fin8
 help:
 	@echo "make test   # run unit tests"
 	@echo "make scan CASE=cases/<id>"
@@ -33,3 +33,7 @@ sample:
 
 run:
 	PYTHONPATH=src:. $(RUNPY) tools/fsf_run.py --all
+
+fin8:
+	PYTHONPATH=src:. $(RUNPY) tools/scaffold_fin8.py --verify
+	PYTHONPATH=src:. $(RUNPY) -m unittest tests.test_fin8_scaffold -v

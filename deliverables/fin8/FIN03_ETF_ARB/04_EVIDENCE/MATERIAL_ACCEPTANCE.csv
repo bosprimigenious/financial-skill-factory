@@ -1,0 +1,5 @@
+file,expected_rows,actual_rows,required_fields_ok,verdict,note
+ETF_QUOTES.csv,,,,PENDING,待真实材料
+NAV_IOPV.csv,,,,PENDING,待真实材料
+PCF_BASKET.csv,,,,PENDING,待真实材料
+FEES.csv,,,,PENDING,待真实材料

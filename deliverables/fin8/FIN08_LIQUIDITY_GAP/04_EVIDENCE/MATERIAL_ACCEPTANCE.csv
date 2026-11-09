@@ -1,0 +1,4 @@
+file,expected_rows,actual_rows,required_fields_ok,verdict,note
+CASHFLOWS.csv,,,,PENDING,待真实材料
+LIQUID_ASSETS.csv,,,,PENDING,待真实材料
+LIABILITIES.csv,,,,PENDING,待真实材料

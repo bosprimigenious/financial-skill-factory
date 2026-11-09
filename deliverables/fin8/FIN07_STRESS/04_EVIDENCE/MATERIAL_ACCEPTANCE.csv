@@ -1,0 +1,4 @@
+file,expected_rows,actual_rows,required_fields_ok,verdict,note
+EXPOSURES.csv,,,,PENDING,待真实材料
+RISK_FACTOR_HISTORY.csv,,,,PENDING,待真实材料
+LIMITS.csv,,,,PENDING,待真实材料

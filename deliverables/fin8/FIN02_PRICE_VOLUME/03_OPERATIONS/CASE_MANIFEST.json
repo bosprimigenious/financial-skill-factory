@@ -1,0 +1,95 @@
+{
+  "task_code": "FIN02",
+  "task_slug": "PRICE_VOLUME",
+  "local_name": "FIN02_PRICE_VOLUME",
+  "industry_l1": "金融",
+  "l2_skill": "市场异动归因与复盘",
+  "level3_skill": "解读量价筹码与资金行为",
+  "platform_task_id": "7705055634240196361",
+  "priority": "优先试产",
+  "source_type": "TBD",
+  "status": "SCAFFOLD",
+  "inputs": [
+    {
+      "file": "OHLCV.csv",
+      "primary_key": "symbol+trade_date",
+      "fields": [
+        "symbol",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "amount",
+        "adj_factor"
+      ]
+    },
+    {
+      "file": "FLOAT.csv",
+      "primary_key": "symbol+trade_date",
+      "fields": [
+        "symbol",
+        "trade_date",
+        "float_shares",
+        "holder_concentration",
+        "pledge_ratio"
+      ]
+    },
+    {
+      "file": "FLOW.csv",
+      "primary_key": "symbol+trade_date+channel",
+      "fields": [
+        "symbol",
+        "trade_date",
+        "channel",
+        "net_inflow",
+        "large_order_ratio",
+        "block_trade_flag"
+      ]
+    },
+    {
+      "file": "EVENT_LOG.csv",
+      "primary_key": "event_id",
+      "fields": [
+        "event_id",
+        "symbol",
+        "event_date",
+        "event_type",
+        "source",
+        "verified"
+      ]
+    }
+  ],
+  "deliverables": [
+    "D1 EVENT_WINDOW（逐事件窗口与剔除口径）",
+    "D2 PRICE_VOLUME_DECOMPOSITION（量价分解：价格/成交/换手）",
+    "D3 资金分渠道归因与残差",
+    "D4 口径与缺口登记"
+  ],
+  "decision_chain": [
+    "事件识别",
+    "窗口切分与剔除",
+    "量价分解",
+    "资金归因",
+    "异常归因结论"
+  ],
+  "policy_parameters": [
+    "窗口长度与前后置期",
+    "异常阈值定义",
+    "自由流通股本来源",
+    "事件剔除规则"
+  ],
+  "typical_errors": [
+    "用总股本算换手",
+    "窗口按公告日而非生效日",
+    "把大宗交易计入竞价资金"
+  ],
+  "difficulty_gate": {
+    "rule_id": "XPERT-DIFF-11.4",
+    "judge_max": 50,
+    "steps_min": 50,
+    "duration": "rating_only"
+  },
+  "created_at": "2026-11-09T18:24:06+08:00"
+}

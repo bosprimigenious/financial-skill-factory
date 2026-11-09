@@ -1,0 +1,81 @@
+{
+  "task_code": "FIN06",
+  "task_slug": "CREDIT_MIGRATION",
+  "local_name": "FIN06_CREDIT_MIGRATION",
+  "industry_l1": "金融",
+  "l2_skill": "信用与固定收益研究",
+  "level3_skill": "识别信用评级迁移风险",
+  "platform_task_id": "7705055524749086518",
+  "priority": "候选",
+  "source_type": "TBD",
+  "status": "SCAFFOLD",
+  "inputs": [
+    {
+      "file": "ISSUER.csv",
+      "primary_key": "issuer_id",
+      "fields": [
+        "issuer_id",
+        "name",
+        "industry",
+        "region",
+        "external_rating",
+        "outlook"
+      ]
+    },
+    {
+      "file": "RATING_HISTORY.csv",
+      "primary_key": "issuer_id+date",
+      "fields": [
+        "issuer_id",
+        "date",
+        "rating",
+        "agency",
+        "action"
+      ]
+    },
+    {
+      "file": "FINANCIALS.csv",
+      "primary_key": "issuer_id+period",
+      "fields": [
+        "issuer_id",
+        "period",
+        "revenue",
+        "ebitda",
+        "debt",
+        "interest",
+        "cash"
+      ]
+    }
+  ],
+  "deliverables": [
+    "D1 MIGRATION_MATRIX（迁移矩阵与样本口径）",
+    "D2 ISSUER_WATCHLIST（预警名单与触发条件）",
+    "D3 敞口与限额对照",
+    "D4 口径与缺口登记"
+  ],
+  "decision_chain": [
+    "评级序列清洗",
+    "迁移统计",
+    "矩阵估计",
+    "发行人打分",
+    "预警与限额"
+  ],
+  "policy_parameters": [
+    "评级符号映射",
+    "样本期与平滑方法",
+    "违约定义",
+    "限额规则"
+  ],
+  "typical_errors": [
+    "把展望下调计为迁移",
+    "小样本直接取 0",
+    "未评级当 AAA"
+  ],
+  "difficulty_gate": {
+    "rule_id": "XPERT-DIFF-11.4",
+    "judge_max": 50,
+    "steps_min": 50,
+    "duration": "rating_only"
+  },
+  "created_at": "2026-11-09T18:24:06+08:00"
+}

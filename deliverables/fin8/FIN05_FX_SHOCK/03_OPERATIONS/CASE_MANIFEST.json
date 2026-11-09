@@ -1,0 +1,80 @@
+{
+  "task_code": "FIN05",
+  "task_slug": "FX_SHOCK",
+  "local_name": "FIN05_FX_SHOCK",
+  "industry_l1": "金融",
+  "l2_skill": "宏观与市场策略研究",
+  "level3_skill": "评估汇率冲击影响",
+  "platform_task_id": "7705055005066317587",
+  "priority": "候选",
+  "source_type": "TBD",
+  "status": "SCAFFOLD",
+  "inputs": [
+    {
+      "file": "FX_EXPOSURE.csv",
+      "primary_key": "entity+currency",
+      "fields": [
+        "entity",
+        "currency",
+        "exposure_amount",
+        "exposure_type",
+        "as_of"
+      ]
+    },
+    {
+      "file": "CASHFLOWS.csv",
+      "primary_key": "flow_id",
+      "fields": [
+        "flow_id",
+        "entity",
+        "currency",
+        "due_date",
+        "amount",
+        "direction"
+      ]
+    },
+    {
+      "file": "HEDGES.csv",
+      "primary_key": "hedge_id",
+      "fields": [
+        "hedge_id",
+        "currency",
+        "notional",
+        "strike",
+        "maturity",
+        "instrument"
+      ]
+    }
+  ],
+  "deliverables": [
+    "D1 SCENARIO_IMPACT（多情景汇率冲击与损益）",
+    "D2 HEDGE_GAP（逐币种对冲缺口）",
+    "D3 敏感性与结论",
+    "D4 口径与缺口登记"
+  ],
+  "decision_chain": [
+    "敞口识别",
+    "现金流时点",
+    "情景设定",
+    "重估",
+    "对冲缺口"
+  ],
+  "policy_parameters": [
+    "情景幅度与方向",
+    "折算汇率来源",
+    "对冲工具口径",
+    "敞口时间边界"
+  ],
+  "typical_errors": [
+    "只算资产不算负债",
+    "用期末汇率折全部现金流",
+    "漏掉交叉货币对"
+  ],
+  "difficulty_gate": {
+    "rule_id": "XPERT-DIFF-11.4",
+    "judge_max": 50,
+    "steps_min": 50,
+    "duration": "rating_only"
+  },
+  "created_at": "2026-11-09T18:24:06+08:00"
+}

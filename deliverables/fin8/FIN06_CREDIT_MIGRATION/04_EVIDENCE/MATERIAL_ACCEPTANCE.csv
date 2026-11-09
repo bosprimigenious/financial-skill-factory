@@ -1,0 +1,4 @@
+file,expected_rows,actual_rows,required_fields_ok,verdict,note
+ISSUER.csv,,,,PENDING,待真实材料
+RATING_HISTORY.csv,,,,PENDING,待真实材料
+FINANCIALS.csv,,,,PENDING,待真实材料

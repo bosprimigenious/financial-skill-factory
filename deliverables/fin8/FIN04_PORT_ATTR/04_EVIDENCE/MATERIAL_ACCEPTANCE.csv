@@ -1,0 +1,4 @@
+file,expected_rows,actual_rows,required_fields_ok,verdict,note
+POSITIONS.csv,,,,PENDING,待真实材料
+TRANSACTIONS.csv,,,,PENDING,待真实材料
+BENCHMARK.csv,,,,PENDING,待真实材料

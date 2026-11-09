@@ -1,0 +1,85 @@
+{
+  "task_code": "FIN01",
+  "task_slug": "ALT_DATA",
+  "local_name": "FIN01_ALT_DATA",
+  "industry_l1": "金融",
+  "l2_skill": "市场数据与信息查询",
+  "level3_skill": "查询行业高频与另类数据",
+  "platform_task_id": "7705055555161788179",
+  "priority": "优先试产",
+  "source_type": "TBD",
+  "status": "SCAFFOLD",
+  "inputs": [
+    {
+      "file": "SOURCE_CATALOG.csv",
+      "primary_key": "source_id",
+      "fields": [
+        "source_id",
+        "source_name",
+        "variant",
+        "freq",
+        "history_start",
+        "license",
+        "has_pit",
+        "coverage_note"
+      ]
+    },
+    {
+      "file": "OBSERVATIONS.csv",
+      "primary_key": "source_id+entity+ts",
+      "fields": [
+        "source_id",
+        "entity",
+        "ts",
+        "field",
+        "value",
+        "unit",
+        "revision_no"
+      ]
+    },
+    {
+      "file": "ENTITY_MAPPING.csv",
+      "primary_key": "entity",
+      "fields": [
+        "entity",
+        "ticker",
+        "name",
+        "exchange",
+        "valid_from",
+        "valid_to",
+        "mapping_rule"
+      ]
+    }
+  ],
+  "deliverables": [
+    "D1 SOURCE_ASSESSMENT（逐源评估：可得性/时点真实性/覆盖率/实体一致性）",
+    "D2 FEATURE_DICTIONARY（逐字段：定义/单位/频率/滞后/前视风险）",
+    "D3 拒绝源清单与理由",
+    "D4 口径与缺口登记"
+  ],
+  "decision_chain": [
+    "源可得性",
+    "时点真实性(point-in-time)",
+    "实体映射",
+    "字段前视风险",
+    "特征入模决定"
+  ],
+  "policy_parameters": [
+    "PIT 口径（发布日期 vs 观察日）",
+    "实体映射有效期",
+    "缺失值语义（UNKNOWN/NOT_OBSERVED）",
+    "复权方式"
+  ],
+  "typical_errors": [
+    "用最新快照回测",
+    "把 NOT_PROVEN 当 0",
+    "跨交易所代码未做映射"
+  ],
+  "difficulty_gate": {
+    "rule_id": "XPERT-DIFF-11.4",
+    "judge_max": 50,
+    "steps_min": 50,
+    "duration": "rating_only"
+  },
+  "created_at": "2026-11-09T18:24:06+08:00"
+}

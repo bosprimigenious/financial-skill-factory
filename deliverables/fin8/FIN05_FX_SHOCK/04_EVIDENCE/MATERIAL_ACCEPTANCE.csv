@@ -1,0 +1,4 @@
+file,expected_rows,actual_rows,required_fields_ok,verdict,note
+FX_EXPOSURE.csv,,,,PENDING,待真实材料
+CASHFLOWS.csv,,,,PENDING,待真实材料
+HEDGES.csv,,,,PENDING,待真实材料

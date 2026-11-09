@@ -1,0 +1,80 @@
+{
+  "task_code": "FIN08",
+  "task_slug": "LIQUIDITY_GAP",
+  "local_name": "FIN08_LIQUIDITY_GAP",
+  "industry_l1": "金融",
+  "l2_skill": "投资风险管理",
+  "level3_skill": "评估流动性缺口",
+  "platform_task_id": "7705055005065203475",
+  "priority": "候选",
+  "source_type": "TBD",
+  "status": "SCAFFOLD",
+  "inputs": [
+    {
+      "file": "CASHFLOWS.csv",
+      "primary_key": "flow_id",
+      "fields": [
+        "flow_id",
+        "bucket",
+        "direction",
+        "amount",
+        "currency",
+        "certainty"
+      ]
+    },
+    {
+      "file": "LIQUID_ASSETS.csv",
+      "primary_key": "asset_id",
+      "fields": [
+        "asset_id",
+        "asset_class",
+        "market_value",
+        "haircut",
+        "settle_days",
+        "is_pledged"
+      ]
+    },
+    {
+      "file": "LIABILITIES.csv",
+      "primary_key": "liability_id",
+      "fields": [
+        "liability_id",
+        "due_date",
+        "amount",
+        "callable",
+        "priority"
+      ]
+    }
+  ],
+  "deliverables": [
+    "D1 GAP_LADDER（期限阶梯缺口）",
+    "D2 COVERAGE（覆盖率与压力情景）",
+    "D3 变现假设与折扣依据",
+    "D4 口径与缺口登记"
+  ],
+  "decision_chain": [
+    "现金流分桶",
+    "变现折扣",
+    "质押冻结剔除",
+    "缺口计算",
+    "覆盖率结论"
+  ],
+  "policy_parameters": [
+    "分桶粒度",
+    "折价率来源",
+    "可变现定义",
+    "覆盖率阈值"
+  ],
+  "typical_errors": [
+    "质押资产计入流动性",
+    "忽略结算天数",
+    "应收全按可回收"
+  ],
+  "difficulty_gate": {
+    "rule_id": "XPERT-DIFF-11.4",
+    "judge_max": 50,
+    "steps_min": 50,
+    "duration": "rating_only"
+  },
+  "created_at": "2026-11-09T18:24:06+08:00"
+}

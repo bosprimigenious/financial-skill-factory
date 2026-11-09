@@ -1,0 +1,5 @@
+file,expected_rows,actual_rows,required_fields_ok,verdict,note
+OHLCV.csv,,,,PENDING,待真实材料
+FLOAT.csv,,,,PENDING,待真实材料
+FLOW.csv,,,,PENDING,待真实材料
+EVENT_LOG.csv,,,,PENDING,待真实材料

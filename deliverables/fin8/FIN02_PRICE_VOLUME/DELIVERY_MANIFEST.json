@@ -1,0 +1,33 @@
+{
+  "task_code": "FIN02",
+  "level3_skill": "解读量价筹码与资金行为",
+  "platform_task_id": "7705055634240196361",
+  "file_count": 23,
+  "files": [
+    "01_PUBLIC_DOUBAO/INPUT_CONTRACT.md",
+    "01_PUBLIC_DOUBAO/PROMPT.template.md",
+    "01_PUBLIC_DOUBAO/inputs/.gitkeep",
+    "02_PRIVATE_EXPERT/CASE_INTAKE.md",
+    "02_PRIVATE_EXPERT/GOLDEN_RESPONSE.template.md",
+    "02_PRIVATE_EXPERT/HIDDEN_DIFFICULTY_MAP.template.csv",
+    "02_PRIVATE_EXPERT/IDEAL_STEPS.template.md",
+    "02_PRIVATE_EXPERT/INTERNAL_GRADER_20x5.template.csv",
+    "02_PRIVATE_EXPERT/PLATFORM_EXPERT_RUBRIC.template.csv",
+    "02_PRIVATE_EXPERT/RUBRIC_RULES.md",
+    "03_OPERATIONS/CASE_MANIFEST.json",
+    "03_OPERATIONS/RUN_LOG.csv",
+    "04_EVIDENCE/C20_REVIEW.csv",
+    "04_EVIDENCE/HASHING.md",
+    "04_EVIDENCE/MATERIAL_ACCEPTANCE.csv",
+    "04_EVIDENCE/MODEL_RUN_EVIDENCE.csv",
+    "04_EVIDENCE/SOURCE_REGISTER.csv",
+    "05_PLATFORM_FIELDS/PLATFORM_FIELDS.md",
+    "06_READINESS/READINESS_GATES.md",
+    "CASE_CARD.md",
+    "MANIFEST.sha256",
+    "OUTPUT_CONTRACT.md",
+    "README_STATUS.md"
+  ],
+  "status": "SCAFFOLD",
+  "note": "含 inputs/.gitkeep；真实材料接入后须重算 MANIFEST.sha256"
+}

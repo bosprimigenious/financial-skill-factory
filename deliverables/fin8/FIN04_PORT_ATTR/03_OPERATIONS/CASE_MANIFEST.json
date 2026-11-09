@@ -1,0 +1,83 @@
+{
+  "task_code": "FIN04",
+  "task_slug": "PORT_ATTR",
+  "local_name": "FIN04_PORT_ATTR",
+  "industry_l1": "金融",
+  "l2_skill": "持仓诊断与投资决策辅助",
+  "level3_skill": "归因个人组合收益与基准偏离",
+  "platform_task_id": "7705055555161820947",
+  "priority": "候选",
+  "source_type": "TBD",
+  "status": "SCAFFOLD",
+  "inputs": [
+    {
+      "file": "POSITIONS.csv",
+      "primary_key": "account+symbol+date",
+      "fields": [
+        "account",
+        "symbol",
+        "date",
+        "qty",
+        "price",
+        "market_value",
+        "currency"
+      ]
+    },
+    {
+      "file": "TRANSACTIONS.csv",
+      "primary_key": "txn_id",
+      "fields": [
+        "txn_id",
+        "account",
+        "symbol",
+        "trade_date",
+        "side",
+        "qty",
+        "price",
+        "fee",
+        "fx_rate"
+      ]
+    },
+    {
+      "file": "BENCHMARK.csv",
+      "primary_key": "benchmark+date",
+      "fields": [
+        "benchmark",
+        "date",
+        "return",
+        "weight_scheme"
+      ]
+    }
+  ],
+  "deliverables": [
+    "D1 RETURN_RECON（时间加权/资金加权对平）",
+    "D2 ATTRIBUTION（配置/选股/交互，或行业/个股）",
+    "D3 基准偏离解释与残差",
+    "D4 口径与缺口登记"
+  ],
+  "decision_chain": [
+    "收益口径",
+    "现金流处理",
+    "权重方案",
+    "归因分解",
+    "偏离解释"
+  ],
+  "policy_parameters": [
+    "收益口径（TWR/MWR）",
+    "权重方案",
+    "费用与税的处理",
+    "汇率折算时点"
+  ],
+  "typical_errors": [
+    "忽略申赎现金流",
+    "用简单相减算超额",
+    "分红未复权"
+  ],
+  "difficulty_gate": {
+    "rule_id": "XPERT-DIFF-11.4",
+    "judge_max": 50,
+    "steps_min": 50,
+    "duration": "rating_only"
+  },
+  "created_at": "2026-11-09T18:24:06+08:00"
+}

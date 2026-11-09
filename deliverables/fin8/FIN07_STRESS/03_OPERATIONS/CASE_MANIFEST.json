@@ -1,0 +1,75 @@
+{
+  "task_code": "FIN07",
+  "task_slug": "STRESS",
+  "local_name": "FIN07_STRESS",
+  "industry_l1": "金融",
+  "l2_skill": "压力测试与风险限额",
+  "level3_skill": "设计压力情景",
+  "platform_task_id": "7705054469567057727",
+  "priority": "候选",
+  "source_type": "TBD",
+  "status": "SCAFFOLD",
+  "inputs": [
+    {
+      "file": "EXPOSURES.csv",
+      "primary_key": "portfolio+factor",
+      "fields": [
+        "portfolio",
+        "factor",
+        "exposure",
+        "as_of"
+      ]
+    },
+    {
+      "file": "RISK_FACTOR_HISTORY.csv",
+      "primary_key": "factor+date",
+      "fields": [
+        "factor",
+        "date",
+        "value"
+      ]
+    },
+    {
+      "file": "LIMITS.csv",
+      "primary_key": "limit_id",
+      "fields": [
+        "limit_id",
+        "scope",
+        "metric",
+        "threshold",
+        "breach_action"
+      ]
+    }
+  ],
+  "deliverables": [
+    "D1 STRESS_RESULTS（逐情景逐因子重估）",
+    "D2 LIMIT_BREACH（超限判定与处置）",
+    "D3 情景假设与相关性说明",
+    "D4 口径与缺口登记"
+  ],
+  "decision_chain": [
+    "因子映射",
+    "情景设定",
+    "联合冲击",
+    "重估",
+    "限额判定"
+  ],
+  "policy_parameters": [
+    "情景来源与幅度",
+    "因子相关性矩阵",
+    "非线性处理",
+    "限额口径"
+  ],
+  "typical_errors": [
+    "单因子冲击相加",
+    "缺失因子当 0",
+    "忽略期权凸性"
+  ],
+  "difficulty_gate": {
+    "rule_id": "XPERT-DIFF-11.4",
+    "judge_max": 50,
+    "steps_min": 50,
+    "duration": "rating_only"
+  },
+  "created_at": "2026-11-09T18:24:06+08:00"
+}

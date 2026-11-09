@@ -1,0 +1,82 @@
+{
+  "batch": "FIN8-20261109",
+  "industry": "金融",
+  "standard": "FDE 11.4",
+  "difficulty_gate": {
+    "rule": "judge<=50 AND model_steps>=50",
+    "duration": "rating_only"
+  },
+  "tasks": [
+    {
+      "code": "FIN01",
+      "level3_skill": "查询行业高频与另类数据",
+      "platform_task_id": "7705055555161788179",
+      "priority": "优先试产",
+      "package": "FIN01_ALT_DATA.zip",
+      "status": "SCAFFOLD"
+    },
+    {
+      "code": "FIN02",
+      "level3_skill": "解读量价筹码与资金行为",
+      "platform_task_id": "7705055634240196361",
+      "priority": "优先试产",
+      "package": "FIN02_PRICE_VOLUME.zip",
+      "status": "SCAFFOLD"
+    },
+    {
+      "code": "FIN03",
+      "level3_skill": "分析ETF折溢价与申赎套利机制",
+      "platform_task_id": "7705055652846309139",
+      "priority": "优先试产",
+      "package": "FIN03_ETF_ARB.zip",
+      "status": "SCAFFOLD"
+    },
+    {
+      "code": "FIN04",
+      "level3_skill": "归因个人组合收益与基准偏离",
+      "platform_task_id": "7705055555161820947",
+      "priority": "候选",
+      "package": "FIN04_PORT_ATTR.zip",
+      "status": "SCAFFOLD"
+    },
+    {
+      "code": "FIN05",
+      "level3_skill": "评估汇率冲击影响",
+      "platform_task_id": "7705055005066317587",
+      "priority": "候选",
+      "package": "FIN05_FX_SHOCK.zip",
+      "status": "SCAFFOLD"
+    },
+    {
+      "code": "FIN06",
+      "level3_skill": "识别信用评级迁移风险",
+      "platform_task_id": "7705055524749086518",
+      "priority": "候选",
+      "package": "FIN06_CREDIT_MIGRATION.zip",
+      "status": "SCAFFOLD"
+    },
+    {
+      "code": "FIN07",
+      "level3_skill": "设计压力情景",
+      "platform_task_id": "7705054469567057727",
+      "priority": "候选",
+      "package": "FIN07_STRESS.zip",
+      "status": "SCAFFOLD"
+    },
+    {
+      "code": "FIN08",
+      "level3_skill": "评估流动性缺口",
+      "platform_task_id": "7705055005065203475",
+      "priority": "候选",
+      "package": "FIN08_LIQUIDITY_GAP.zip",
+      "status": "SCAFFOLD"
+    }
+  ],
+  "counts": {
+    "tasks": 8,
+    "files_per_task": 23,
+    "base_price_cny": 1500,
+    "theoretical_total_cny": 12000,
+    "note": "理论结算额＝8×1500，按全部质检合格计；不是收入保证"
+  }
+}

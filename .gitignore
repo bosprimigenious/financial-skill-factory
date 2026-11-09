@@ -10,3 +10,4 @@ packs/*
 !packs/.gitkeep
 !packs/SELECTION-FROM-119.md
 !packs/7689005313907642138/
+# deliverables/ 入库：八题小包与总包是交付物，干净克隆需能直接取用
