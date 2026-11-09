@@ -584,7 +584,7 @@
       "hard_boundary": "不得把传播互动指标直接解释为投资收益、客户转化或观点正确性的证明。"
     },
     {
-      "platform_task_id": "7705055551529078578",
+      "platform_task_id": "7705056530287021864",
       "second_level_skill": "股票交易执行",
       "third_level_skill": "分析执行偏差",
       "domain": "交易执行偏差归因与实施质量分析",
@@ -948,7 +948,7 @@
       ]
     },
     {
-      "platform_task_id": "7705055524749086518",
+      "platform_task_id": "7705055926348238592",
       "second_level_skill": "信用与固定收益研究",
       "third_level_skill": "识别信用评级迁移风险",
       "domain": "发行人评级迁移与固定收益敞口风险",
@@ -1007,7 +1007,7 @@
       ]
     },
     {
-      "platform_task_id": "7705054469567057727",
+      "platform_task_id": "7705055839858560804",
       "second_level_skill": "压力测试与风险限额",
       "third_level_skill": "设计压力情景",
       "domain": "投资组合风险因子压力情景设计与限额评估",

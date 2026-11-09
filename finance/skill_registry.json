@@ -59,7 +59,7 @@
       "role_hint": "投研传播/舆情分析"
     },
     {
-      "platform_task_id": "7705055551529078578",
+      "platform_task_id": "7705056530287021864",
       "second_level_skill": "股票交易执行",
       "third_level_skill": "分析执行偏差",
       "role_hint": "交易执行/执行质量分析"
@@ -95,13 +95,13 @@
       "role_hint": "宏观量化/风险研究"
     },
     {
-      "platform_task_id": "7705055524749086518",
+      "platform_task_id": "7705055926348238592",
       "second_level_skill": "信用与固定收益研究",
       "third_level_skill": "识别信用评级迁移风险",
       "role_hint": "信用研究/固定收益风险"
     },
     {
-      "platform_task_id": "7705054469567057727",
+      "platform_task_id": "7705055839858560804",
       "second_level_skill": "压力测试与风险限额",
       "third_level_skill": "设计压力情景",
       "role_hint": "量化风险/压力测试"

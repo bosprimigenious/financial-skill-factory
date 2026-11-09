@@ -1,14 +1,56 @@
 {
-  "batch_id":"FDE-FINANCE-20261109","industry":"金融",
-  "source":"User-supplied Xpert task list captured 2026-11-09","status":"SCAFFOLD_ONLY",
-  "selected_tasks":[
-    {"case_code":"FIN01_ALT_DATA","platform_task_id":"7705055555161788179","second_level_skill":"市场数据与信息查询","third_level_skill":"查询行业高频与另类数据"},
-    {"case_code":"FIN02_PRICE_VOLUME","platform_task_id":"7705055634240196361","second_level_skill":"市场异动归因与复盘","third_level_skill":"解读量价筹码与资金行为"},
-    {"case_code":"FIN03_ETF_ARB","platform_task_id":"7705055652846309139","second_level_skill":"基金与ETF研究评价","third_level_skill":"分析ETF折溢价与申赎套利机制"},
-    {"case_code":"FIN04_PORT_ATTR","platform_task_id":"7705055555161820947","second_level_skill":"持仓诊断与投资决策辅助","third_level_skill":"归因个人组合收益与基准偏离"},
-    {"case_code":"FIN05_FX_SHOCK","platform_task_id":"7705055005066317587","second_level_skill":"宏观与市场策略研究","third_level_skill":"评估汇率冲击影响"},
-    {"case_code":"FIN06_CREDIT_MIGRATION","platform_task_id":"7705055524749086518","second_level_skill":"信用与固定收益研究","third_level_skill":"识别信用评级迁移风险"},
-    {"case_code":"FIN07_STRESS","platform_task_id":"7705054469567057727","second_level_skill":"压力测试与风险限额","third_level_skill":"设计压力情景"},
-    {"case_code":"FIN08_LIQUIDITY_GAP","platform_task_id":"7705055005065203475","second_level_skill":"投资风险管理","third_level_skill":"评估流动性缺口"}
+  "batch_id": "FDE-FINANCE-20261109",
+  "industry": "金融",
+  "source": "User-supplied Xpert task list captured 2026-11-09",
+  "status": "SCAFFOLD_ONLY",
+  "selected_tasks": [
+    {
+      "case_code": "FIN01_ALT_DATA",
+      "platform_task_id": "7705055555161788179",
+      "second_level_skill": "市场数据与信息查询",
+      "third_level_skill": "查询行业高频与另类数据"
+    },
+    {
+      "case_code": "FIN02_PRICE_VOLUME",
+      "platform_task_id": "7705055634240196361",
+      "second_level_skill": "市场异动归因与复盘",
+      "third_level_skill": "解读量价筹码与资金行为"
+    },
+    {
+      "case_code": "FIN03_ETF_ARB",
+      "platform_task_id": "7705055652846309139",
+      "second_level_skill": "基金与ETF研究评价",
+      "third_level_skill": "分析ETF折溢价与申赎套利机制"
+    },
+    {
+      "case_code": "FIN04_PORT_ATTR",
+      "platform_task_id": "7705055555161820947",
+      "second_level_skill": "持仓诊断与投资决策辅助",
+      "third_level_skill": "归因个人组合收益与基准偏离"
+    },
+    {
+      "case_code": "FIN05_FX_SHOCK",
+      "platform_task_id": "7705055005066317587",
+      "second_level_skill": "宏观与市场策略研究",
+      "third_level_skill": "评估汇率冲击影响"
+    },
+    {
+      "case_code": "FIN06_CREDIT_MIGRATION",
+      "platform_task_id": "7705055926348238592",
+      "second_level_skill": "信用与固定收益研究",
+      "third_level_skill": "识别信用评级迁移风险"
+    },
+    {
+      "case_code": "FIN07_STRESS",
+      "platform_task_id": "7705055839858560804",
+      "second_level_skill": "压力测试与风险限额",
+      "third_level_skill": "设计压力情景"
+    },
+    {
+      "case_code": "FIN08_EXEC_DEVIATION",
+      "platform_task_id": "7705056530287021864",
+      "second_level_skill": "股票交易执行",
+      "third_level_skill": "分析执行偏差"
+    }
   ]
 }
