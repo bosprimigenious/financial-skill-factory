@@ -1,0 +1,5 @@
+order_id,symbol,side,order_qty,fill_qty,unfilled_qty,notional,slippage,explicit_fee,total_cost,cost_bps
+O1,600519,BUY,300,300,0,450220.00,220.00,138.98,358.98,7.9734
+O2,000001,SELL,20000,20000,0,224080.00,-80.00,192.42,112.42,5.0170
+O3,000001,BUY,8000,3000,5000,33480.00,30.00,12.00,42.00,12.5448
+O4,600519,SELL,100,0,100,0,0,0,0,0
