@@ -1,7 +1,7 @@
 {
   "item_id": "7705055555161788179",
   "code": "fin01",
-  "generated_at": "2026-11-10T11:28:45+08:00",
+  "generated_at": "2026-11-10T12:17:12+08:00",
   "status": "BLOCKED",
   "gaps": [
     "豆包未运行：无 runs/fin01/doubao_run.json（CDP 9334 不可用）"
@@ -19,18 +19,18 @@
     },
     {
       "path": "pack/gt.md",
-      "sha256": "3e18a4d4da3306d3308515dd15dc1dc72a1ec4faa0ca5b3e84026d81ba1b62f2",
-      "bytes": 2534
+      "sha256": "6eef7f0c138fe07397f79e81fddbff58dec74f9f2da7ac38498749a488481098",
+      "bytes": 3384
     },
     {
       "path": "pack/gt_summary.json",
-      "sha256": "9cc3d169809ba3d4773de01c96991658c6b8f8f1c27dcec5750b772d335aba40",
-      "bytes": 485
+      "sha256": "9b10a37876730157c9942bbf8170d3b17f41fed7560abcd99d1999147337200b",
+      "bytes": 589
     },
     {
       "path": "pack/gt_table.csv",
-      "sha256": "45bc62d9f514a0d983b3ba998a52e7fe3491b0fceace760f7d6c1272efe70849",
-      "bytes": 308
+      "sha256": "3f2ab948f0c995f6bdfefeae985d54a541c8ed5f9dc6e3fe1c46cffee73257eb",
+      "bytes": 348
     },
     {
       "path": "pack/ideal_steps.md",
@@ -38,24 +38,29 @@
       "bytes": 1313
     },
     {
+      "path": "pack/materials/00_附件说明.md",
+      "sha256": "1ad7e679fd9a4d1ec79c0a6acbcbfdbbdc49328bd273eb93e50ba8f5c057a073",
+      "bytes": 1536
+    },
+    {
       "path": "pack/materials/M1_数据源目录.csv",
-      "sha256": "268682c23c01ecea312edf860efd4a4452e7ccadd29934951a2d65c6789554fb",
-      "bytes": 613
+      "sha256": "c4f3f28cc373b73f610e1cf6d9e4c407c8ddb0a70b03ff8b03c8af2c541fa10e",
+      "bytes": 1032
     },
     {
       "path": "pack/materials/M2_观测数据.csv",
-      "sha256": "dabeabdfefa2553a6355091af20621eabc152b67a23191065b6a1232271cf7aa",
-      "bytes": 861
+      "sha256": "6fe874407a9bc3e5afefb76b4d3c8ac4f5915b765e74cfc6c8a11582aad56e6d",
+      "bytes": 5986
     },
     {
       "path": "pack/materials/M3_实体映射.csv",
-      "sha256": "b62358f0cfd07c2329562b661b4a12139721ad8e27a28803a168d10d575606df",
-      "bytes": 619
+      "sha256": "76d6bbea5ae41306b00ce18764d79e421674e83aeaf6524688d281c09a7a1882",
+      "bytes": 747
     },
     {
       "path": "pack/materials/M4_口径说明.md",
-      "sha256": "0b853067374570cc6a61d3ffb171a0a37eef55e1437da7cab0c35f92883438c0",
-      "bytes": 1518
+      "sha256": "5555dc39d9b9c2288cb9b549fa393410bb31d7be1e1298a3cd25aa544298ce0d",
+      "bytes": 3113
     },
     {
       "path": "pack/materials_contract.md",

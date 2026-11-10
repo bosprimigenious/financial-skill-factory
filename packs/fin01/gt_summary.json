@@ -1,12 +1,13 @@
 {
-  "sources": 3,
-  "declared_entities_total": 22,
+  "sources": 4,
+  "declared_entities_total": 261,
   "observed_entities_total": 2,
-  "overall_coverage_ratio": 0.0909,
+  "overall_coverage_ratio": 0.0077,
   "not_proven_records_total": 6,
   "records_missing_released_at_total": 0,
   "sources_failing_pit": [
-    "S03"
+    "S03",
+    "S04"
   ],
   "unmapped_entities": [],
   "tickers_across_exchanges": {
@@ -16,7 +17,12 @@
     ]
   },
   "count_check": {
-    "fields_total": 5,
-    "note": "入模字段数 + 拒绝字段数 必须等于字段总数，见 rubric R7"
+    "fields_total": 10,
+    "fields_modeled": 7,
+    "fields_rejected": 3,
+    "not_observed_sources": [
+      "S04"
+    ],
+    "note": "入模字段 + 拒绝字段 = 字段总数，见 rubric 勾稽项"
   }
 }

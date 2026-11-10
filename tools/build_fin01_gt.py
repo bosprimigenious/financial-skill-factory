@@ -110,8 +110,14 @@ def main() -> int:
         "unmapped_entities": unmapped,
         "tickers_across_exchanges": {k: sorted(v) for k, v in dup_code.items() if len(v) > 1},
         "count_check": {
-            "fields_total": len({(r["source_id"], r["entity"]) for r in m2}),
-            "note": "入模字段数 + 拒绝字段数 必须等于字段总数，见 rubric R7",
+            "fields_total": len({(r["source_id"], r["entity"], r["field"]) for r in m2}),
+            "fields_modeled": len({(r["source_id"], r["entity"], r["field"])
+                                   for r in m2 if (r["value"] or "").strip()}),
+            "fields_rejected": len({(r["source_id"], r["entity"], r["field"])
+                                    for r in m2 if not (r["value"] or "").strip()}),
+            "not_observed_sources": [r["source_id"] for r in rows
+                                     if r["records"] == 0],
+            "note": "入模字段 + 拒绝字段 = 字段总数，见 rubric 勾稽项",
         },
     }
     (ROOT / "packs/fin01/gt_summary.json").write_text(
