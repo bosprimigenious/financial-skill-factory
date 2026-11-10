@@ -1,0 +1,26 @@
+{
+  "status": "PARTIALLY_FILLED_SAVED",
+  "platform_item_id": "7705055555161788179",
+  "browser": "Safari",
+  "saved_at": "2026-11-10T18:03:16+08:00",
+  "observed_confirmation": "答案暂存成功",
+  "completed": [
+    "Replaced old 9.09% GT with latest 0.77%/4-source/10-field result; clarified S02 historical 15:00 vs 11:43 intraday snapshot",
+    "Prompt attachment FIN01_材料包.zip visible 5.1KB",
+    "Golden attachment FIN01_计算底稿.zip visible 2.6KB",
+    "Rubric 1 required fields corrected and UI says 1 of 1 complete",
+    "Need web = 否; web time limit = 否"
+  ],
+  "remaining": [
+    "Rubrics 2-9",
+    "True expert qualification; current field contains [X]/[机构/岗位] placeholders",
+    "Real Doubao run and corresponding output, share/feedback links, attachments, rating and duration",
+    "Final readback of all fields"
+  ],
+  "not_performed": [
+    "Final platform submit",
+    "Model inference",
+    "Invented qualifications or model results"
+  ],
+  "gui_lease_released": true
+}

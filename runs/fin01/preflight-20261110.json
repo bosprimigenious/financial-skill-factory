@@ -1,0 +1,46 @@
+{
+  "item_id": "7705055555161788179",
+  "status": "PREPARED_NOT_SUBMITTED_TO_MODEL",
+  "product": "豆包",
+  "required_mode": "会员-工作-云电脑-豆包2.1 Pro-推理强度高",
+  "timing_policy": "Start on observed send acceptance, end on actual completion; no artificial waiting; GUI lease waits excluded",
+  "run_limit_seconds": 3600,
+  "answer_isolation": "Only prompt.md and FIN01_材料包.zip go to solver; no GT, rubric, author package or thresholds",
+  "files": [
+    {
+      "path": "packs/fin01/prompt.md",
+      "sha256": "f110cb2c8fdecee50d8906cc957dad6e89cec3f6a8983dca5b117e39781303e3",
+      "bytes": 1935
+    },
+    {
+      "path": "packs/fin01/rubric.csv",
+      "sha256": "6b77b3d5dcb69911eced65a31d55a60117a7a5d8bb008c12c6ab877b0a43081c",
+      "bytes": 2287
+    },
+    {
+      "path": "packs/fin01/gt.md",
+      "sha256": "6eef7f0c138fe07397f79e81fddbff58dec74f9f2da7ac38498749a488481098",
+      "bytes": 3384
+    },
+    {
+      "path": "packs/fin01/gt_table.csv",
+      "sha256": "3f2ab948f0c995f6bdfefeae985d54a541c8ed5f9dc6e3fe1c46cffee73257eb",
+      "bytes": 348
+    },
+    {
+      "path": "packs/fin01/gt_summary.json",
+      "sha256": "9b10a37876730157c9942bbf8170d3b17f41fed7560abcd99d1999147337200b",
+      "bytes": 589
+    },
+    {
+      "path": "deliverables/fin01/FIN01_材料包.zip",
+      "sha256": "fcb4c11f26ece3b565123afda90b0c170b4271fa10d5eabe52603cce0dc33d8b",
+      "bytes": 5266
+    },
+    {
+      "path": "deliverables/fin01/FIN01_计算底稿.zip",
+      "sha256": "92fe979004b908f6f3a79fa1fc67468af491af7b1e731edc6a0cfeec7ef16aa0",
+      "bytes": 2668
+    }
+  ]
+}

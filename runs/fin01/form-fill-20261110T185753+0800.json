@@ -1,0 +1,43 @@
+{
+  "status": "RUBRICS_COMPLETE_SAVED",
+  "platform_item_id": "7705055555161788179",
+  "browser": "Safari",
+  "saved_at": "2026-11-10T18:57:53+08:00",
+  "observed_confirmation": "答案暂存成功",
+  "rubrics_total": 9,
+  "rubrics_complete": 9,
+  "rubric_titles": [
+    "源可得性与许可",
+    "时点真实性（PIT）",
+    "实体映射有效期",
+    "字段定义与单位频率",
+    "覆盖率分子分母",
+    "缺失语义区分",
+    "拒绝理由可复核",
+    "把缺失当 0 或把快照当 PIT",
+    "给出可执行替代源"
+  ],
+  "types": [
+    "必需项",
+    "必需项",
+    "必需项",
+    "必需项",
+    "必需项",
+    "必需项",
+    "必需项",
+    "负向项",
+    "加分项"
+  ],
+  "gate_candidates": [
+    2,
+    8
+  ],
+  "numeric_and_alternative_fields_filled": true,
+  "product_run_started": false,
+  "platform_submitted": false,
+  "own_errors": [
+    "Initial batch helper expected explicit Placeholder label for empty rubric core input; actual AX exposes bare label. Added one blank second rubric before stopping, then populated it without duplication.",
+    "First helper update remained bound to earlier function definitions; switched to fresh inline state-based control identification."
+  ],
+  "gui_lease_released": true
+}

@@ -1,0 +1,13 @@
+{
+  "session_id": "38452918511808002",
+  "status": "RUNNING",
+  "platform_elapsed_observed": "2分22秒",
+  "observed_actions": [
+    "Unzipped formal input attachment",
+    "Enumerated 5 files",
+    "Reading observations and entity mapping"
+  ],
+  "model": "豆包2.1 Pro 高",
+  "mode": "云电脑",
+  "final_output_observed": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "MODEL_FIELDS_FILLED_UPLOAD_BLOCKED",
+  "item_id": "7705055555161788179",
+  "saved_at": "2026-11-10T19:21:13+08:00",
+  "rubrics_complete": 9,
+  "model_share_url": "https://www.doubao.com/thread/x1Wzz9jcKrvYHuQr9",
+  "model_feedback_locator": "https://www.doubao.com/chat/38452918511808002",
+  "feedback_locator_note": "Original product conversation URL, not an invented separate feedback page; expert evaluation entered in platform feedback text",
+  "rating": "基本达标",
+  "duration_seconds": 403,
+  "duration_option": "少于40min",
+  "model_and_mode_confirmed": true,
+  "upload_blocker": "Safari native open-panel shows OKButton disabled after selecting either actual XLSX or exact-byte ZIP wrapper; no bypass attempted",
+  "model_attachment_uploaded": false,
+  "corrected_gt_attachment_uploaded": false,
+  "platform_submitted": false,
+  "own_error": "Initial share copy attempt had not updated clipboard, pasted preexisting unrelated clipboard text into address bar without Return; field cleared/restored. Later verified UI toast 对话链接已复制 before reading official share URL. No clipboard contents persisted to local reports.",
+  "share_copy_confirmed": true,
+  "gui_lease_released": true
+}

@@ -1,0 +1,32 @@
+{
+  "item_id": "7705055555161788179",
+  "status": "SUBMITTED_AWAITING_OUTPUT",
+  "product": "豆包",
+  "model": "豆包 2.1 Pro",
+  "reasoning": "高",
+  "mode": "工作任务 / 云电脑",
+  "session_id": "38452918511808002",
+  "session_url": "https://www.doubao.com/chat/38452918511808002",
+  "started_at": "2026-11-10T19:00:56.626+08:00",
+  "ended_at": null,
+  "duration_seconds": null,
+  "input_files": [
+    {
+      "path": "packs/fin01/prompt.md",
+      "sha256": "f110cb2c8fdecee50d8906cc957dad6e89cec3f6a8983dca5b117e39781303e3"
+    },
+    {
+      "path": "deliverables/fin01/FIN01_材料包.zip",
+      "sha256": "fcb4c11f26ece3b565123afda90b0c170b4271fa10d5eabe52603cce0dc33d8b"
+    }
+  ],
+  "answer_and_rubric_shared": false,
+  "product_share_url": null,
+  "feedback_url": null,
+  "score": null,
+  "official_steps": null,
+  "notes": [
+    "Official server conversation ID observed after accepted send. No final answer or tool execution log observed yet.",
+    "Background model wait does not reserve shared foreground."
+  ]
+}

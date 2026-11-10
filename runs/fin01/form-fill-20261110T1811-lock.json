@@ -1,0 +1,16 @@
+{
+  "status": "BLOCKED_MAC_LOCKED",
+  "platform_item_id": "7705055555161788179",
+  "browser": "Safari",
+  "observed_before_block": [
+    "Expert credential placeholders replaced with description of verifiable task artifacts, without invented employment years or institution",
+    "Both attachment necessity descriptions filled",
+    "Numeric and reasonable-alternative sections of Rubric 1 expanded"
+  ],
+  "interrupted_call": "Attempted Rubric 1 optional fields and addition of Rubrics 2-3; completion not observed, must reread before retry",
+  "error": "The Mac is locked and automatic unlock could not unlock it. Ask the user to unlock the Mac manually before continuing.",
+  "product_run_started": false,
+  "platform_submitted": false,
+  "user_action": "Manual Mac unlock requested; no credentials requested",
+  "gui_lease_released": true
+}

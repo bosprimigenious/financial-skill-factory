@@ -1,0 +1,68 @@
+{
+  "status": "EXPERT_REVIEW_COMPLETED",
+  "candidate_sha256": "78c8aece144c63c91d606d25be85347bd5837e1836566ac974f588eead29c563",
+  "rating": "基本达标",
+  "criteria": [
+    {
+      "rubric": 1,
+      "verdict": "满足",
+      "evidence": "D1!C3:C6,H3:I6",
+      "basis": "四源频率、历史起点、许可与限制齐全"
+    },
+    {
+      "rubric": 2,
+      "verdict": "合理替代，呈现有缺项",
+      "evidence": "D1!F3:F6; D2!J3:K10; D0!B9",
+      "basis": "识别66历史与6快照、S01 T+1；未单列前视风险比例，原题因子可用时点未固定，不按未声明数值扣错"
+    },
+    {
+      "rubric": 3,
+      "verdict": "不满足",
+      "evidence": "D4!D4:E4",
+      "basis": "仅同码跨所，未逐条列valid_from/valid_to与观测日有效期核对"
+    },
+    {
+      "rubric": 4,
+      "verdict": "满足",
+      "evidence": "D2!E3:H10,M7",
+      "basis": "字段定义、单位、容差、频率及指数不复权"
+    },
+    {
+      "rubric": 5,
+      "verdict": "满足，合理替代",
+      "evidence": "D1!G3:G6; D0!B6:B7",
+      "basis": "1/1,1/1,0/17,0/242正确；source×field口径8=7+1已声明，不强制GT另一个主键10=7+3"
+    },
+    {
+      "rubric": 6,
+      "verdict": "合理替代",
+      "evidence": "D3!D3:D4; D0!B10",
+      "basis": "S03 NOT_PROVEN与S04 NOT_OBSERVED正确；S02六个最终值对象非新增原始空值"
+    },
+    {
+      "rubric": 7,
+      "verdict": "满足",
+      "evidence": "D3!C3:E4",
+      "basis": "拒绝理由引用具体行号、空值、缺时点与M1 known_limit"
+    },
+    {
+      "rubric": 8,
+      "verdict": "满足",
+      "evidence": "D2!K4:K9,M4:M9; D4!E10",
+      "basis": "未按0补缺、未用观测日代替发布日、剔除盘中快照、禁止权重反推"
+    },
+    {
+      "rubric": 9,
+      "verdict": "不满足完整加分条件",
+      "evidence": "D3!F3:F4",
+      "basis": "给了补齐官方材料/暂用现源的方向，但缺具体获取方式"
+    }
+  ],
+  "official_judge_score": null,
+  "official_steps": null,
+  "difficulty_gate": "UNVERIFIED_NOT_CLAIMED",
+  "product_elapsed_seconds": 403,
+  "xlsx_readback_note": "Declared dimension=A1 on all sheets. First read_only read truncated to A1. Reset dimensions and independently parse XML; actual 5-sheet contents complete. Original workbook bytes unchanged.",
+  "submission_authorized": true,
+  "platform_submitted": false
+}

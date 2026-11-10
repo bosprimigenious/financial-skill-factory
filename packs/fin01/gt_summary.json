@@ -4,7 +4,7 @@
   "observed_entities_total": 2,
   "overall_coverage_ratio": 0.0077,
   "not_proven_records_total": 6,
-  "records_missing_released_at_total": 0,
+  "records_missing_released_at_total": 6,
   "sources_failing_pit": [
     "S03",
     "S04"

@@ -1,0 +1,40 @@
+{
+  "observed_at": "2026-11-10T19:29:53+08:00",
+  "task_id": "7705055555161788179",
+  "form_url": "https://www.corexpertdata.com/operation/task-v2/7704882673312255744/mark-v3/1/7705055555161788179?itemID=7705055555161788179",
+  "rubrics": {
+    "total": 9,
+    "complete": 9,
+    "visible_confirmation": "共 9 条，其中 9 条已完整填写。"
+  },
+  "saved_at": "2026-11-10T19:29:14+08:00",
+  "attachments_visible_before_submit": [
+    "FIN01_材料包.zip",
+    "FIN01_计算底稿_复核版.zip",
+    "FIN01_豆包实际输出.zip"
+  ],
+  "old_gt_attachment_reference_removed": true,
+  "model": {
+    "product": "豆包会员-工作-云电脑-豆包2.1pro-推理强度高",
+    "runtime_seconds": 403,
+    "official_steps": null,
+    "official_judge_score": null,
+    "share_url": "https://www.doubao.com/thread/x1Wzz9jcKrvYHuQr9",
+    "chat_url": "https://www.doubao.com/chat/38452918511808002",
+    "rating": "基本达标"
+  },
+  "submission": {
+    "button_clicked": true,
+    "redirected_home": true,
+    "reopened_original_task_message": "已完成全部题目",
+    "quality_check_passed": null,
+    "difficulty_accepted": false
+  },
+  "attempts_and_limitations": [
+    "Safari native file picker kept upload disabled for selected xlsx and zip; cancelled without forcing disabled controls.",
+    "Chrome first address entry via typeText lost punctuation and produced a search URL; replaced via paste with the exact task URL.",
+    "Chrome independently opened task showed all 9 rubric items complete; both attachment uploads succeeded.",
+    "Original model XLSX preserved inside transport ZIP; wrapper was created locally and is not claimed as model-generated.",
+    "Submission is verified by re-entry completion message, not by a quality-check pass receipt."
+  ]
+}

@@ -67,7 +67,7 @@ def main() -> int:
             ts, rel = parse_dt(r["ts"]), parse_dt(r["released_at"])
             if ts and rel:
                 lags.append((rel - ts).total_seconds() / 86400)
-        no_release = [r for r in obs if valued and not (r["released_at"] or "").strip()]
+        no_release = [r for r in obs if not (r["released_at"] or "").strip()]
         rows.append({
             "source_id": sid,
             "declared_entities": declared[sid],

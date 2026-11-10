@@ -1,0 +1,101 @@
+{
+  "frozen_for_run": "2026-11-10T19:00:56.626+08:00",
+  "criteria": [
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "源可得性与许可",
+      "acceptance_standard": "逐源给出频率、历史起点与许可，并与 M1 一致；漏源或无依据认定许可可用于本任务，则不达标。",
+      "professional_judgment": "许可缺失或仅展示的源不得入模，专业判断以可商用、可研究的明确使用范围为准；公开可见不等于允许商业再分发。",
+      "evidence_source_and_location": "M1_数据源目录.csv：source_id、license、freq、history_start；00_附件说明.md：数据来源与使用约定。",
+      "numeric_tolerance": "无（二值判定）",
+      "reasonable_alternative_or_boundary": "以同义表述说明许可限制均可",
+      "gate_candidate": "否"
+    },
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "时点真实性（PIT）",
+      "acceptance_standard": "逐条比较 released_at 与 ts，给出前视风险比例",
+      "professional_judgment": "以发布日而非观测日判可得性，是避免前视的唯一口径",
+      "evidence_source_and_location": "M2#released_at,ts",
+      "numeric_tolerance": "比例容差 0.0001",
+      "reasonable_alternative_or_boundary": "按日粒度或小时粒度计算均可，须声明",
+      "gate_candidate": "是（前视误判会使整题用途失效）"
+    },
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "实体映射有效期",
+      "acceptance_standard": "逐条核对 valid_from/valid_to 与观测日重叠，覆盖一对多",
+      "professional_judgment": "代码复用以 valid_to 切分，不得跨期合并",
+      "evidence_source_and_location": "M3#valid_from,valid_to",
+      "numeric_tolerance": "日期精确",
+      "reasonable_alternative_or_boundary": "同一实体多代码按 valid 区间拆分均等价",
+      "gate_candidate": "否"
+    },
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "字段定义与单位频率",
+      "acceptance_standard": "逐字段给定义/单位/频率，与 M4 一致",
+      "professional_judgment": "单位与频率不一致会让因子在横截面上不可比",
+      "evidence_source_and_location": "M4#指标定义",
+      "numeric_tolerance": "无",
+      "reasonable_alternative_or_boundary": "同义单位表述（元/万元）须换算后等价",
+      "gate_candidate": "否"
+    },
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "覆盖率分子分母",
+      "acceptance_standard": "分子=实际观测实体数，分母=M1 声明覆盖数",
+      "professional_judgment": "分母取自声明而非实际观测，否则覆盖率恒为 100%",
+      "evidence_source_and_location": "M1#coverage_note, M2#entity",
+      "numeric_tolerance": "整数精确",
+      "reasonable_alternative_or_boundary": "按字段或按实体计算均可，须声明",
+      "gate_candidate": "否"
+    },
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "缺失语义区分",
+      "acceptance_standard": "逐条区分 UNKNOWN/NOT_OBSERVED/NOT_PROVEN",
+      "professional_judgment": "三者混用会系统性高估覆盖率",
+      "evidence_source_and_location": "M2#value 空值标记",
+      "numeric_tolerance": "无",
+      "reasonable_alternative_or_boundary": "以等价英文标记均可",
+      "gate_candidate": "否"
+    },
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "拒绝理由可复核",
+      "acceptance_standard": "每条拒绝理由指向具体记录或字段事实",
+      "professional_judgment": "不可复核的理由等于未验收",
+      "evidence_source_and_location": "D3 各行 + M1/M2 行号",
+      "numeric_tolerance": "无",
+      "reasonable_alternative_or_boundary": "同类理由可合并但须列全部 source_id",
+      "gate_candidate": "否"
+    },
+    {
+      "rubric_type": "负向项",
+      "core_criterion": "把缺失当 0 或把快照当 PIT",
+      "acceptance_standard": "出现以下任一即不得分：NOT_PROVEN 记为 0；以最新快照回测；用观测日代替发布日",
+      "professional_judgment": "这三类做法会让结论看似完整但不可复现",
+      "evidence_source_and_location": "D2/D4 对照 M2",
+      "numeric_tolerance": "无",
+      "reasonable_alternative_or_boundary": "无（负向项不接受替代）",
+      "gate_candidate": "是"
+    },
+    {
+      "rubric_type": "加分项",
+      "core_criterion": "给出可执行替代源",
+      "acceptance_standard": "为被拒源给出可获取的替代源与获取方式",
+      "professional_judgment": "超出验收本身，属额外价值",
+      "evidence_source_and_location": "D3 替代方案列",
+      "numeric_tolerance": "无",
+      "reasonable_alternative_or_boundary": "替代源可来自公开渠道",
+      "gate_candidate": "否"
+    }
+  ],
+  "weights": "Platform rubric has no explicit points field; no invented official Judge score",
+  "gate_candidates": [
+    2,
+    8
+  ],
+  "source_note": "R1 reflects observed live form edits saved before model input; R2-R9 copied from author rubric.csv and filled before model run"
+}
