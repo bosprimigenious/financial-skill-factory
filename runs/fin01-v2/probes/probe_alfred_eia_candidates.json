@@ -1,0 +1,35 @@
+[
+  {
+    "filename": "alfred_candidate_WCESTUS1.csv",
+    "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=WCESTUS1,WCESTUS1,WCESTUS1,WCESTUS1&vintage_date=2025-09-04,2025-09-11,2025-09-18,2025-11-27",
+    "retrieved_at": "2026-11-10T12:44:55.744851+00:00",
+    "exit_code": 0,
+    "status_and_bytes": "404 0",
+    "error": "",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "parse_error": "list index out of range"
+  },
+  {
+    "filename": "alfred_candidate_WGTSTUS1.csv",
+    "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=WGTSTUS1,WGTSTUS1,WGTSTUS1,WGTSTUS1&vintage_date=2025-09-04,2025-09-11,2025-09-18,2025-11-27",
+    "retrieved_at": "2026-11-10T12:44:55.746121+00:00",
+    "exit_code": 0,
+    "status_and_bytes": "404 0",
+    "error": "",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "parse_error": "list index out of range"
+  },
+  {
+    "filename": "alfred_candidate_WPULEUS3.csv",
+    "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=WPULEUS3,WPULEUS3,WPULEUS3,WPULEUS3&vintage_date=2025-09-04,2025-09-11,2025-09-18,2025-11-27",
+    "retrieved_at": "2026-11-10T12:44:55.747801+00:00",
+    "exit_code": 0,
+    "status_and_bytes": "404 0",
+    "error": "",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "parse_error": "list index out of range"
+  }
+]

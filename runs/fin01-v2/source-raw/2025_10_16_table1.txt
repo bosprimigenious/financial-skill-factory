@@ -1,0 +1,112 @@
+Weekly Petroleum Status Report/Energy Information Administration
+1
+Table 1. U.S. Petroleum Balance Sheet, Week Ending 10/10/2025
+Petroleum Stocks
+(Million Barrels)
+Current
+Week
+Week Ago Year Ago
+10/3/25 Difference Percent
+Change 10/11/24 Difference Percent
+Change10/10/25
+Crude Oil ...................................................... 831.5 827.2 4.3 0.5 804.4 27.1 3.4
+Commercial (Excluding SPR)1 ................. 423.8 420.3 3.5 0.8 420.5 3.2 0.8
+Strategic Petroleum Reserve (SPR)2 ....... 407.7 407.0 0.8 0.2 383.9 23.9 6.2
+Total Motor Gasoline3 .................................. 218.8 219.1 -0.3 -0.1 212.7 6.1 2.9
+Reformulated ............................................ 0.0 0.0 0.0 20.0 0.0 0.0 87.5
+Conventional ............................................. 15.6 15.7 -0.1 -0.3 13.4 2.2 16.4
+Blending Components .............................. 203.1 203.4 -0.2 -0.1 199.2 3.9 2.0
+Fuel Ethanol ................................................. 22.6 22.7 -0.1 -0.4 22.3 0.4 1.6
+Kerosene-Type Jet Fuel ............................... 44.4 44.3 0.1 0.3 42.8 1.6 3.7
+Distillate Fuel Oil3 ......................................... 117.0 121.6 -4.5 -3.7 115.0 2.1 1.8
+15 ppm sulfur and Under3 ........................ 106.5 110.6 -4.0 -3.7 105.7 0.8 0.8
+> 15 ppm to 500 ppm sulfur ...................... 3.6 3.5 0.0 1.1 2.7 0.9 33.1
+> 500 ppm sulfur ....................................... 6.9 7.4 -0.5 -7.0 6.6 0.3 4.8
+Residual Fuel Oil .......................................... 21.4 21.2 0.3 1.2 24.4 -3.0 -12.2
+Propane/Propylene4 ..................................... 102.4 100.5 1.9 1.9 103.1 -0.8 -0.7
+Other Oils5 ................................................... 338.3 337.6 0.8 0.2 311.1 27.3 8.8
+Unfinished Oils ......................................... 83.4 83.5 0.0 -0.1 82.3 1.1 1.4
+Total Stocks (Including SPR)2,3,4 ................ 1,696.6 1,694.1 2.4 0.1 1,635.8 60.7 3.7
+Total Stocks (Excluding SPR)3,4 ................. 1,288.8 1,287.2 1.7 0.1 1,252.0 36.9 2.9
+Petroleum Supply
+(Thousand Barrels per Day)
+Current
+Week
+Week Ago Year Ago Four-Week Averages
+Week Ending
+Cumulative Daily Average
+10/3/25 Difference 10/11/24 Difference 10/10/25 10/11/24 Percent
+Change10/10/25 10/10/25 10/11/24 Percent
+Change
+Crude Oil Supply
+(1)     Domestic Production6 ...................... 13,636 13,629 7 13,500 136 13,568 13,350 1.6 13,450 13,198 1.9
+(2)        Alaska .............................................. 432 430 2 431 1 428 430 -0.4 419 419 -0.1
+(3)        Lower 48 .......................................... 13,204 13,199 5 13,100 104 13,140 12,950 1.5 13,031 12,798 1.8
+(4)     Transfers to Crude Oil Supply ......... 459 266 193 410 49 318 540 -41.0 527 488 8.0
+(5)        Alaskan NGL production7 ................ 47 47 0 47 0 46 47 -1.5 47 50 -5.7
+(6)        Natural Gasoline, Condensate, and
+Unfinished Oils8 ........................................... 412 219 193 363 49 272 493 -44.8 480 438 9.6
+(7)     Net Imports (Including SPR) ............ 1,059 2,813 -1,754 1,406 -346 1,991 2,290 -13.0 2,261 2,444 -7.5
+(8)        Imports ............................................. 5,525 6,403 -878 5,529 -3 6,064 6,213 -2.4 6,132 6,580 -6.8
+(9)            Commercial Crude Oil .................. 5,525 6,403 -878 5,529 -3 6,064 6,213 -2.4 6,132 6,580 -6.8
+(10)            Imports by SPR .......................... 0000000 0 .000 0 .0
+(11)            Imports into SPR by Others ....... 0000000 0 .000 0 .0
+(12)        Exports ........................................... 4,466 3,590 876 4,123 343 4,073 3,923 3.8 3,871 4,136 -6.4
+(13)   Stock Change (+/build; -/draw) ........ 612 571 41 -177 789 373 225 – – 81 64 – –
+(14)       Commercial Stock Change ............. 503 531 -27 -313 816 301 108 – – 31 -39 – –
+(15)       SPR Stock Change ......................... 109 41 68 136 -27 72 117 – – 50 103 – –
+(16)   Adjustment9 ...................................... 587 161 426 262 325 513 -108 – – 129 33 – –
+(17)   Crude Oil Input to Refineries ........... 15,130 16,297 -1,167 15,755 -625 16,018 15,847 1.1 16,286 16,100 1.2
+Other Supply
+(18)   Production ......................................... 9,892 10,084 -193 9,257 635 9,948 9,354 6.3 9,526 9,097 4.7
+(19)      Natural Gas Plant Liquids10 ............ 7,600 7,725 -124 6,906 695 7,635 6,995 9.2 7,182 6,730 6.7
+(20)      Renewable Fuels/Oxygenate Plant .. 1,379 1,379 0 1,376 3 1,348 1,370 -1.6 1,365 1,346 1.4
+(21)           Fuel Ethanol ................................ 1,074 1,071 3 1,042 32 1,041 1,022 1.8 1,068 1,041 2.6
+(22)          Other11 ........................................ 305 308 -3 334 -30 307 348 -11.6 297 305 -2.6
+(23)      Refinery Processing Gain ................ 912 981 -68 975 -62 964 989 -2.5 979 1,022 -4.2
+(24)   Net Imports12 .................................... -5,309 -5,042 -266 -4,818 -491 -5,260 -5,303 – – -4,987 -4,732 – –
+(25)      Imports12 ......................................... 1,691 1,768 -76 1,613 78 1,799 1,486 21.1 1,742 1,863 -6.5
+(26)      Exports12 ......................................... 7,000 6,810 190 6,431 569 7,059 6,790 4.0 6,729 6,595 2.0
+(27)   Stock Change (+/build; -/draw)3,13 -266 -706 441 -690 424 -72 -1,202 – – 165 28 – –
+(28)   Adjustment14 .................................... 206 210 -4 223 -17 209 219 – – 212 222 – –
+(29)   Transfers to Crude Oil Supply15 ..... -459 -266 -193 -410 -49 -318 -540 -41.0 -527 -488 –
+Products Supplied
+(30)   Total16 ................................................ 19,726 21,990 -2,264 20,697 -971 20,669 20,779 -0.5 20,344 20,171 0.9
+(31)     Finished Motor Gasoline17 ............... 8,455 8,919 -464 8,620 -165 8,713 9,000 -3.2 8,787 8,856 -0.8
+(32)     Kerosene-Type Jet Fuel .................... 1,691 1,698 -7 1,647 44 1,657 1,740 -4.8 1,710 1,649 3.7
+(33)     Distillate Fuel Oil ............................... 4,233 4,346 -113 4,212 21 3,983 3,976 0.2 3,813 3,701 3.0
+(34)     Residual Fuel Oil ............................... 220 88 133 355 -135 262 323 -18.9 280 280 -0.2
+(35)     Propane/Propylene18 ....................... 495 1,474 -979 783 -288 849 998 -14.9 976 956 2.1
+(36)     Other Oils19 ...................................... 4,632 5,465 -833 5,080 -449 5,204 4,743 9.7 4,778 4,729 1.0
+Net Imports of Crude and Petroleum Products
+(33)   Total .................................................... -4,249 -2,229 -2,020 -3,412 -837 -3,268 -3,013 8.5 -2,727 -2,288 19.2
+– – = Not Applicable.
+– = Data Not Available.
+1 Includes those domestic and Customs-cleared foreign crude oil stocks held at refineries and tank farms or in transit thereto, and in pipelines.
+2 Includes non-U.S. stocks held under foreign or commercial storage agreements.
+3 Excludes stocks located in the "Northeast Heating Oil Reserve", "Northeast Regional Refined Petroleum Product Reserve", and "State of New York’s Strategic Fuels Reserve Program." For details see Appendix
+C.
+4 Prior to April 10, 2020 this included stocks of propylene held at terminals.
+5 Includes weekly data for NGPLs and LRGs (except propane/propylene), kerosene, and asphalt and road oil; and estimated stocks of minor products based on monthly data.
+6 Domestic crude oil production includes lease condensate and is estimated using a combination of short-term forecasts for the lower 48 states and the latest available production estimates from Alaska. Weekly
+crude oil production estimates are rounded to the nearest 1,000 barrels per day (b/d) for the U.S. and the Lower 48 states. This change is a shift from rounding to the nearest 100,000 b/d. For more details see
+Appendix B, under "Data Obtained Through Models." 
+7 Weekly Production of total NGL in Alaska as reported on EIA-806.
+8 Natural gasoline (excluding condensate) and unfinished oils transfers to crude oil supply from most recent "Petroleum Supply Monthly" plus weekly production of condensate minus weekly stock change of
+condensate then multiply the total by -1.
+9 Formerly known as Unaccounted-for Crude Oil, this is a balancing item. Starting with the November 15, 2023 publication, crude oil adjustment includes transfers to crude oil supply (line 4). See Glossary for further
+explanation.
+10 Formerly known as Natural Gas Liquids Production, prior to June 4, 2010, this included adjustments for fuel ethanol and motor gasoline blending components.
+11 Includes denaturants (e.g. Pentanes Plus) and other renewables (e.g. biodiesel). Prior to April 10, 2020 this included other oxygenates (e.g. ETBE and MTBE).
+12 Includes finished petroleum products, unfinished oils, gasoline blending components, fuel ethanol, and NGPLs and LRGs.
+13 Includes an estimate of minor product stock change based on monthly data.
+14 Includes monthly adjustments for hydrogen and other hydrocarbon production.
+15 Total barrels of NGL and unfinished oils subtracted from supply of products and transferred to supply of crude oil (line 4).
+16 Total Product Supplied = Crude Oil Input to Refineries (line 17) + Other Supply Production (line 18) + Net Product Imports (line 24) – Stock Change (line 27) + Adjustment (line 28) + Transfers to crude oil supply
+(line 29).
+17 See Table 2, footnote #3.
+18 Calculation of propane product supplied does not include propane produced in Alaska that was transferred to crude oil (line 5).
+19 Other Oil Product Supplied = Total Product Supplied (line 30) less the product supplied of Finished Motor Gasoline (line 31), Kerosene-Type Jet Fuel (line 32), Distillate Fuel Oil (line 33), Residual Fuel Oil (line
+34), and Propane/Propylene (line 35).
+Notes: Some data estimated (see Sources for clarification). Data may not add to total due to independent rounding. Differences and percent changes are calculated using unrounded numbers.
+Data source:  See page 29.

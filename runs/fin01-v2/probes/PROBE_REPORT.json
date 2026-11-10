@@ -1,0 +1,116 @@
+{
+  "status": "PROBE_COMPLETE_NOT_TASK_ACCEPTANCE",
+  "created_at": "2026-11-10T12:45:52.993364+00:00",
+  "recommended": "Keep the main EIA industry task coherent. Do not add unrelated ICSA merely to increase workload. ALFRED ICSA is a usable independent revision probe, but requested EIA series endpoints returned 404 and are excluded.",
+  "ALFRED_ICSA": {
+    "one_vintage": {
+      "file": "alfred_curl_icsa.csv",
+      "rows": 2983,
+      "header": [
+        "observation_date",
+        "ICSA_20240307"
+      ]
+    },
+    "three_vintages_2024": {
+      "file": "alfred_icsa_vintages_curl.csv",
+      "rows": 2985,
+      "header": [
+        "observation_date",
+        "ICSA_20240307",
+        "ICSA_20240314",
+        "ICSA_20240321"
+      ],
+      "independent_single_column_agreement_rows": 9,
+      "revised_observations_nonempty_comparison": 191
+    },
+    "three_vintages_2025": {
+      "file": "alfred_icsa_2025_vintages_curl.csv",
+      "rows": 3063,
+      "header": [
+        "observation_date",
+        "ICSA_20250904",
+        "ICSA_20250911",
+        "ICSA_20250918"
+      ],
+      "focus_window_rows": [
+        [
+          "2025-08-02",
+          "227000",
+          "227000",
+          "227000"
+        ],
+        [
+          "2025-08-09",
+          "224000",
+          "224000",
+          "224000"
+        ],
+        [
+          "2025-08-16",
+          "234000",
+          "234000",
+          "234000"
+        ],
+        [
+          "2025-08-23",
+          "229000",
+          "229000",
+          "229000"
+        ],
+        [
+          "2025-08-30",
+          "237000",
+          "236000",
+          "236000"
+        ],
+        [
+          "2025-09-06",
+          "",
+          "263000",
+          "264000"
+        ],
+        [
+          "2025-09-13",
+          "",
+          "",
+          "231000"
+        ]
+      ]
+    },
+    "date_validation": "All 2024-03-07, 2024-03-14, 2024-03-21, 2025-09-04, 2025-09-11, 2025-09-18 appear as actual vintage options in alfred_icsa_form_curl.html (905 options total).",
+    "license_evidence": "alfred_icsa_metadata_curl.html has Public Domain: Citation Requested; do not generalize to all FRED series.",
+    "PIT_limit": "ALFRED vintage is date-level. Official help uses source release date when available, provider date next, first FRED availability date otherwise. It does not prove intraday arrival. Current Updated timestamp is not a historical release log.",
+    "download_caveat": "cosd/coed did not clip all columns in a multi-series graph request. Filter the returned observation_date explicitly; validate column headers and values."
+  },
+  "EIA": {
+    "successes": [
+      "eia_20240403_table1_verified.csv",
+      "eia_20240410_table1_verified.csv",
+      "eia_20241114_table1_verified.csv",
+      "eia_crude_stocks.xls",
+      "eia_weekly_schedule.html",
+      "eia_copyright.html"
+    ],
+    "CSV_parse": "Each Table 1 raw CSV has 59 physical rows with 1/8/13 columns (metadata/footnotes and multiple sections). Decode cp1252 and split sections before counting data rows. Do not claim 58 homogeneous observations.",
+    "XLS_parse": "Downloaded 130048B XLS but not parsed: bundled xlrd absent. Prefer verified official CSV; this is a parser dependency limitation, not data corruption.",
+    "license": "EIA official Copyrights and Reuse allows use/distribution of government information with source and publication date acknowledgement, subject to any separately noted third-party material."
+  },
+  "failures": [
+    "urllib ALFRED/FRED reads timed out; curl succeeded through same required local proxy.",
+    "Guessed EIA /download/table1.csv archive paths returned 404; actual 2024 archive links use /csv/table1.csv.",
+    "Current https://www.eia.gov/petroleum/supply/weekly/csv/table1.csv returned404; current site links use ir.eia.gov/wpsr/table1.csv.",
+    "DOL current PDF returned403 through local download; web reader can see it, but no byte snapshot was obtained.",
+    "Requested WCESTUS1/WGTSTUS1/WPULEUS3 ALFRED graph endpoints returned HTTP404 with zero bytes; empty CSV parsing raised local list-index error, which is our probe error and not an additional source defect."
+  ],
+  "scope": "No GUI use, no external messages, no existing task-package edits. Only new probes directory files.",
+  "ALFRED_EIA_candidates": {
+    "ids": [
+      "WCESTUS1",
+      "WGTSTUS1",
+      "WPULEUS3"
+    ],
+    "graph_status": "All HTTP404 zero bytes",
+    "series_page_status": "All https://alfred.stlouisfed.org/series?seid=<id> also HTTP404 zero bytes",
+    "decision": "Exclude these exact IDs. This does not prove no related petroleum series exists anywhere in ALFRED."
+  }
+}

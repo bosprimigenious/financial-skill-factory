@@ -1,0 +1,32 @@
+[
+  {
+    "series_id": "WCESTUS1",
+    "url": "https://alfred.stlouisfed.org/series?seid=WCESTUS1",
+    "file": "alfred_candidate_WCESTUS1_page.html",
+    "retrieved_at": "2026-11-10T12:45:53.102659+00:00",
+    "exit_code": 0,
+    "status_and_bytes": "404 0",
+    "error": "",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "series_id": "WGTSTUS1",
+    "url": "https://alfred.stlouisfed.org/series?seid=WGTSTUS1",
+    "file": "alfred_candidate_WGTSTUS1_page.html",
+    "retrieved_at": "2026-11-10T12:45:53.106501+00:00",
+    "exit_code": 0,
+    "status_and_bytes": "404 0",
+    "error": "",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "series_id": "WPULEUS3",
+    "url": "https://alfred.stlouisfed.org/series?seid=WPULEUS3",
+    "file": "alfred_candidate_WPULEUS3_page.html",
+    "retrieved_at": "2026-11-10T12:45:52.949438+00:00",
+    "exit_code": 0,
+    "status_and_bytes": "404 0",
+    "error": "",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

@@ -1,0 +1,490 @@
+[
+  {
+    "file": "2025_08_27_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_08_27/wpsr_2025_08_27.php",
+    "status": 200,
+    "bytes": 66479,
+    "sha256": "9fcc9c5e2719708cfe830441ffe9fef4e0f151a4cdfa374b4949a8c97d3b1a08",
+    "fetched_at": "2026-11-10T12:43:22.348710+00:00"
+  },
+  {
+    "file": "2025_08_27_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_08_27/csv/table1.csv",
+    "status": 200,
+    "bytes": 6550,
+    "sha256": "f9a4329112eb669d1db3dcd3ab84552096f4ec41559416832e71981070d2965f",
+    "fetched_at": "2026-11-10T12:43:23.565785+00:00"
+  },
+  {
+    "file": "2025_08_27_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_08_27/csv/table2.csv",
+    "status": 200,
+    "bytes": 8354,
+    "sha256": "ceb5922a2477774ade79350c62de134fb6a2c0f9b20a2486ec59612a3bd66628",
+    "fetched_at": "2026-11-10T12:43:22.341864+00:00"
+  },
+  {
+    "file": "2025_08_27_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_08_27/csv/table4.csv",
+    "status": 200,
+    "bytes": 2318,
+    "sha256": "a308d7b2aceab877ecde04292a906415fc09ef49f059d6fa93bbd194795c653e",
+    "fetched_at": "2026-11-10T12:43:21.942922+00:00"
+  },
+  {
+    "file": "2025_09_04_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_04/wpsr_2025_09_04.php",
+    "status": 200,
+    "bytes": 66481,
+    "sha256": "62e8b79d13135fe940758d642d2c50146582192fc89f9a35c65d902c44b0532c",
+    "fetched_at": "2026-11-10T12:43:24.299673+00:00"
+  },
+  {
+    "file": "2025_09_04_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_04/csv/table1.csv",
+    "status": 200,
+    "bytes": 6537,
+    "sha256": "9a11c50f05ea8195341a1b05d21c5558ddee7a9f04cbe849818bb838d671714a",
+    "fetched_at": "2026-11-10T12:43:23.327138+00:00"
+  },
+  {
+    "file": "2025_09_04_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_04/csv/table2.csv",
+    "status": 200,
+    "bytes": 8350,
+    "sha256": "b9d7a01b80de47c76dc0f038ad37547c1f222ef045632b51f7d9c17c181fafd8",
+    "fetched_at": "2026-11-10T12:43:23.547599+00:00"
+  },
+  {
+    "file": "2025_09_04_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_04/csv/table4.csv",
+    "status": 200,
+    "bytes": 2303,
+    "sha256": "1125541f707ab3c864fd696c2c652111729c0ee01fb9e6f5b971a7f57bf58385",
+    "fetched_at": "2026-11-10T12:43:24.729562+00:00"
+  },
+  {
+    "file": "2025_09_10_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_10/wpsr_2025_09_10.php",
+    "status": 200,
+    "bytes": 66475,
+    "sha256": "db90b92d51bea88c6b128575443d5a03fd81cef24fc79c336e4bd0c42fe5ad26",
+    "fetched_at": "2026-11-10T12:43:26.182819+00:00"
+  },
+  {
+    "file": "2025_09_10_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_10/csv/table1.csv",
+    "status": 200,
+    "bytes": 6507,
+    "sha256": "7552918e50ee677164f66a4ef62fe21c955bfda7252258909d4d0c1f7c5b4616",
+    "fetched_at": "2026-11-10T12:43:25.335038+00:00"
+  },
+  {
+    "file": "2025_09_10_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_10/csv/table2.csv",
+    "status": 200,
+    "bytes": 8349,
+    "sha256": "e5b351b1862eb7e482e1fe56e6b5ed3aaf825e03b548bca6cde9d4fbe51ef341",
+    "fetched_at": "2026-11-10T12:43:25.668171+00:00"
+  },
+  {
+    "file": "2025_09_10_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_10/csv/table4.csv",
+    "status": 200,
+    "bytes": 2297,
+    "sha256": "eaed85d3913c5cdea246ca7a22eb669623c72934093395277f7b1f79f59730fd",
+    "fetched_at": "2026-11-10T12:43:25.755846+00:00"
+  },
+  {
+    "file": "2025_09_17_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_17/wpsr_2025_09_17.php",
+    "status": 200,
+    "bytes": 66481,
+    "sha256": "534af5278c7356b26a9423f179bc1300f2600c9ffb7d93fce1d9f278090dcb6e",
+    "fetched_at": "2026-11-10T12:43:26.959709+00:00"
+  },
+  {
+    "file": "2025_09_17_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_17/csv/table1.csv",
+    "status": 200,
+    "bytes": 6578,
+    "sha256": "1a1ae6e3d8eb7d4a572c7dada230793577e145148e8e51ec49fcd2efe1f4b9e9",
+    "fetched_at": "2026-11-10T12:43:26.975251+00:00"
+  },
+  {
+    "file": "2025_09_17_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_17/csv/table2.csv",
+    "status": 200,
+    "bytes": 8363,
+    "sha256": "266dd54152791cfc63e42e9771664c7740932b9cc6904598852e0cce7d35179f",
+    "fetched_at": "2026-11-10T12:43:30.087550+00:00"
+  },
+  {
+    "file": "2025_09_17_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_17/csv/table4.csv",
+    "status": 200,
+    "bytes": 2307,
+    "sha256": "1154672e0c514715c9f42e2836e5a562b2a55e59a5603f53a0d5900b12942eb2",
+    "fetched_at": "2026-11-10T12:43:27.534105+00:00"
+  },
+  {
+    "file": "2025_09_24_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_24/wpsr_2025_09_24.php",
+    "status": 200,
+    "bytes": 66481,
+    "sha256": "fb9e099677df421fe46a4590a7635a102f2700d7c5205a5ab3b686cefaff533c",
+    "fetched_at": "2026-11-10T12:43:28.510426+00:00"
+  },
+  {
+    "file": "2025_09_24_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_24/csv/table1.csv",
+    "status": 200,
+    "bytes": 6562,
+    "sha256": "7cd07f9685fb5c60c5fdf7e531c42c80aae7d3aae3e10609d93546f4d5063d52",
+    "fetched_at": "2026-11-10T12:43:28.452913+00:00"
+  },
+  {
+    "file": "2025_09_24_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_24/csv/table2.csv",
+    "status": 200,
+    "bytes": 8353,
+    "sha256": "b8a15bf29ae96e11ed49efe2b684c5d7adda25f5699afc3e6666cdca005af19b",
+    "fetched_at": "2026-11-10T12:43:28.455365+00:00"
+  },
+  {
+    "file": "2025_09_24_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_09_24/csv/table4.csv",
+    "status": 200,
+    "bytes": 2306,
+    "sha256": "f94c440080cbf746378b06cbd3055dc33c42d2cf07e23a58218b41a92746d840",
+    "fetched_at": "2026-11-10T12:43:29.722594+00:00"
+  },
+  {
+    "file": "2025_10_01_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_01/wpsr_2025_10_01.php",
+    "status": 200,
+    "bytes": 66478,
+    "sha256": "ba87da16ae8d0448296329019c56442ee9e38278a8bec460b5febeefa6aed124",
+    "fetched_at": "2026-11-10T12:43:30.041904+00:00"
+  },
+  {
+    "file": "2025_10_01_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_01/csv/table1.csv",
+    "status": 200,
+    "bytes": 6525,
+    "sha256": "9c0255efcaa0ad5d480cf32b54be9db1f3e80a7d5944faf8b26a965c153cef1e",
+    "fetched_at": "2026-11-10T12:43:29.543050+00:00"
+  },
+  {
+    "file": "2025_10_01_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_01/csv/table2.csv",
+    "status": 200,
+    "bytes": 8357,
+    "sha256": "df3ef6ebc724bf40cd32c999c6674da8c6f66e8b50faadd069a1b9ba3fe6abb0",
+    "fetched_at": "2026-11-10T12:43:31.807771+00:00"
+  },
+  {
+    "file": "2025_10_01_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_01/csv/table4.csv",
+    "status": 200,
+    "bytes": 2304,
+    "sha256": "f4522567fd6e40c052bda5d907db876641c1c8b765ccd830fc6673a050afeeae",
+    "fetched_at": "2026-11-10T12:43:32.208439+00:00"
+  },
+  {
+    "file": "2025_10_08_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_08/wpsr_2025_10_08.php",
+    "status": 200,
+    "bytes": 66471,
+    "sha256": "d87605101f898829df4072d9d1d310fee35f98a83aea03eb144f525abb7922b7",
+    "fetched_at": "2026-11-10T12:43:31.530688+00:00"
+  },
+  {
+    "file": "2025_10_08_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_08/csv/table1.csv",
+    "status": 200,
+    "bytes": 6532,
+    "sha256": "f47c7d03934fd91c5df6edfbd874b2869c92cd823a4f284011259118714bec9f",
+    "fetched_at": "2026-11-10T12:43:31.175511+00:00"
+  },
+  {
+    "file": "2025_10_08_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_08/csv/table2.csv",
+    "status": 200,
+    "bytes": 8367,
+    "sha256": "8c1335bbe5d07d1c238ffb5af82453e9f3d688dfc0390c7519ad7b6cd2398e70",
+    "fetched_at": "2026-11-10T12:43:32.735771+00:00"
+  },
+  {
+    "file": "2025_10_08_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_08/csv/table4.csv",
+    "status": 200,
+    "bytes": 2308,
+    "sha256": "72c86df23ec819e549a98a00cbea6f30289e1f996f6a5e00052a3c5815b8e0ce",
+    "fetched_at": "2026-11-10T12:43:33.094893+00:00"
+  },
+  {
+    "file": "2025_10_16_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_16/wpsr_2025_10_16.php",
+    "status": 200,
+    "bytes": 66481,
+    "sha256": "b6a83ada127444b0f9ead46aaa9f20649fcb3fc997fad22f1771a677e471422d",
+    "fetched_at": "2026-11-10T12:43:33.327780+00:00"
+  },
+  {
+    "file": "2025_10_16_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_16/csv/table1.csv",
+    "status": 200,
+    "bytes": 6550,
+    "sha256": "7b345f2e4dff9a7b31f882460d9fed6fac6806510f9672b07447aea4873f1c44",
+    "fetched_at": "2026-11-10T12:43:33.011525+00:00"
+  },
+  {
+    "file": "2025_10_16_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_16/csv/table2.csv",
+    "status": 200,
+    "bytes": 8403,
+    "sha256": "f310332b0d0f7f6dbe3b54a8933cc3b79c674ddd4764f3839529af7aaf326ef4",
+    "fetched_at": "2026-11-10T12:43:33.578540+00:00"
+  },
+  {
+    "file": "2025_10_16_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_16/csv/table4.csv",
+    "status": 200,
+    "bytes": 2297,
+    "sha256": "6e03317cdbe20d879b37d857fff462f217b3e1d9acbf701bd79eb498928eff17",
+    "fetched_at": "2026-11-10T12:43:35.234069+00:00"
+  },
+  {
+    "file": "2025_10_22_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_22/wpsr_2025_10_22.php",
+    "status": 200,
+    "bytes": 66481,
+    "sha256": "283d6d6725d820730517dfdd53274e9fe5ffcb5d35ea563f117533e60ff9b63d",
+    "fetched_at": "2026-11-10T12:43:35.115004+00:00"
+  },
+  {
+    "file": "2025_10_22_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_22/csv/table1.csv",
+    "status": 200,
+    "bytes": 6554,
+    "sha256": "abcf299091fbf8d12d0ca19313a956149fc44773c02a9dfff65b9e70b17ba2f0",
+    "fetched_at": "2026-11-10T12:43:34.822876+00:00"
+  },
+  {
+    "file": "2025_10_22_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_22/csv/table2.csv",
+    "status": 200,
+    "bytes": 8379,
+    "sha256": "e6fc771e96c97c93dc1ad0ad2a978e44c6e12e9ff3dc98fa87ca97d985265a28",
+    "fetched_at": "2026-11-10T12:43:35.263751+00:00"
+  },
+  {
+    "file": "2025_10_22_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_22/csv/table4.csv",
+    "status": 200,
+    "bytes": 2313,
+    "sha256": "0e009c6fcbe2ac274f519ba9fe8d5878a48335c947992e1c81dd4e3bd3c19b40",
+    "fetched_at": "2026-11-10T12:43:35.731117+00:00"
+  },
+  {
+    "file": "2025_10_29_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_29/wpsr_2025_10_29.php",
+    "status": 200,
+    "bytes": 66481,
+    "sha256": "f2e23ee61f9af6ffd3467d935a6a76913a0b18e98f4d378fe068d448a82b4da7",
+    "fetched_at": "2026-11-10T12:43:37.813797+00:00"
+  },
+  {
+    "file": "2025_10_29_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_29/csv/table1.csv",
+    "status": 200,
+    "bytes": 6586,
+    "sha256": "b9ee41a5fedad4966b8db0bd51e24b49b77c9734cbcfc35a0ae7ef6579560b95",
+    "fetched_at": "2026-11-10T12:43:36.438345+00:00"
+  },
+  {
+    "file": "2025_10_29_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_29/csv/table2.csv",
+    "status": 200,
+    "bytes": 8395,
+    "sha256": "ca5676e5d9b233e8f1204cd71615e9425d48b4ad0b7fe05198a35070613de06d",
+    "fetched_at": "2026-11-10T12:43:36.896994+00:00"
+  },
+  {
+    "file": "2025_10_29_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_29/csv/table4.csv",
+    "status": 200,
+    "bytes": 2318,
+    "sha256": "a28647286910f00b749ce1b6f991f3ecd2f283c145c1ab09bdc56b014073ef10",
+    "fetched_at": "2026-11-10T12:43:36.863320+00:00"
+  },
+  {
+    "file": "2025_11_05_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_05/wpsr_2025_11_05.php",
+    "status": 200,
+    "bytes": 66481,
+    "sha256": "ff9e4d82aa4031412f84ded2604ac34674010d64f194478745f0dbaff4acd1cf",
+    "fetched_at": "2026-11-10T12:43:37.750315+00:00"
+  },
+  {
+    "file": "2025_11_05_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_05/csv/table1.csv",
+    "status": 200,
+    "bytes": 6550,
+    "sha256": "a48086725edc188b29230af7b4887251183c9bed8c6f87f8c5bd6c768a608d86",
+    "fetched_at": "2026-11-10T12:43:38.763729+00:00"
+  },
+  {
+    "file": "2025_11_05_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_05/csv/table2.csv",
+    "status": 200,
+    "bytes": 8404,
+    "sha256": "5ef3f1f3d5d55fd698a07c1796360ccee4b76730a26f7531fc71c0655cbe4cb5",
+    "fetched_at": "2026-11-10T12:43:39.833878+00:00"
+  },
+  {
+    "file": "2025_11_05_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_05/csv/table4.csv",
+    "status": 200,
+    "bytes": 2306,
+    "sha256": "3ee773ad95b705f91f2f66ad87b2bed7c095ea96623b0ab9a71f2e96fabb4eff",
+    "fetched_at": "2026-11-10T12:43:40.197157+00:00"
+  },
+  {
+    "file": "2025_11_13_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_13/wpsr_2025_11_13.php",
+    "status": 200,
+    "bytes": 67499,
+    "sha256": "afd626645d1eeb0f8cba8fcc24d210f30d42101b0f61d52dd6086e8539544800",
+    "fetched_at": "2026-11-10T12:43:40.418681+00:00"
+  },
+  {
+    "file": "2025_11_13_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_13/csv/table1.csv",
+    "status": 200,
+    "bytes": 6568,
+    "sha256": "5580c0bcb0a8f7ebc2c60d801ade4bd6fd678e626b8a0e7628fd10fd9c8e4e46",
+    "fetched_at": "2026-11-10T12:43:40.259407+00:00"
+  },
+  {
+    "file": "2025_11_13_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_13/csv/table2.csv",
+    "status": 200,
+    "bytes": 8387,
+    "sha256": "063219f2c5f140ba15d4b599b60cbeb00374eba78bcbe7d3cc0ed5130286d81f",
+    "fetched_at": "2026-11-10T12:43:40.810141+00:00"
+  },
+  {
+    "file": "2025_11_13_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_13/csv/table4.csv",
+    "status": 200,
+    "bytes": 2309,
+    "sha256": "a71b64950bcc00db51d08ebcb15c19cf0e9cec3282be91db4b3a2464805ac66b",
+    "fetched_at": "2026-11-10T12:43:42.367696+00:00"
+  },
+  {
+    "file": "2025_11_19_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_19/wpsr_2025_11_19.php",
+    "status": 200,
+    "bytes": 66536,
+    "sha256": "5c1360e7c00d66d19201c22df03ec2dacd1864e33238cba58cbaec0dcb321423",
+    "fetched_at": "2026-11-10T12:43:41.585967+00:00"
+  },
+  {
+    "file": "2025_11_19_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_19/csv/table1.csv",
+    "status": 200,
+    "bytes": 6587,
+    "sha256": "b69303d24ffd3616d43af28c67a24d31cf898dad0e4a5c3d2e9b33d7d0d3fb06",
+    "fetched_at": "2026-11-10T12:43:41.786482+00:00"
+  },
+  {
+    "file": "2025_11_19_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_19/csv/table2.csv",
+    "status": 200,
+    "bytes": 8421,
+    "sha256": "549d2acae6933ebd0e78933cfe371ca5b26b07436f62f0f765c56399759e3d52",
+    "fetched_at": "2026-11-10T12:43:42.511867+00:00"
+  },
+  {
+    "file": "2025_11_19_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_19/csv/table4.csv",
+    "status": 200,
+    "bytes": 2309,
+    "sha256": "7e3d8679124e72c8354f967591be33182de8f43bb1ae7b1cf1012af3f27bd240",
+    "fetched_at": "2026-11-10T12:43:43.165148+00:00"
+  },
+  {
+    "file": "2025_11_26_release.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_26/wpsr_2025_11_26.php",
+    "status": 200,
+    "bytes": 66536,
+    "sha256": "cd1be96c284dab67668fff8050fd5d972ab092f75c39a34a25336b731caa0c06",
+    "fetched_at": "2026-11-10T12:43:44.697645+00:00"
+  },
+  {
+    "file": "2025_11_26_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_26/csv/table1.csv",
+    "status": 200,
+    "bytes": 6583,
+    "sha256": "326d1dbdadc5dfc6d59b6b693d893d88d65c607754b7dd26694b7ec140f0a9f9",
+    "fetched_at": "2026-11-10T12:43:44.358925+00:00"
+  },
+  {
+    "file": "2025_11_26_table2.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_26/csv/table2.csv",
+    "status": 200,
+    "bytes": 8387,
+    "sha256": "1006fff8b7a6bcd44a887efd1669ee448bc1ccf376b7b397613b1ed8f28ae669",
+    "fetched_at": "2026-11-10T12:43:44.173508+00:00"
+  },
+  {
+    "file": "2025_11_26_table4.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_11_26/csv/table4.csv",
+    "status": 200,
+    "bytes": 2319,
+    "sha256": "a01d768e95cef39c8f29d41eb733ef0f6973028abd18c41121c46e655a0e8c17",
+    "fetched_at": "2026-11-10T12:43:44.750999+00:00"
+  },
+  {
+    "file": "eia_schedule.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/schedule.php",
+    "status": 200,
+    "bytes": 52109,
+    "sha256": "fc541adcac23e9856c45ae35c3b15b71b301eec3dc51494eb5649280fdc498f6",
+    "fetched_at": "2026-11-10T12:43:45.377380+00:00"
+  },
+  {
+    "file": "eia_reuse.html",
+    "url": "https://www.eia.gov/about/copyrights_reuse.php",
+    "status": 200,
+    "bytes": 52530,
+    "sha256": "c5f94e9019f9ef3ca177dbd2610ce4d853d526a793d7b703fde3c49d34912008",
+    "fetched_at": "2026-11-10T12:43:46.195823+00:00"
+  },
+  {
+    "file": "2025_10_16_table1.pdf",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_16/pdf/table1.pdf",
+    "status": 200,
+    "bytes": 90361,
+    "sha256": "7cbecbe69ba252d0da84d654fa25e6afa76fe2a2ae64ff6d48d839d624496aef",
+    "fetched_at": "2026-11-10T12:43:46.473224+00:00"
+  },
+  {
+    "file": "2025_10_16_table2.pdf",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_16/pdf/table2.pdf",
+    "status": 200,
+    "bytes": 88271,
+    "sha256": "b2ecc20e5ba980ff1f7170fe1eff945dc2e1eb80ea51e6d2f51d530cb29f82cb",
+    "fetched_at": "2026-11-10T12:43:47.312529+00:00"
+  },
+  {
+    "file": "2025_10_16_table4.pdf",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2025/2025_10_16/pdf/table4.pdf",
+    "status": 200,
+    "bytes": 86086,
+    "sha256": "0b8551b1bf659f3f8656d2f347597c8811cb056b8b1fc6be3cbbdf3a519b4b18",
+    "fetched_at": "2026-11-10T12:43:50.387704+00:00"
+  }
+]

@@ -1,0 +1,181 @@
+{
+  "audit_status": "ARITHMETIC_AND_SELECTION_CHECKED_RULE_TEXT_PENDING",
+  "independent_counts": {
+    "archive_issues": 14,
+    "raw_manifest_files": 61,
+    "canonical_fields": 51,
+    "candidate_values": 1554,
+    "candidate_feeds": {
+      "T1": 546,
+      "T2": 672,
+      "T4": 336
+    },
+    "cutoffs": 56,
+    "pit_panel_rows": 5712,
+    "decision_rows": 112,
+    "control_rows": 140,
+    "control_verdicts": {
+      "PASS": 140
+    },
+    "actual_cross_issue_value_changes": 0,
+    "decision_distribution": {
+      "待补证": 6,
+      "可发布": 56,
+      "限制发布": 50
+    }
+  },
+  "candidate_and_panel_errors": [],
+  "raw_hash_or_copy_errors": [],
+  "freshness_before_priority_counterexamples": [
+    {
+      "case_id": "W02B",
+      "field": "stock_crude_commercial_US",
+      "correct": "2025_09_04:T1:r3:c2",
+      "wrong_source_first": "2025_08_27:T4:r3:c2",
+      "correct_week": "2025-08-29",
+      "wrong_week": "2025-08-22"
+    },
+    {
+      "case_id": "W02B",
+      "field": "stock_crude_total_US",
+      "correct": "2025_09_04:T1:r2:c2",
+      "wrong_source_first": "2025_08_27:T4:r2:c2",
+      "correct_week": "2025-08-29",
+      "wrong_week": "2025-08-22"
+    },
+    {
+      "case_id": "W02B",
+      "field": "stock_distillate_US",
+      "correct": "2025_09_04:T1:r11:c2",
+      "wrong_source_first": "2025_08_27:T4:r18:c2",
+      "correct_week": "2025-08-29",
+      "wrong_week": "2025-08-22"
+    },
+    {
+      "case_id": "W02B",
+      "field": "stock_gasoline_US",
+      "correct": "2025_09_04:T1:r5:c2",
+      "wrong_source_first": "2025_08_27:T4:r12:c2",
+      "correct_week": "2025-08-29",
+      "wrong_week": "2025-08-22"
+    }
+  ],
+  "subset_counterexample_20251016": {
+    "US_commercial_million_barrels": "423.785",
+    "five_PADD_sum": "423.785",
+    "Cushing": "22.001",
+    "Alaska_in_transit": "3.889",
+    "wrong_PADD_plus_Cushing": "445.786",
+    "wrong_PADD_plus_Alaska": "427.674"
+  },
+  "critical_scope_limitations": [
+    "Official archive snapshots were fetched in 2026, not contemporaneously in 2025. Archive release-date URL is not proof every byte was immutable since initial release. State historical replay as a scenario assumption, not measured historical arrival.",
+    "T1/T2/T4 lags 10/25/55 minutes and stress T2 plus24h are author-defined scenario facts. Do not attribute those lags to EIA actual distribution.",
+    "No numerical cross-issue revision signal was observed. Test release-version tie-breaking using provenance IDs only; do not claim changed-data detection tested.",
+    "Alaska In-Transit parent=PADD5 is not explicitly proved by provided Table4 footnote5, which describes transit between Alaska and other states/territories. Safe source-backed statement is not a sixth PADD, not separately added to US totals. If parent used in scoring, state a scenario mapping assumption or add official geographical allocation rule.",
+    "Products supplied is an apparent-consumption proxy. Stock/gasoline or distillate products-supplied ratios are task-defined coverage measures, not automatically EIA official days-of-supply methodology. Label them as internal ratios and state denominator choice.",
+    "All140 controls are PASS; no genuine failure signal for reconciliation. Rubrics should assess correct residuals and avoid treating tolerable independent rounding as an anomaly.",
+    "Raw CSV data_rows in manifest are len(rows)-1 and include secondary header; for Table1 this is57 physical nonfirst-header rows, not homogeneous business observations. State physical rows separately from111 extracted values/issue."
+  ],
+  "unit_pdf_evidence": [
+    "2025_10_16_table1.txt: Petroleum Stocks (Million Barrels), Petroleum Supply (Thousand Barrels per Day)",
+    "2025_10_16_table2.txt: Thousand Barrels per Day, Except Where Noted; percent utilization = gross inputs / operable capacity; percentages calculated using unrounded numbers",
+    "2025_10_16_table4.txt: Million Barrels; Cushing footnote4 and Alaska In-Transit footnote5; totals may not add due to independent rounding"
+  ],
+  "independent_control_recalculation": {
+    "count": 140,
+    "verdicts": {
+      "PASS": 140
+    },
+    "errors": [],
+    "largest_absolute_residual_by_check": {
+      "CRUDE_BALANCE": "1",
+      "CRUDE_COMPONENTS": "0.000",
+      "REGIONAL_CAPACITY": "1",
+      "REGIONAL_COMMERCIAL": "1.000",
+      "REGIONAL_CRUDE_INPUTS": "2",
+      "REGIONAL_GROSS_INPUTS": "1",
+      "STOCK_FLOW_crude_commercial": "0.4285714285714285714285714",
+      "STOCK_FLOW_crude_total": "0.5714285714285714285714286",
+      "STOCK_FLOW_spr": "0.42857142857142857142857143",
+      "UTILIZATION": "0.05264317180616740088105727"
+    }
+  },
+  "official_archive_calendar_check": {
+    "issues_checked": 14,
+    "errors": [],
+    "holiday_schedule_evidence": "eia_schedule.html independently parsed rows: Aug29→Sep4 2025 12:00p.m.; Oct10→Oct16 2025 12:00p.m.; Nov7→Nov13 2025 12:00p.m.",
+    "issues": [
+      {
+        "file": "2025_08_27_release.html",
+        "release_date": "2025-08-27",
+        "week": "2025-08-22"
+      },
+      {
+        "file": "2025_09_04_release.html",
+        "release_date": "2025-09-04",
+        "week": "2025-08-29"
+      },
+      {
+        "file": "2025_09_10_release.html",
+        "release_date": "2025-09-10",
+        "week": "2025-09-05"
+      },
+      {
+        "file": "2025_09_17_release.html",
+        "release_date": "2025-09-17",
+        "week": "2025-09-12"
+      },
+      {
+        "file": "2025_09_24_release.html",
+        "release_date": "2025-09-24",
+        "week": "2025-09-19"
+      },
+      {
+        "file": "2025_10_01_release.html",
+        "release_date": "2025-10-01",
+        "week": "2025-09-26"
+      },
+      {
+        "file": "2025_10_08_release.html",
+        "release_date": "2025-10-08",
+        "week": "2025-10-03"
+      },
+      {
+        "file": "2025_10_16_release.html",
+        "release_date": "2025-10-16",
+        "week": "2025-10-10"
+      },
+      {
+        "file": "2025_10_22_release.html",
+        "release_date": "2025-10-22",
+        "week": "2025-10-17"
+      },
+      {
+        "file": "2025_10_29_release.html",
+        "release_date": "2025-10-29",
+        "week": "2025-10-24"
+      },
+      {
+        "file": "2025_11_05_release.html",
+        "release_date": "2025-11-05",
+        "week": "2025-10-31"
+      },
+      {
+        "file": "2025_11_13_release.html",
+        "release_date": "2025-11-13",
+        "week": "2025-11-07"
+      },
+      {
+        "file": "2025_11_19_release.html",
+        "release_date": "2025-11-19",
+        "week": "2025-11-14"
+      },
+      {
+        "file": "2025_11_26_release.html",
+        "release_date": "2025-11-26",
+        "week": "2025-11-21"
+      }
+    ]
+  }
+}

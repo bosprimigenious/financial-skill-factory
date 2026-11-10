@@ -33,7 +33,7 @@ PROFILE = (
  'engineering roles: a multimodal integrity platform (CLIP + Milvus), a Chinese AI-text detection platform built '
  'end to end, a university LLM practice platform, and a first-author detection framework under review at NeurIPS 2026. '
  'Habit of building the measurement before the claim: every number carries a source ID, a publication date and a '
- 'reproducible workbook. Also an active open-source contributor: 47 public repositories and 117 pull requests, the '
+ 'reproducible workbook. Also an open-source contributor with 47 public repositories and 117 pull requests, the '
  'majority of them correctness fixes to evaluation harnesses and data-validation libraries.'
 )
 
@@ -162,43 +162,54 @@ PAPER = dict(
  ],
 )
 
-OSS_STATS = ('Since Oct 2024: 47 public repositories (80 stars, 28 followers), 117 pull requests of which 44 merged, '
-             'and 47 issues filed — mostly correctness fixes to evaluation harnesses, data-validation libraries and '
-             'agent tooling.')
+OSS_STATS = ('Active since October 2024 — 47 public repositories, 117 pull requests (44 merged) and 47 issues filed, '
+             'concentrated in evaluation harnesses, data-validation libraries and agent tooling. Each change below '
+             'started from reproducing a failure and ships with the input that provoked it, rather than from reading '
+             'code for style.')
 
 OSS_UPSTREAM = [
- dict(project='harbor-framework/terminal-bench', n='12 PRs / 6 merged',
-      note='Task and grader correctness in an agent benchmark: inclusive clearance boundary in a photonic '
-           'wave-guide routing task, comment-aware scanning in an anti-wrapper check, de-duplication by '
-           'transaction_id in expected rows, UTC comparison for database cut-over timestamps, annotated-constant '
-           'readback in a shard-corruption task, and ordered CSS transform composition in layout recreation.'),
- dict(project='apache/hugegraph-ai · apache/hugegraph-toolchain', n='2 PRs',
-      note='Opt-in graph trace on the /rag response (additive, no behaviour change without the flag); loader fix '
-           'that splits Collection values without casting to List.'),
- dict(project='SWE-bench/SWE-bench', n='1 PR',
-      note='Grading fix: a test suite that exited non-zero and produced no report is not a pass — stop scoring '
-           'it as one.'),
- dict(project='kubeedge/ianvs', n='1 PR',
-      note='Validator fix: preserve Git pathname boundaries so a prefix match cannot leak across directories.'),
- dict(project='unionai-oss/pandera · datachain-ai/datachain · eosphoros-ai/DB-GPT · apache/dubbo-go-pixiu · ruyisdk/ruyi',
-      n='6 / 6 / 4 / 4 / 3 PRs',
-      note='Data-validation and data-tooling fixes (schema checks, dataset normalisation) plus config and proxy '
-           'behaviour fixes in the Go and Python services.'),
+ dict(project='harbor-framework/terminal-bench', area='agent benchmark · task and grader correctness',
+      note='Fixed an inclusive clearance boundary that rejected the geometrically correct route in a photonic '
+           'wave-guide task; made the anti-wrapper scan ignore comments; de-duplicated expected rows by '
+           'transaction_id; normalised cut-over timestamp comparison to UTC; read annotated constants back from the '
+           'recipe in a shard-corruption task; composed CSS transforms in bound order in a layout-recreation task.'),
+ dict(project='SWE-bench/SWE-bench', area='benchmark grading integrity',
+      note='A suite that exits non-zero and produces no report is not a pass. The harness now refuses to score it, '
+           'closing a hole where an infrastructure failure could be counted as a solved instance.'),
+ dict(project='apache/hugegraph-ai', area='graph-retrieval observability',
+      note='Added an opt-in graph trace to the /rag response, disabled by default so existing callers see no '
+           'behaviour change while reviewers can inspect which subgraph produced an answer.'),
+ dict(project='apache/hugegraph-toolchain', area='loader data handling',
+      note='Splits Collection-typed values without casting to List, so nested collections no longer fail ingestion.'),
+ dict(project='kubeedge/ianvs', area='validator path safety',
+      note='Preserved Git pathname boundaries — a prefix match could previously cross directory boundaries and '
+           'accept a file outside the intended tree.'),
+ dict(project='unionai-oss/pandera · datachain-ai/datachain', area='data validation and dataset normalisation',
+      note='Schema-check and dataset-normalisation fixes in two libraries that other pipelines depend on for '
+           'contract enforcement.'),
+ dict(project='eosphoros-ai/DB-GPT · apache/dubbo-go-pixiu · ruyisdk/ruyi', area='service configuration and proxy behaviour',
+      note='Model/provider configuration fixes in DB-GPT, request-routing behaviour in the Dubbo gateway, and '
+           'exposing repo.disabled through config get in RuyiSDK so a disabled repository can be inspected.'),
 ]
 
 OSS_OWN = [
- ('autoresearch-skills', '★57', 'Reusable agent skills for AutoResearch task design, isolation, QA and handoff — the '
-                                  'skill set other people install and run, not a demo.'),
- ('ModelingPaperKit', '★7', 'Zero-config reproducible toolkit for CUMCM / MCM-ICM modelling papers: environment, '
-                            'figure and result tables generated from one config.'),
- ('continuum', '★2', 'Local-first history layer for coding agents: explicit import, literal search, pagination and a '
-                     'derived index, without touching vendor databases.'),
- ('VoiceInput', '★1', 'macOS menu-bar voice input: local Whisper transcription injected at the caret, no audio leaves the machine.'),
- ('financial-skill-factory · expert-task-pipeline', '—', 'Author-side pipelines for judgeable finance tasks: case intake, '
-                                                          'material contracts, frozen rubrics, isolated GT, scoring and submission gates.'),
+ ('autoresearch-skills — 57 stars',
+  'Reusable agent skills for AutoResearch task design, isolation, QA and handoff: a skill set other people install '
+  'and run, not a demo.'),
+ ('ModelingPaperKit — 7 stars',
+  'Zero-config reproducible toolkit for CUMCM / MCM-ICM modelling papers — environment, figures and result tables '
+  'generated from a single config so a paper can be rebuilt by anyone.'),
+ ('continuum — 2 stars',
+  'Local-first history layer for coding agents: explicit import, literal search, pagination and a derived index, '
+  'without writing to vendor databases.'),
+ ('VoiceInput — 1 star',
+  'macOS menu-bar voice input: local Whisper transcription injected at the caret; audio never leaves the machine.'),
+ ('financial-skill-factory · expert-task-pipeline',
+  'Author-side pipelines for judgeable finance tasks — case intake, material contracts, frozen rubrics, isolated '
+  'ground truth, item-by-item scoring and submission gates.'),
  ('office-task-bench-skill · classroom-note-reconstruction · zh-handwritten-notes-skill · image-text-restore-skill',
-  '4 skills', 'Published agent skills for office-task authoring, lecture-note reconstruction, CJK handwriting rendering and '
-              'text-preserving image restoration.'),
+  'Four published agent skills: office-task authoring, lecture-note reconstruction, CJK handwriting rendering, and '
+  'text-preserving image restoration.'),
 ]
 
 EDU = dict(
@@ -253,11 +264,11 @@ story.append(Paragraph('OPEN SOURCE', SEC))
 story.append(Paragraph(OSS_STATS, BODY))
 story.append(Spacer(1, 2))
 for e in OSS_UPSTREAM:
-    story.append(Paragraph(f"<b>{e['project']}</b> — {e['n']}", ORG))
+    story.append(Paragraph(f"<b>{e['project']}</b>  —  {e['area']}", ORG))
     story.append(Paragraph(e['note'], BUL, bulletText='•'))
 story.append(Spacer(1, 2))
-for name, star, note in OSS_OWN:
-    story.append(Paragraph(f"<b>{name}</b>  {star}", ORG))
+for name, note in OSS_OWN:
+    story.append(Paragraph(f"<b>{name}</b>", ORG))
     story.append(Paragraph(note, BUL, bulletText='•'))
 
 story.append(Paragraph('EDUCATION', SEC))
