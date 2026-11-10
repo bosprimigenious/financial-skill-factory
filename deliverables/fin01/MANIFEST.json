@@ -1,7 +1,7 @@
 {
   "item_id": "7705055555161788179",
   "code": "fin01",
-  "generated_at": "2026-11-10T12:17:12+08:00",
+  "generated_at": "2026-11-10T12:17:25+08:00",
   "status": "BLOCKED",
   "gaps": [
     "豆包未运行：无 runs/fin01/doubao_run.json（CDP 9334 不可用）"
