@@ -1,27 +1,61 @@
 {
   "item_id": "7705055555161788179",
   "code": "fin01",
-  "generated_at": "2026-11-09T23:00:19+08:00",
+  "generated_at": "2026-11-10T11:28:45+08:00",
   "status": "BLOCKED",
   "gaps": [
-    "材料未接入：packs/fin01/materials 为空（需真实公开数据，按 materials_contract.md 落盘）",
     "豆包未运行：无 runs/fin01/doubao_run.json（CDP 9334 不可用）"
   ],
   "files": [
     {
       "path": "pack/STATUS.md",
-      "sha256": "3fcc113451a50098241adaf3135825a1d2145e561d229807b41cee201247e8f3",
-      "bytes": 715
+      "sha256": "cd4f26fbbbf56e4cdbc4145fc85c8d030ed4dfb0452c74c10d86ff8dc4db7530",
+      "bytes": 1305
+    },
+    {
+      "path": "pack/SUBMISSION.md",
+      "sha256": "6e392d4275380c6c46fd832b14e0a9033dc2691783dde66a36b4e4664c02eeae",
+      "bytes": 4536
     },
     {
       "path": "pack/gt.md",
-      "sha256": "2e5ab9216a9847ea1a07f9d6358077f1b9698abc0aa3c2dd2a9426a856e609c6",
-      "bytes": 922
+      "sha256": "3e18a4d4da3306d3308515dd15dc1dc72a1ec4faa0ca5b3e84026d81ba1b62f2",
+      "bytes": 2534
+    },
+    {
+      "path": "pack/gt_summary.json",
+      "sha256": "9cc3d169809ba3d4773de01c96991658c6b8f8f1c27dcec5750b772d335aba40",
+      "bytes": 485
+    },
+    {
+      "path": "pack/gt_table.csv",
+      "sha256": "45bc62d9f514a0d983b3ba998a52e7fe3491b0fceace760f7d6c1272efe70849",
+      "bytes": 308
     },
     {
       "path": "pack/ideal_steps.md",
       "sha256": "a31727c3103ac5b853a4eea3a461921af3ca37508efe3897100a23c71322d076",
       "bytes": 1313
+    },
+    {
+      "path": "pack/materials/M1_数据源目录.csv",
+      "sha256": "268682c23c01ecea312edf860efd4a4452e7ccadd29934951a2d65c6789554fb",
+      "bytes": 613
+    },
+    {
+      "path": "pack/materials/M2_观测数据.csv",
+      "sha256": "dabeabdfefa2553a6355091af20621eabc152b67a23191065b6a1232271cf7aa",
+      "bytes": 861
+    },
+    {
+      "path": "pack/materials/M3_实体映射.csv",
+      "sha256": "b62358f0cfd07c2329562b661b4a12139721ad8e27a28803a168d10d575606df",
+      "bytes": 619
+    },
+    {
+      "path": "pack/materials/M4_口径说明.md",
+      "sha256": "0b853067374570cc6a61d3ffb171a0a37eef55e1437da7cab0c35f92883438c0",
+      "bytes": 1518
     },
     {
       "path": "pack/materials_contract.md",
@@ -30,13 +64,18 @@
     },
     {
       "path": "pack/prompt.md",
-      "sha256": "3997e444c16ec9b5d9bff13536d9fbe02a0ce160f6069049ed7f24fbd10b70de",
-      "bytes": 1886
+      "sha256": "f110cb2c8fdecee50d8906cc957dad6e89cec3f6a8983dca5b117e39781303e3",
+      "bytes": 1935
     },
     {
       "path": "pack/rubric.csv",
       "sha256": "6b77b3d5dcb69911eced65a31d55a60117a7a5d8bb008c12c6ab877b0a43081c",
       "bytes": 2287
+    },
+    {
+      "path": "pack/submission_payload.json",
+      "sha256": "65bc06384eb22a1b43a37c6a3fbcf41c32cd0d1b1e60eca12ed15ddffbe4c45c",
+      "bytes": 11228
     }
   ]
 }

@@ -1,0 +1,7 @@
+entity,ticker,name,exchange,valid_from,valid_to,mapping_rule
+SCFI.COMPOSITE,SCFI,上海出口集装箱运价指数,SSEX,2009-10-16,,指数名称直映射
+SCFI.EU_20FT,SCFI-EU20,欧洲航线20ft（基本港）,SSEX,2009-10-16,,航线+箱型组合键
+SCFI.USWC_40FT,SCFI-USWC40,美西航线40ft（基本港）,SSEX,2009-10-16,,航线+箱型组合键
+SCFI.SEA_20FT,SCFI-SEA20,东南亚航线20ft（新加坡）,SSEX,2009-10-16,,航线+箱型组合键
+000001.SH,000001,上证指数,SSE,1990-12-19,,指数代码+交易所后缀
+000001.SZ,000001,平安银行,SZSE,1991-04-03,,同代码不同交易所，必须带后缀区分

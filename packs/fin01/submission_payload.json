@@ -1,0 +1,122 @@
+{
+  "expert_nickname": "",
+  "expert_feishu": "",
+  "expert_role": "",
+  "expert_credential": "",
+  "skill_capability": [
+    "查询运价、开工率、排产、招投标、卫星与客流等高频另类数据并说明口径",
+    "核验指标口径与数据来源"
+  ],
+  "prompt_text": "你是某券商资产管理部的投研数据岗。团队要用一组行业高频与另类数据支撑下一季度的行业配置判断，在提交投委会前，你需要完成**数据源验收与字段口径定义**，确保后续因子研究不会因口径问题产生前视偏差。\n\n【证据截止时点】2026-11-10 收盘后。\n\n【可用材料（仅可依据材料作答）】\n1) M1 数据源目录：逐源给出频率、历史起点、许可与时点标记\n2) M2 观测数据：逐条给出实体、观测日、发布日、字段、值、单位、修订号\n3) M3 实体映射：代码与实体名称的有效期与映射规则\n4) M4 口径说明：指标定义、停牌处理、复权方式、时区与缺失值语义\n\n口径只写在 M1 与 M4 中，题面不复述阈值，也不提示哪些记录属于边界或干扰项。\n\n【任务：交付物】\nD1 源验收表：逐源判断可得性、时点真实性、覆盖率、许可与使用约束\nD2 字段字典：逐字段给出定义、单位、频率、发布滞后、前视风险与是否入模\nD3 拒绝源清单：逐源写明拒绝理由与可替代方案\nD4 口径与缺口登记：同一事实多源冲突、指标未穷举取值、证据缺失，逐项写明对象、取值与影响\n\n【交付要求（硬性）】\n1. 逐条成行，每行可回溯到 source_id 与记录行号，不得以\"其余同上\"概括\n2. 观测日与发布日必须分开判定；不得用\"数据里带日期\"替代时点真实性\n3. 覆盖率的分子分母都要写清，分母与 M1 声明一致\n4. 缺失值须区分 UNKNOWN / NOT_OBSERVED / NOT_PROVEN，不得一律按 0 处理\n5. 同一字段多源冲突时并列两侧取值与采信依据\n6. 拒绝理由须具体到可复核的事实，不得只写\"质量差\"\"不可靠\"\n7. 前视风险结论须落到\"该字段在因子日是否已可得\"这一判断上\n8. 给出计数勾稽：入模字段数 + 拒绝字段数 = 字段总数\n",
+  "prompt_attachments": [
+    "FIN01_材料包.zip"
+  ],
+  "ideal_steps": "# 理想执行步骤（Ideal Steps）\n\n1. 先读 M1 与 M4：把\"口径\"与\"证据\"分开，前者定义怎么判，后者给值。\n2. 建源台账：逐源记录频率、历史起点、许可、时点标记；许可缺失者直接列入待拒。\n3. 建字段清单：以 M4 的指标定义为准，字段名以 M2 实际列为准，二者不一致单列。\n4. 逐字段算发布滞后：`released_at − ts`，取中位数与分位，判定是否满足因子日可得。\n5. 逐源算覆盖率：分子=实际观测实体数；分母=M1 声明覆盖数；两者不符时写明差因。\n6. 实体映射核对：按 `valid_from/valid_to` 切分区间，识别代码复用与一对多，落到具体 ticker。\n7. 多源冲突：同字段不同源取值并列，写明采信侧与依据（频率/许可/PIT）。\n8. 缺失值分类：UNKNOWN（未知）/NOT_OBSERVED（未观测）/NOT_PROVEN（未证实），分别登记。\n9. 形成拒绝清单：每条拒绝理由必须能指到 M1 或 M2 的具体行。\n10. 计数勾稽：入模字段 + 拒绝字段 = 字段总数；与 D2、D3 行数一致。\n11. 缺口登记：口径未穷举、时区不明、修订历史缺失，逐项写影响。\n12. 交付前自检：每行是否有 source_id 与行号；是否有\"其余同上\"这类概括；负向项是否误触。\n",
+  "golden_response": "# 标准答案（GT）\n\n> 数值全部由 `tools/build_fin01_gt.py` 从 `materials/` 计算，见 `gt_table.csv` 与 `gt_summary.json`。\n> 重跑命令：`python3 tools/build_fin01_gt.py`\n\n## 一、源验收结论（D1）\n\n| 源 | 声明覆盖 | 有值实体 | 覆盖率 | 发布滞后中位 | PIT 判定 | 结论 |\n|---|---:|---:|---:|---:|---|---|\n| S01 SCFI 综合（周度） | 1 | 1 | **100.00%** | **0.0 天** | PASS | 可入模 |\n| S02 上证指数日线 | 1 | 1 | **100.00%** | **0.625 天** | PASS | 可入模 |\n| S03 SCFI 分航线 | 20 | **0** | **0.00%** | 无（无有值记录） | **FAIL** | 拒绝入模 |\n\n**整体覆盖率 = 2 / 22 = 9.09%**（分子分母都写清：分子为有值实体数，分母为 M1 声明数）。\n\n## 二、关键缺口（D4）\n\n1. **S03 的 20 条分航线全部无取值**：M2 中有 3 个分航线实体、6 条记录，`value` 全为空、\n   `released_at` 全为空。按 M4 的缺失语义应记 `NOT_PROVEN`，**不得按 0 处理**，\n   也不得据此计算\"分航线运价涨跌\"。\n2. 因此\"用分航线加权复算综合指数\"这一路径在本期**不可执行**：权重表（17 条）虽有，\n   但缺分量取值。任何给出分航线具体数值的答案都是**无依据扩写**。\n3. S02 的 5 个交易日收盘价完整，`released_at` 均为当日 15:00，滞后 0.625 天\n   （15:00 / 24h）—— 满足\"当日收盘后可得\"，不构成前视。\n\n## 三、实体映射（D2 附带）\n\n- 观测到的实体全部能在 M3 找到映射，`unmapped_entities = []`。\n- **同代码跨交易所**：`000001` 同时对应 `000001.SH`（上证指数）与 `000001.SZ`（平安银行）。\n  必须带交易所后缀区分，裸写 `000001` 视为映射不完整。\n\n## 四、计数勾稽（D4 末）\n\n- 字段级去重后共 **5 个 (source, entity) 组合**：S01×1 + S02×1 + S03×3。\n- 入模字段 **2**（S01、S02 各 1）+ 拒绝字段 **3**（S03 三个实体）＝ **5**，与上表一致。\n\n## 五、Narrative GT（可直接放进 D1 结论段）\n\n> 本期可入模的只有 SCFI 综合指数与上证指数日线两个源，覆盖率各 100%，发布滞后分别为 0 天与\n> 0.625 天，均在因子日可得，无前视风险。SCFI 分航线 20 条仅声明、无取值（6 条记录全部为空），\n> 覆盖率 0%，判定为 NOT_PROVEN 并拒绝入模；因此在分航线数据补齐前，不得用分航线复算综合指数，\n> 也不得报告分航线运价变动。整体覆盖率 9.09%，瓶颈在分航线源而非数据频率。\n",
+  "golden_attachments": [
+    "FIN01_计算底稿.zip"
+  ],
+  "rubrics": [
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "源可得性与许可",
+      "acceptance_standard": "逐源给出频率/历史起点/许可，并与 M1 一致",
+      "professional_judgment": "许可缺失或仅展示的源不得入模，专业判断以可商用/可研究为准",
+      "evidence_source_and_location": "M1#license,freq",
+      "numeric_tolerance": "无（二值判定）",
+      "reasonable_alternative_or_boundary": "以同义表述说明许可限制均可",
+      "gate_candidate": "否"
+    },
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "时点真实性（PIT）",
+      "acceptance_standard": "逐条比较 released_at 与 ts，给出前视风险比例",
+      "professional_judgment": "以发布日而非观测日判可得性，是避免前视的唯一口径",
+      "evidence_source_and_location": "M2#released_at,ts",
+      "numeric_tolerance": "比例容差 0.0001",
+      "reasonable_alternative_or_boundary": "按日粒度或小时粒度计算均可，须声明",
+      "gate_candidate": "是（前视误判会使整题用途失效）"
+    },
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "实体映射有效期",
+      "acceptance_standard": "逐条核对 valid_from/valid_to 与观测日重叠，覆盖一对多",
+      "professional_judgment": "代码复用以 valid_to 切分，不得跨期合并",
+      "evidence_source_and_location": "M3#valid_from,valid_to",
+      "numeric_tolerance": "日期精确",
+      "reasonable_alternative_or_boundary": "同一实体多代码按 valid 区间拆分均等价",
+      "gate_candidate": "否"
+    },
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "字段定义与单位频率",
+      "acceptance_standard": "逐字段给定义/单位/频率，与 M4 一致",
+      "professional_judgment": "单位与频率不一致会让因子在横截面上不可比",
+      "evidence_source_and_location": "M4#指标定义",
+      "numeric_tolerance": "无",
+      "reasonable_alternative_or_boundary": "同义单位表述（元/万元）须换算后等价",
+      "gate_candidate": "否"
+    },
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "覆盖率分子分母",
+      "acceptance_standard": "分子=实际观测实体数，分母=M1 声明覆盖数",
+      "professional_judgment": "分母取自声明而非实际观测，否则覆盖率恒为 100%",
+      "evidence_source_and_location": "M1#coverage_note, M2#entity",
+      "numeric_tolerance": "整数精确",
+      "reasonable_alternative_or_boundary": "按字段或按实体计算均可，须声明",
+      "gate_candidate": "否"
+    },
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "缺失语义区分",
+      "acceptance_standard": "逐条区分 UNKNOWN/NOT_OBSERVED/NOT_PROVEN",
+      "professional_judgment": "三者混用会系统性高估覆盖率",
+      "evidence_source_and_location": "M2#value 空值标记",
+      "numeric_tolerance": "无",
+      "reasonable_alternative_or_boundary": "以等价英文标记均可",
+      "gate_candidate": "否"
+    },
+    {
+      "rubric_type": "必需项",
+      "core_criterion": "拒绝理由可复核",
+      "acceptance_standard": "每条拒绝理由指向具体记录或字段事实",
+      "professional_judgment": "不可复核的理由等于未验收",
+      "evidence_source_and_location": "D3 各行 + M1/M2 行号",
+      "numeric_tolerance": "无",
+      "reasonable_alternative_or_boundary": "同类理由可合并但须列全部 source_id",
+      "gate_candidate": "否"
+    },
+    {
+      "rubric_type": "负向项",
+      "core_criterion": "把缺失当 0 或把快照当 PIT",
+      "acceptance_standard": "出现以下任一即不得分：NOT_PROVEN 记为 0；以最新快照回测；用观测日代替发布日",
+      "professional_judgment": "这三类做法会让结论看似完整但不可复现",
+      "evidence_source_and_location": "D2/D4 对照 M2",
+      "numeric_tolerance": "无",
+      "reasonable_alternative_or_boundary": "无（负向项不接受替代）",
+      "gate_candidate": "是"
+    },
+    {
+      "rubric_type": "加分项",
+      "core_criterion": "给出可执行替代源",
+      "acceptance_standard": "为被拒源给出可获取的替代源与获取方式",
+      "professional_judgment": "超出验收本身，属额外价值",
+      "evidence_source_and_location": "D3 替代方案列",
+      "numeric_tolerance": "无",
+      "reasonable_alternative_or_boundary": "替代源可来自公开渠道",
+      "gate_candidate": "否"
+    }
+  ],
+  "model_version_confirmed": true,
+  "model_output_text": "",
+  "model_share_link": "",
+  "model_feedback_link": "",
+  "model_attachments": [],
+  "difficulty": "高",
+  "rating": "",
+  "rating_explanation": "",
+  "model_duration": "少于40min",
+  "need_web": "否",
+  "web_time_limit": "否"
+}

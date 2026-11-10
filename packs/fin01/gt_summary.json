@@ -1,0 +1,22 @@
+{
+  "sources": 3,
+  "declared_entities_total": 22,
+  "observed_entities_total": 2,
+  "overall_coverage_ratio": 0.0909,
+  "not_proven_records_total": 6,
+  "records_missing_released_at_total": 0,
+  "sources_failing_pit": [
+    "S03"
+  ],
+  "unmapped_entities": [],
+  "tickers_across_exchanges": {
+    "000001": [
+      "SSE",
+      "SZSE"
+    ]
+  },
+  "count_check": {
+    "fields_total": 5,
+    "note": "入模字段数 + 拒绝字段数 必须等于字段总数，见 rubric R7"
+  }
+}

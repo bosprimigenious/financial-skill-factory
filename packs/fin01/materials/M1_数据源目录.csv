@@ -1,0 +1,4 @@
+source_id,source_name,vendor,freq,history_start,license,pit_flag,coverage_note,source_url
+S01,上海出口集装箱运价指数（综合）,上海航运交易所,周度,2009-10-16,公开引用需注明来源,TRUE,1条综合指数,https://www.sse.net.cn/index/singleIndex?indexType=scfi
+S02,上证指数日线,东方财富行情接口,日度,1990-12-19,公开,TRUE,1个指数,https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.000001
+S03,SCFI 分航线运价,上海航运交易所,周度,2009-10-16,公开引用需注明来源,TRUE,20条分航线,https://www.sse.net.cn/index/singleIndex?indexType=scfi
