@@ -1,0 +1,68 @@
+[
+  {
+    "filename": "alfred_icsa_vintages.csv",
+    "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=ICSA,ICSA,ICSA&vintage_date=2024-03-07,2024-03-14,2024-03-21&cosd=2024-01-01&coed=2024-03-31",
+    "retrieved_at": "2026-11-10T12:40:25.034362+00:00",
+    "error": "The read operation timed out"
+  },
+  {
+    "filename": "alfred_icsa_20240307.csv",
+    "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=ICSA&vintage_date=2024-03-07&cosd=2024-01-01&coed=2024-03-31",
+    "retrieved_at": "2026-11-10T12:40:25.034904+00:00",
+    "error": "The read operation timed out"
+  },
+  {
+    "filename": "eia_crude_stocks.xls",
+    "url": "https://www.eia.gov/dnav/pet/hist_xls/WCESTUS1w.xls",
+    "retrieved_at": "2026-11-10T12:40:25.035087+00:00",
+    "status": 200,
+    "content_type": "application/vnd.ms-excel",
+    "final_url": "https://www.eia.gov/dnav/pet/hist_xls/WCESTUS1w.xls",
+    "bytes": 130048,
+    "sha256": "5489a1f004087cd553a15d309bd7cab8772ab957e8a9db45655ed1ea161bec36"
+  },
+  {
+    "filename": "eia_weekly_table1.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/csv/table1.csv",
+    "retrieved_at": "2026-11-10T12:40:25.035220+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "filename": "eia_weekly_schedule.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/schedule.php",
+    "retrieved_at": "2026-11-10T12:40:27.059686+00:00",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://www.eia.gov/petroleum/supply/weekly/schedule.php",
+    "bytes": 52109,
+    "sha256": "fc541adcac23e9856c45ae35c3b15b71b301eec3dc51494eb5649280fdc498f6"
+  },
+  {
+    "filename": "alfred_help.html",
+    "url": "https://alfred.stlouisfed.org/help",
+    "retrieved_at": "2026-11-10T12:40:28.534353+00:00",
+    "error": "The read operation timed out"
+  },
+  {
+    "filename": "fred_icsa_metadata.html",
+    "url": "https://fred.stlouisfed.org/series/ICSA",
+    "retrieved_at": "2026-11-10T12:40:29.223339+00:00",
+    "error": "The read operation timed out"
+  },
+  {
+    "filename": "fred_terms.html",
+    "url": "https://fred.stlouisfed.org/legal/",
+    "retrieved_at": "2026-11-10T12:41:01.798116+00:00",
+    "error": "The read operation timed out"
+  },
+  {
+    "filename": "eia_copyright.html",
+    "url": "https://www.eia.gov/about/copyrights_reuse.php",
+    "retrieved_at": "2026-11-10T12:41:02.321478+00:00",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://www.eia.gov/about/copyrights_reuse.php",
+    "bytes": 53550,
+    "sha256": "aeece7b95c41db52c7ac303894e7c2192348107f66eeff2851c5257b68eb6d6d"
+  }
+]

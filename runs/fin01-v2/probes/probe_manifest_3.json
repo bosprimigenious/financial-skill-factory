@@ -1,0 +1,263 @@
+[
+  {
+    "filename": "eia_20240403_table1_verified.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2024/2024_04_03/csv/table1.csv",
+    "retrieved_at": "2026-11-10T12:42:21.331919+00:00",
+    "status": 200,
+    "bytes": 6547,
+    "sha256": "38e256cb0b0ee616ba0c23695b5050f62a458d02cd5395a6b1c6bca0e3ca897f",
+    "content_type": "application/octet-stream",
+    "encoding": "cp1252",
+    "physical_rows": 59,
+    "column_counts": [
+      1,
+      8,
+      13
+    ],
+    "sample": [
+      [
+        "STUB_1",
+        "3/29/24",
+        "3/22/24",
+        "Difference",
+        "Percent Change",
+        "3/31/23",
+        "Difference",
+        "Percent Change"
+      ],
+      [
+        "Crude Oil",
+        "815.058",
+        "811.257",
+        "3.801",
+        "0.500",
+        "841.127",
+        "-26.069",
+        "-3.100"
+      ],
+      [
+        "Commercial (Excluding SPR)",
+        "451.417",
+        "448.207",
+        "3.210",
+        "0.700",
+        "469.952",
+        "-18.535",
+        "-3.900"
+      ],
+      [
+        "Strategic Petroleum Reserve (SPR)",
+        "363.641",
+        "363.050",
+        "0.591",
+        "0.200",
+        "371.175",
+        "-7.534",
+        "-2.000"
+      ],
+      [
+        "Total Motor Gasoline",
+        "227.816",
+        "232.072",
+        "-4.256",
+        "-1.800",
+        "222.575",
+        "5.241",
+        "2.400"
+      ],
+      [
+        "Reformulated",
+        "0.019",
+        "0.018",
+        "0.001",
+        "5.600",
+        "0.023",
+        "-0.004",
+        "-17.400"
+      ]
+    ]
+  },
+  {
+    "filename": "eia_20240410_table1_verified.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2024/2024_04_10/csv/table1.csv",
+    "retrieved_at": "2026-11-10T12:42:21.332576+00:00",
+    "status": 200,
+    "bytes": 6523,
+    "sha256": "905c23661ebe4a5c9a23ad88709bd33a1034b254f58879d46d1b493dfac603e1",
+    "content_type": "application/octet-stream",
+    "encoding": "cp1252",
+    "physical_rows": 59,
+    "column_counts": [
+      1,
+      8,
+      13
+    ],
+    "sample": [
+      [
+        "STUB_1",
+        "4/5/24",
+        "3/29/24",
+        "Difference",
+        "Percent Change",
+        "4/7/23",
+        "Difference",
+        "Percent Change"
+      ],
+      [
+        "Crude Oil",
+        "821.494",
+        "815.058",
+        "6.436",
+        "0.800",
+        "840.124",
+        "-18.630",
+        "-2.200"
+      ],
+      [
+        "Commercial (Excluding SPR)",
+        "457.258",
+        "451.417",
+        "5.841",
+        "1.300",
+        "470.549",
+        "-13.291",
+        "-2.800"
+      ],
+      [
+        "Strategic Petroleum Reserve (SPR)",
+        "364.236",
+        "363.641",
+        "0.595",
+        "0.200",
+        "369.575",
+        "-5.339",
+        "-1.400"
+      ],
+      [
+        "Total Motor Gasoline",
+        "228.531",
+        "227.816",
+        "0.715",
+        "0.300",
+        "222.245",
+        "6.286",
+        "2.800"
+      ],
+      [
+        "Reformulated",
+        "0.022",
+        "0.019",
+        "0.003",
+        "15.800",
+        "0.022",
+        "0.000",
+        "0.000"
+      ]
+    ]
+  },
+  {
+    "filename": "eia_20241114_table1_verified.csv",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2024/2024_11_14/csv/table1.csv",
+    "retrieved_at": "2026-11-10T12:42:21.332770+00:00",
+    "status": 200,
+    "bytes": 6590,
+    "sha256": "4c7fc11787a60484bf30bac50d8016d2d24bea1b23f7f8d46900c1ee26fe902e",
+    "content_type": "application/octet-stream",
+    "encoding": "cp1252",
+    "physical_rows": 59,
+    "column_counts": [
+      1,
+      8,
+      13
+    ],
+    "sample": [
+      [
+        "STUB_1",
+        "11/8/24",
+        "11/1/24",
+        "Difference",
+        "Percent Change",
+        "11/10/23",
+        "Difference",
+        "Percent Change"
+      ],
+      [
+        "Crude Oil",
+        "817.537",
+        "814.881",
+        "2.656",
+        "0.300",
+        "790.628",
+        "26.909",
+        "3.400"
+      ],
+      [
+        "Commercial (Excluding SPR)",
+        "429.747",
+        "427.658",
+        "2.089",
+        "0.500",
+        "439.354",
+        "-9.607",
+        "-2.200"
+      ],
+      [
+        "Strategic Petroleum Reserve (SPR)",
+        "387.790",
+        "387.223",
+        "0.567",
+        "0.100",
+        "351.274",
+        "36.516",
+        "10.400"
+      ],
+      [
+        "Total Motor Gasoline",
+        "206.873",
+        "211.280",
+        "-4.406",
+        "-2.100",
+        "215.670",
+        "-8.797",
+        "-4.100"
+      ],
+      [
+        "Reformulated",
+        "0.014",
+        "0.018",
+        "-0.004",
+        "-22.200",
+        "0.020",
+        "-0.006",
+        "-30.000"
+      ]
+    ]
+  },
+  {
+    "filename": "eia_20240403_archive.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2024/2024_04_03/wpsr_2024_04_03.php",
+    "retrieved_at": "2026-11-10T12:42:21.332888+00:00",
+    "status": 200,
+    "bytes": 64352,
+    "sha256": "f345623b2b847168a3aa7f2ed75d9dfc7296e010c96c9d134da0d7ea0c343e4c",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "filename": "eia_20240410_archive.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/2024/2024_04_10/wpsr_2024_04_10.php",
+    "retrieved_at": "2026-11-10T12:42:22.439808+00:00",
+    "status": 200,
+    "bytes": 65298,
+    "sha256": "8b020dd703f13426a3de12d47f3d697db7f3314e1efd78af49683733c4b71dcf",
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "filename": "eia_all_archives.html",
+    "url": "https://www.eia.gov/petroleum/supply/weekly/archive/",
+    "retrieved_at": "2026-11-10T12:42:22.559551+00:00",
+    "status": 200,
+    "bytes": 175464,
+    "sha256": "d10df7fc1fbf13d64bc3af2859bd5ce03c489058b3a6c77334a80aa2695f9c75",
+    "content_type": "text/html; charset=UTF-8"
+  }
+]
